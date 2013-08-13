@@ -21,7 +21,7 @@
         var header = document.getElementById("header");
         var volume = document.getElementById("volume");
         header.addEventListener('click', function() {
-          var socket = new WebSocket("ws://localhost:8080/"); //"+location.host+"/");
+          var socket = new WebSocket("ws://agrbin-streamer.nodejitsu.com/");
           var player = new Player(myClock.clock, volume);
           socket.onopen = function() {
             new Syncer(socket, function() {
@@ -33,7 +33,7 @@
     </script>
   </head>
   <body>
-    <h1 id="header">click to start.</h1>
+    <h1 id="header">e click to start.</h1>
     <input
       id="volume" type="range" min="0" max="1" step="0.02" value="0.5"
       style="display: none;"
