@@ -20,7 +20,7 @@ exports.streamer = {
   checkInterval : 0.5,
   chunkDuration : 2.448,
   overlapTime   : 0.048,
-  chunkHostUrl  : "../frags/",
+  chunkHostUrl  : "frags/",
   numberOfChunks: 150
 };
 
