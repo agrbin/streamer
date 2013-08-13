@@ -12,6 +12,7 @@ if [ -r $input ]; then
 
   set -e
   out_dir=$(dirname $0)/frags
+  mkdir -p $out_dir
   rm -f $out_dir/*.mp3
 
   # strip out id3
