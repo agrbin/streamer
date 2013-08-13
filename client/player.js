@@ -48,7 +48,7 @@ var Player = function(getTime, volumeElement) {
     oscillator.frequency.value = 666;
     oscillator.connect(masterGain);
     oscillator.noteOn(0);
-    oscillator.noteOff(0.2);
+    oscillator.noteOff(0.01);
   })();
 
   // socket.onmessage will be binded to this method.
