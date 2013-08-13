@@ -23,7 +23,9 @@
         header.addEventListener('click', function() {
           var socket = new WebSocket("ws://agrbin-streamer.nodejitsu.com/");
           var player = new Player(myClock.clock, volume);
+          header.innerHTML = "syncing...";
           socket.onopen = function() {
+            header.innerHTML = "listen!";
             new Syncer(socket, function() {
               socket.onmessage = player.addChunk;
             });
