@@ -1,0 +1,9 @@
+{
+  "subdomain"   : "agrbin-streamer",
+  "engines"     : { "node": "0.6.x" },
+  "name"        : "agrbin-streamer",
+  "author"      : "Anton Grbin <anton.grbin@gmail.com>",
+  "version"     : "0.1.0",
+  "description" : "example app using WebSocekts and WebAudtio.",
+  "scripts"     : { "start": "./bin/server" }
+}
