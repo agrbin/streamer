@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+  <head>
+    <script type="text/javascript" src="clock.js"></script>
+    <script type="text/javascript" src="player.js"></script>
+    <script type="text/javascript" src="syncer.js"></script>
+    <script>
+      /*
+       * when you click on header element:
+       *  socket and player will be instantiated.
+       *
+       *  when socket connects syncer will start to communicate with server for
+       *  a clock synchronization and if it succeeds it will bind socket message
+       *  event to a player.
+       *
+       *  player and streamer on server will continue to communicate.
+       */
+      window.addEventListener('load', function() {
+        var header = document.getElementById("header");
+        var volume = document.getElementById("volume");
+        header.addEventListener('click', function() {
+          var socket = new WebSocket("ws://localhost:8080/"); //"+location.host+"/");
+          var player = new Player(myClock.clock, volume);
+          socket.onopen = function() {
+            new Syncer(socket, function() {
+              socket.onmessage = player.addChunk;
+            });
+          };
+        });
+      }, false);
+    </script>
+  </head>
+  <body>
+    <h1 id="header">click to start.</h1>
+    <input
+      id="volume" type="range" min="0" max="1" step="0.02" value="0.5"
+      style="display: none;"
+      />
+  </body>
+</html>
