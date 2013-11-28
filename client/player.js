@@ -21,7 +21,7 @@
  *  one can think of the time part in last 13 bytes as a sequential number of the
  *  chunk.
  */
-var Player = function(getTime, volumeElement) {
+var Player = function(getTime, volumeElement, colorElement) {
 
   var audioContext = new webkitAudioContext()
     , masterGain = null
@@ -38,10 +38,13 @@ var Player = function(getTime, volumeElement) {
     // set up master gain
     masterGain = audioContext.createGainNode();
     masterGain.connect(audioContext.destination);
-    volumeElement.style.display = 'block';
-    volumeElement.addEventListener('change', function () {
-      masterGain.gain.value = this.value;
-    });
+    masterGain.gain.value = 1;
+    if (volumeElement) {
+      volumeElement.style.display = 'block';
+      volumeElement.addEventListener('change', function () {
+        masterGain.gain.value = this.value;
+      });
+    }
     // play the number of the beast freq as a test note.
     // oscillator is a long word, isn't it?
     var oscillator = audioContext.createOscillator();
@@ -50,6 +53,19 @@ var Player = function(getTime, volumeElement) {
     oscillator.noteOn(0);
     oscillator.noteOff(0.01);
   })();
+
+  this.tick = function(freq, tickLength) {
+    var oscillator = audioContext.createOscillator();
+    oscillator.frequency.value = freq;
+    oscillator.connect(audioContext.destination);
+    oscillator.noteOn(audioContext.currentTime);
+    oscillator.noteOff(audioContext.currentTime + tickLength);
+    colorElement.style.backgroundColor = 'red';
+    setTimeout(function() {
+      colorElement.style.backgroundColor = 'white';
+    }, tickLength * 1000);
+    console.log("tick");
+  };
 
   // socket.onmessage will be binded to this method.
   // when message is received, start downloading mp3 chunk and decode it.
