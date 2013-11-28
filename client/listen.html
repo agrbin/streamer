@@ -40,17 +40,19 @@
 
     var samplerate = audioContext.sampleRate;
     var fftsize = analyserNode.fftSize = 2048;
-    var freq = 2000;
+    var freq = 18000;
+    var antifreqs = [17500, 18500];
 
     var sound = freqByteData[Math.round(freq * fftsize / samplerate)];
-    // sound += freqByteData[Math.round(freq * 2 * fftsize / samplerate)];
+    for (var i = 0; i < antifreqs.length; i++) {
+      sound -= freqByteData[Math.round(antifreqs[i] * fftsize / samplerate)];
+    };
     // sound += freqByteData[Math.round(freq * 4 * fftsize / samplerate)];
     // sound /= 3;
 
-    console.log(sound);
     color.style.backgroundColor = 'rgb(' + sound +',40,40)';
 
-    if (sound > 240) {
+    if (sound > 100) {
       log.innerHTML += '<br>done';
       console.log('done');
     }
