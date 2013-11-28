@@ -54,16 +54,27 @@ var Player = function(getTime, volumeElement, colorElement) {
     oscillator.noteOff(0.01);
   })();
 
+  var playing = false;
+   
   this.tick = function(freq, tickLength) {
-    var oscillator = audioContext.createOscillator();
-    oscillator.frequency.value = freq;
-    oscillator.connect(audioContext.destination);
-    oscillator.noteOn(audioContext.currentTime);
-    oscillator.noteOff(audioContext.currentTime + tickLength);
+    if (playing) return;
+    playing = true;
+
+    var t0 = audioContext.currentTime;
+    for (var j = 0; j < 30; ++j) {
+      var modif = (j % 2) * 10 / 1000; // 10ms
+
+      var oscillator = audioContext.createOscillator();
+      oscillator.frequency.value = freq;
+      oscillator.connect(audioContext.destination);
+      oscillator.noteOn(t0 + j + modif);
+      oscillator.noteOff(t0 + tickLength + j + modif);
+      setTimeout(function() {colorElement.style.backgroundColor = 'red';}, (j + modif) * 1000);
+      setTimeout(function() {colorElement.style.backgroundColor = 'white';}, (j + tickLength + modif) * 1000);
+    }
+    setTimeout(function() {playing = false;}, (9 + tickLength + modif) * 1000);
+
     colorElement.style.backgroundColor = 'red';
-    setTimeout(function() {
-      colorElement.style.backgroundColor = 'white';
-    }, tickLength * 1000);
     console.log("tick");
   };
 
