@@ -11,6 +11,10 @@ function Client(ws, player) {
 
   function beClient() {
     myrecv(ws, function(msg) {
+      if ('play' in msg) {
+        shout("I plays!");
+        return;
+      }
       if ('url' in msg) {
         player.addChunk(msg);
       } else {
