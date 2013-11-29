@@ -20,10 +20,11 @@ exports.Router = function() {
     });
   };
 
+  // worked only for A
   function sendHandler(msg) {
-    for (clientSockIndex in socks) {
-      msg.start += offsets[ids[clientSockIndex]];
-      socks[clientSockIndex].send(msg);
+    for (var j = 0; j < socks.length; ++j) {
+      msg.start += offsets[ids[j]];
+      socks[j].send(msg);
     }
   };
 
