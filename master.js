@@ -67,7 +67,7 @@ function Master(ws, listener) {
         penalties[id] = 0;
       } else {
         penalties[id] ++;
-        if (penalties[id] == 2) {
+        if (penalties[id] == 5) {
           --n;
           log("kicking out " + id);
           delete offsets[id];
