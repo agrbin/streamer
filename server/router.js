@@ -22,7 +22,7 @@ exports.Router = function() {
 
   function sendHandler(msg) {
     for (clientSockIndex in socks) {
-      msg.start += offsets[clientSockIndex];
+      msg.start += offsets[ids[clientSockIndex]];
       socks[clientSockIndex].send(msg);
     }
   };
