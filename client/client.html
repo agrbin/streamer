@@ -28,15 +28,21 @@
           var socket = new WebSocket("ws://lieutier.me:8080");
           var player = new Player(myClock.clock);
           header.innerHTML = "syncing...";
-          socket.onopen = function() {
-            new Syncer(socket, function() {
-              header.innerHTML = "client synced!";
+          window.addEventListener("devicemotion", function sync(event) {
+            var r =
+              event.acceleration.x*event.acceleration.x +
+              event.acceleration.y*event.acceleration.y +
+              event.acceleration.z*event.acceleration.z;
+            if (r > 0.6) {
+              myClock.reset();
+              window.removeEventListener("devicemotion", sync);
               did = true;
               new Client(socket, player);
-            });
-          };
+            }
+          });
         });
-      }, false);
+      });
+
     </script>
   </head>
   <body>

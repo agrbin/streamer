@@ -17,6 +17,10 @@ var myClock = new (function() {
     offset += x;
   };
 
+  this.reset = function() {
+    myClock.skew(-myClock.clock());
+  }
+
 })();
 
 function log() {
