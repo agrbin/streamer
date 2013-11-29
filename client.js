@@ -11,12 +11,12 @@ function Client(ws, player) {
 
   function beClient() {
     myrecv(ws, function(msg) {
-      if ('play' in msg) {
+      if ('length' in msg && msg.length && msg[0] === 'play') {
         shout("I plays!");
         return;
       }
       if ('url' in msg) {
-        player.addChunk(msg);
+        player.addChunk(JSON.stringify(msg));
       } else {
         // msg { id: {when:, freq:}, ... }
         player.tick(msg[id].when,  msg[id].freq, 0.1);
