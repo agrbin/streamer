@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Clock Sync</title>
+    <title>master</title>
     <link href="favicon.ico" rel="icon" type="image/ico" />
     <script type="text/javascript" src="clock.js"></script>
     <script type="text/javascript" src="player.js"></script>
     <script type="text/javascript" src="syncer.js"></script>
+    <script type="text/javascript" src="listener.js"></script>
+    <script type="text/javascript" src="master.js"></script>
     <script>
       /*
        * when you click on header element:
@@ -20,16 +22,18 @@
        *  player and streamer on server will continue to communicate.
        */
       window.addEventListener('load', function() {
+        var did = false;
         var header = document.getElementById("header");
-        var volume = document.getElementById("volume");
+        var listener = new Listener();
         header.addEventListener('click', function() {
-          var socket = new WebSocket("ws://agrbin-streamer.nodejitsu.com/");
-          var player = new Player(myClock.clock, volume);
+          if (did) {return;}
+          var socket = new WebSocket("ws://lieutier.me:8080");
           header.innerHTML = "syncing...";
           socket.onopen = function() {
-            header.innerHTML = "listen!";
             new Syncer(socket, function() {
-              socket.onmessage = player.addChunk;
+              header.innerHTML = "master synced!";
+              did = true;
+              new Master(socket, listener);
             });
           };
         });
@@ -37,17 +41,6 @@
     </script>
   </head>
   <body>
-    <h1 id="header">click here to start.</h1>
-    <input
-      id="volume" type="range" min="0" max="1" step="0.02" value="0.5"
-      style="display: none;"
-      />
-    <p>
-    Details on
-    <a target="_blank" href="https://github.com/agrbin/streamer">
-      github.com/agrbin/streamer</a>.
-    </p><p>
-    Open this page from another device(s) and let them play together!
-    </p>
+    <h1 id="header">master. click here to start.</h1>
   </body>
 </html>

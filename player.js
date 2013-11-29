@@ -21,7 +21,7 @@
  *  one can think of the time part in last 13 bytes as a sequential number of the
  *  chunk.
  */
-var Player = function(getTime, volumeElement) {
+var Player = function(getTime, volumeElement, colorElement) {
 
   var audioContext = new webkitAudioContext()
     , masterGain = null
@@ -38,10 +38,13 @@ var Player = function(getTime, volumeElement) {
     // set up master gain
     masterGain = audioContext.createGainNode();
     masterGain.connect(audioContext.destination);
-    volumeElement.style.display = 'block';
-    volumeElement.addEventListener('change', function () {
-      masterGain.gain.value = this.value;
-    });
+    masterGain.gain.value = 1;
+    if (volumeElement) {
+      volumeElement.style.display = 'block';
+      volumeElement.addEventListener('change', function () {
+        masterGain.gain.value = this.value;
+      });
+    }
     // play the number of the beast freq as a test note.
     // oscillator is a long word, isn't it?
     var oscillator = audioContext.createOscillator();
@@ -50,6 +53,35 @@ var Player = function(getTime, volumeElement) {
     oscillator.noteOn(0);
     oscillator.noteOff(0.01);
   })();
+
+  var osc = null, oscGain = null;
+  this.tick = function(when, freq, tickLength) {
+    when = transponseTime(when);
+    if (osc === null) {
+      //
+      oscGain = audioContext.createGainNode();
+      oscGain.connect(audioContext.destination);
+      oscGain.gain.value = 0;
+      // 
+      osc = audioContext.createOscillator();
+      osc.frequency.value = freq;
+      osc.connect(oscGain);
+      osc.noteOn(0);
+    }
+    oscGain.gain.setValueAtTime(1, when);
+    oscGain.gain.setValueAtTime(0, when + tickLength);
+  };
+
+  this.tickMultiple = function(freq, tickLength, num) {
+    var t = audioContext.currentTime, j;
+    for (j = 0; j < num; ++j) {
+      var oscillator = audioContext.createOscillator();
+      oscillator.frequency.value = freq;
+      oscillator.connect(audioContext.destination);
+      oscillator.noteOn(t + j);
+      oscillator.noteOff(t + j + tickLength);
+    }
+  };
 
   // socket.onmessage will be binded to this method.
   // when message is received, start downloading mp3 chunk and decode it.
