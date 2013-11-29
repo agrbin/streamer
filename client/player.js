@@ -63,6 +63,17 @@ var Player = function(getTime, volumeElement, colorElement) {
     oscillator.noteOff(when + tickLength);
   };
 
+  this.tickMultiple = function(freq, tickLength, num) {
+    var t = audioContext.currentTime, j;
+    for (j = 0; j < num; ++j) {
+      var oscillator = audioContext.createOscillator();
+      oscillator.frequency.value = freq;
+      oscillator.connect(audioContext.destination);
+      oscillator.noteOn(t + j);
+      oscillator.noteOff(t + j + tickLength);
+    }
+  };
+
   // socket.onmessage will be binded to this method.
   // when message is received, start downloading mp3 chunk and decode it.
   this.addChunk = function(msg) {

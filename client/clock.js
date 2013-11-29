@@ -23,6 +23,16 @@ var myClock = new (function() {
 
 })();
 
+var _body = null;
+var _color = "red";
+function clockit() {
+  if (_body === null) _body = document.body;
+  _color = (_color == "red" ? "blue" : "red");
+  _body.style.backgroundColor = _color;
+  var t = myClock.clock();
+  setTimeout(clockit, 1000 - (t % 1000));
+}
+
 function log() {
   console.log(myClock.clock(), arguments);
 }
