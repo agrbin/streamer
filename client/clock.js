@@ -19,3 +19,22 @@ var myClock = new (function() {
 
 })();
 
+function log() {
+  console.log(myClock.clock(), arguments);
+}
+
+function shout(msg) {
+  document.getElementById("header").innerHTML = msg;
+}
+
+function mysend(sock, data) {
+  console.log("send: ", data);
+  sock.send(JSON.stringify(data));
+}
+
+function myrecv(sock, cb) {
+  sock.onmessage = function(msg) {
+    console.log("recv: ", JSON.parse(msg.data));
+    cb(JSON.parse(msg.data));
+  }
+}
