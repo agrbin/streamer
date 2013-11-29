@@ -23,23 +23,32 @@
       window.addEventListener('load', function() {
         var did = false;
         var header = document.getElementById("header");
+        var start = false;
         header.addEventListener('click', function() {
           if (did) {return;}
           var socket = new WebSocket("ws://lieutier.me:8080");
           var player = new Player(myClock.clock);
           header.innerHTML = "syncing...";
-          window.addEventListener("devicemotion", function sync(event) {
-            var r =
-              event.acceleration.x*event.acceleration.x +
-              event.acceleration.y*event.acceleration.y +
-              event.acceleration.z*event.acceleration.z;
-            if (r > 0.6) {
-              myClock.reset();
-              window.removeEventListener("devicemotion", sync);
+          socket.onopen = function() {
+            new Syncer(socket, function() {
+              header.innerHTML = "client synced!";
               did = true;
+              window.setTimeout(function(){
+                start = true;
+              },1000);
               new Client(socket, player);
-            }
-          });
+              window.addEventListener("devicemotion", function sync(event) {
+                var r =
+                  event.acceleration.x*event.acceleration.x +
+                  event.acceleration.y*event.acceleration.y +
+                  event.acceleration.z*event.acceleration.z;
+                if (start && r > 0.6) {
+                  shout(myClock.clock());
+                  window.removeEventListener("devicemotion", sync);
+                }
+              });
+            });
+          };
         });
       });
 
