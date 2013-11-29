@@ -1,4 +1,4 @@
-function Client(ws) {
+function Client(ws, player) {
   var id = null;
   mysend(ws, ["client", navigator.userAgent]);
 
@@ -11,7 +11,8 @@ function Client(ws) {
 
   function beClient() {
     myrecv(ws, function(msg) {
-      mysend(ws, msg);
+      // msg { id: {when:, freq:}, ... }
+      player.tick(msg[id].when,  msg[id].freq, 0.3);
     });
   };
 };

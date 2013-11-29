@@ -21,7 +21,7 @@ exports.Router = function() {
   this.newMaster = function(sock) {
     console.log("new master request");
     masterSock = sock;
-    masterSock.send({n:socks.length,ids:ids});
+    masterSock.send({ids:ids});
     masterSock.recv(function (msg) {
       var clientSock;
       for (clientSockIndex in socks) {

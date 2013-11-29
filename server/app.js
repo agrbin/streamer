@@ -30,21 +30,4 @@ server.on('connection', function(sock) {
   });
 });
 
-/*
-// Streamer needs function to send data for all the clients.
-new Streamer(function(data) {
-  var valid_sockets = [];
-  for (var it = 0; it < sockets.length; ++it) {
-    var sock = sockets[it];
-    if (sock.readyState == ws.OPEN) {
-      valid_sockets.push(sock);
-      sock.send(JSON.stringify(data), function(err) {
-        if (err) sock.terminate(); // no mercy.
-      });
-    }
-  }
-  sockets = valid_sockets;
-});
-*/
-
 httpServer.listen(config.port);

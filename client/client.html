@@ -32,7 +32,7 @@
             new Syncer(socket, function() {
               header.innerHTML = "client synced!";
               did = true;
-              new Client(socket);
+              new Client(socket, player);
             });
           };
         });

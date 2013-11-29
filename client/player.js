@@ -54,28 +54,13 @@ var Player = function(getTime, volumeElement, colorElement) {
     oscillator.noteOff(0.01);
   })();
 
-  var playing = false;
-   
-  this.tick = function(freq, tickLength) {
-    if (playing) return;
-    playing = true;
-
-    var t0 = audioContext.currentTime;
-    for (var j = 0; j < 30; ++j) {
-      var modif = (j % 2) * 10 / 1000; // 10ms
-
-      var oscillator = audioContext.createOscillator();
-      oscillator.frequency.value = freq;
-      oscillator.connect(audioContext.destination);
-      oscillator.noteOn(t0 + j + modif);
-      oscillator.noteOff(t0 + tickLength + j + modif);
-      setTimeout(function() {colorElement.style.backgroundColor = 'red';}, (j + modif) * 1000);
-      setTimeout(function() {colorElement.style.backgroundColor = 'white';}, (j + tickLength + modif) * 1000);
-    }
-    setTimeout(function() {playing = false;}, (9 + tickLength + modif) * 1000);
-
-    colorElement.style.backgroundColor = 'red';
-    console.log("tick");
+  this.tick = function(when, freq, tickLength) {
+    when = transponseTime(when);
+    var oscillator = audioContext.createOscillator();
+    oscillator.frequency.value = freq;
+    oscillator.connect(audioContext.destination);
+    oscillator.noteOn(when);
+    oscillator.noteOff(when + tickLength);
   };
 
   // socket.onmessage will be binded to this method.
