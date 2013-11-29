@@ -11,6 +11,7 @@ var Listener = function(){
   var onBeepCalled = false;
   var ob_callback = null;
   var ob_interval = null;
+  var REDUCE_BAND = 500;
 
   that.setFrequency = function(_freq) {
     freq = _freq;
@@ -34,7 +35,7 @@ var Listener = function(){
     analyserNode.getByteFrequencyData(freqByteData);
     var samplerate = audioContext.sampleRate;
     var fftsize = analyserNode.fftSize;
-    var antifreqs = [freq - 500, freq + 500];
+    var antifreqs = [freq - REDUCE_BAND, freq + REDUCE_BAND];
 
     var sound = freqByteData[Math.round(freq * fftsize / samplerate)];
     for (var i = 0; i < antifreqs.length; i++) {

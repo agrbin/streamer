@@ -1,4 +1,6 @@
 function Client(ws, player) {
+  var BEEP_LENGTH_MS = 100;
+
   var id = null, canPlay = false;
   mysend(ws, ["client", navigator.userAgent]);
 
@@ -11,7 +13,7 @@ function Client(ws, player) {
 
   function handlePlay(offsets) {
     if (id in offsets) {
-      shout("I plays!");
+      shout("I will plays!");
       myClock.skew(offsets[id]);
       canPlay = true;
     } else {
@@ -30,8 +32,18 @@ function Client(ws, player) {
           player.addChunk(msg);
         }
       } else {
-        // msg { id: {when:, freq:}, ... }
-        player.tick(msg[id].when,  msg[id].freq, 0.1);
+        // msg [{id:, when:, freq:}, ...]
+        var found = false;
+        for (var it = 0; it < msg.length; ++it) {
+          if (msg[it].id == id) {
+            found = true;
+            player.tick(msg[it].when, msg[it].freq,
+                BEEP_LENGTH_MS / 1000);
+          }
+        }
+        if (!found) {
+          shout("i was killed :(");
+        }
       }
     });
   };
