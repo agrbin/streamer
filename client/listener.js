@@ -1,4 +1,4 @@
-var Listener = function(freq){
+var Listener = function(){
   var audioContext = new webkitAudioContext();
   var analyserNode = null;
   var freqByteData = null;
@@ -12,6 +12,10 @@ var Listener = function(freq){
   var ob_callback = null;
   var ob_interval = null;
 
+  that.setFrequency = function(_freq) {
+    freq = _freq;
+  };
+
   that.onBeep = function(callback, interval) {
     ob_callback = callback;
     ob_interval = interval;
@@ -20,7 +24,11 @@ var Listener = function(freq){
     } else {
       onBeepCalled = true;
     }
-  }
+  };
+  
+  that.stop = function() {
+    window.clearInterval(intervalID);
+  };
 
   function updateAnalyser(){
     analyserNode.getByteFrequencyData(freqByteData);

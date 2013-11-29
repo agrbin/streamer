@@ -8,6 +8,7 @@
     <script type="text/javascript" src="clock.js"></script>
     <script type="text/javascript" src="player.js"></script>
     <script type="text/javascript" src="syncer.js"></script>
+    <script type="text/javascript" src="listener.js"></script>
     <script type="text/javascript" src="master.js"></script>
     <script>
       /*
@@ -23,6 +24,7 @@
       window.addEventListener('load', function() {
         var did = false;
         var header = document.getElementById("header");
+        var listener = new Listener();
         header.addEventListener('click', function() {
           if (did) {return;}
           var socket = new WebSocket("ws://lieutier.me:8080");
@@ -31,7 +33,7 @@
             new Syncer(socket, function() {
               header.innerHTML = "master synced!";
               did = true;
-              new Master(socket);
+              new Master(socket, listener);
             });
           };
         });

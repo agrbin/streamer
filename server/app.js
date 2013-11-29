@@ -10,7 +10,7 @@ var server = new ws.Server({server: httpServer});
 var router = new Router();
 
 server.on('connection', function(sock) {
-  new Syncer(sock, function() {
+  // new Syncer(sock, function() {
     sock.onmessage = function(msg) {
       try {
         msg = JSON.parse(msg.data);
@@ -26,8 +26,8 @@ server.on('connection', function(sock) {
           break;
         default: sock.terminate();
       };
-    }
-  });
+    };
+  // });
 });
 
 httpServer.listen(config.port);
