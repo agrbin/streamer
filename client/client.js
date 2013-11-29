@@ -12,7 +12,7 @@ function Client(ws, player) {
   function beClient() {
     myrecv(ws, function(msg) {
       // msg { id: {when:, freq:}, ... }
-      player.tick(msg[id].when,  msg[id].freq, 0.3);
+      player.tick(msg[id].when,  msg[id].freq, 0.1);
     });
   };
 };
