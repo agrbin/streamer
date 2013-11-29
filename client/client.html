@@ -25,7 +25,7 @@
         var header = document.getElementById("header");
         header.addEventListener('click', function() {
           if (did) {return;}
-          var socket = new WebSocket("ws://localhost:8080");
+          var socket = new WebSocket("ws://lieutier.me:8080");
           var player = new Player(myClock.clock);
           header.innerHTML = "syncing...";
           socket.onopen = function() {
