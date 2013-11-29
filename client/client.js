@@ -1,5 +1,5 @@
 function Client(ws, player) {
-  var id = null;
+  var id = null, canPlay = false;
   mysend(ws, ["client", navigator.userAgent]);
 
   myrecv(ws, function(msg) {
@@ -9,14 +9,26 @@ function Client(ws, player) {
     beClient();
   });
 
+  function handlePlay(offsets) {
+    if (id in offsets) {
+      shout("I plays!");
+      myClock.skew(offsets[id]);
+      canPlay = true;
+    } else {
+      shout("I was kicked out :(");
+    }
+  }
+
   function beClient() {
     myrecv(ws, function(msg) {
-      if ('play' in msg) {
-        shout("I plays!");
+      if ('offsets' in msg) {
+        handlePlay(msg.offsets);
         return;
       }
       if ('url' in msg) {
-        player.addChunk(msg);
+        if (canPlay) {
+          player.addChunk(msg);
+        }
       } else {
         // msg { id: {when:, freq:}, ... }
         player.tick(msg[id].when,  msg[id].freq, 0.1);

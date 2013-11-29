@@ -17,7 +17,8 @@ exports.Streamer = function(sendHandler) {
     , numberOfChunks = config.numberOfChunks
     , checkTimer
     , chunkToSend
-    , chunkToSendPlayTime;
+    , chunkToSendPlayTime
+    , timerHandler = null;
 
   // scheduling technique from
   // http://chimera.labs.oreilly.com/books/1234000001552/ch02.html
@@ -32,7 +33,7 @@ exports.Streamer = function(sendHandler) {
       chunkToSendPlayTime += chunkDuration - overlapTime;
       checkSchedule();
     } else {
-      setTimeout(checkSchedule, checkInterval);
+      timerHandler = setTimeout(checkSchedule, checkInterval);
     }
   }
 
@@ -42,5 +43,11 @@ exports.Streamer = function(sendHandler) {
     chunkToSend = 0;
     checkSchedule();
   })();
+
+  this.stop = function() {
+    if (timerHandler) {
+      clearTimeout(timerHandler);
+    }
+  };
 
 };

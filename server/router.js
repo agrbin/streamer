@@ -1,19 +1,25 @@
 var clock = require('./clock.js')
   , config = require('./config.js').router
   , Streamer = require('./streamer.js').Streamer
+  , getRandomName = require('./names.js').getRandomName
   ;
 
 exports.Router = function() {
   var masterSock = null,
+      clients = {},
       socks = [], ids = [],
-      nextClientId = 'A';
-  var offsets = null; 
+      streamer = null;
 
   this.addClient = function(sock, ua) {
-    var myId = nextClientId;
-    console.log("client " + nextClientId);
-    socks.push(sock); ids.push(myId);
-    nextClientId = String.fromCharCode(65 + socks.length);
+    var myId = getRandomName();
+    // register client
+    console.log("client " + myId);
+    clients[myId] = {
+      sock : sock,
+      id : myId,
+      ua : ua,
+    };
+    // run client
     sock.send(myId);
     sock.recv(function (msg) {
       masterSock.send([myId, msg]);
@@ -22,25 +28,45 @@ exports.Router = function() {
 
   // worked only for A
   function sendHandler(msg) {
-    for (var j = 0; j < socks.length; ++j) {
-      msg.start += offsets[ids[j]];
-      socks[j].send(msg);
+    for (var id in clients) {
+      clients[id].sock.send(msg);
     }
-  };
+  }
+
+  function pullIds() {
+    var sol = {};
+    for (var id in clients)
+      sol[id] = id;
+    return sol;
+  }
+
+  function isSpecialMessage(msg) {
+    if (msg instanceof Object && 'special' in msg) {
+      return msg.special;
+    }
+    return false;
+  }
 
   this.newMaster = function(sock) {
     console.log("new master request");
     masterSock = sock;
-    masterSock.send({ids:ids});
+    if (streamer !== null) {
+      streamer.stop();
+    }
+    masterSock.send({ids:pullIds()});
     masterSock.recv(function (msg) {
-      if ('length' in msg && msg.length && msg[0] === "play") {
-        offsets = msg[1];
-        console.log("i have my offsets ", offsets);
-        new Streamer(sendHandler);
-      }
-      var clientSock;
-      for (clientSockIndex in socks) {
-        socks[clientSockIndex].send(msg); 
+      switch (isSpecialMessage(msg)) {
+        case "play":
+          streamer = new Streamer(sendHandler);
+          break;
+        case "kill":
+          delete clients[msg.id];
+          console.log("clinet " + msg.id + " killed");
+          break;
+        default:
+          for (id in clients) {
+            clients[id].sock.send(msg);
+          }
       }
     });
   };

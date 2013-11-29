@@ -1,0 +1,3125 @@
+<p>Abby</p>
+<p>Abigail</p>
+<p>Absinthe</p>
+<p>Ada</p>
+<p>Addison</p>
+<p>Aden</p>
+<p>Adelaide</p>
+<p>Adele</p>
+<p>Adelia</p>
+<p>Adeline</p>
+<p>Adonna</p>
+<p>Adora</p>
+<p>Adrianna</p>
+<p>Adrienne</p>
+<p>Agatha</p>
+<p>Agnes</p>
+<p>Aida</p>
+<p>Aiesha</p>
+<p>Aileen</p>
+<p>Aislyn</p>
+<p>Aja</p>
+<p>Alana</p>
+<p>Alanis</p>
+<p>Alba</p>
+<p>Alberta</p>
+<p>Alessandra</p>
+<p>Alexa</p>
+<p>Alexandra</p>
+<p>Alexandria</p>
+<p>Alexi</p>
+<p>Alexis</p>
+<p>Alfreda</p>
+<p>Ali</p>
+<p>Alice</p>
+<p>Alicia</p>
+<p>Alfie</p>
+<p>Allison</p>
+<p>Alma</p>
+<p>Almana</p>
+<p>Althea</p>
+<p>Alva</p>
+<p>Alvia</p>
+<p>Alyssa</p>
+<p>Amanda</p>
+<p>Amaranth</p>
+<p>Amber</p>
+<p>Amelia</p>
+<p>America</p>
+<p>Amethyst</p>
+<p>Amika</p>
+<p>Amie</p>
+<p>Amisha</p>
+<p>Amora</p>
+<p>Amorita</p>
+<p>Amy</p>
+<p>Anamika</p>
+<p>Anastasia</p>
+<p>Andrea</p>
+<p>Andromache</p>
+<p>Andromeda</p>
+<p>Angel</p>
+<p>Angela</p>
+<p>Angelina</p>
+<p>Anita</p>
+<p>Ann</p>
+<p>Anna</p>
+<p>Annabelle</p>
+<p>Annabeth</p>
+<p>Annalee</p>
+<p>Annamarie</p>
+<p>Anne</p>
+<p>Annetta</p>
+<p>Annette</p>
+<p>Annie</p>
+<p>Anora</p>
+<p>Ansley</p>
+<p>Antigone</p>
+<p>Antoinette</p>
+<p>Antonia</p>
+<p>Aphrodite</p>
+<p>April</p>
+<p>Arabella</p>
+<p>Arabelle</p>
+<p>Arachne</p>
+<p>Ardelia</p>
+<p>Ardella</p>
+<p>Aretha</p>
+<p>Arianna</p>
+<p>Arienne</p>
+<p>Arlena</p>
+<p>Arlene</p>
+<p>Arora</p>
+<p>Artemis</p>
+<p>Asha</p>
+<p>Ashema</p>
+<p>Ashleigh</p>
+<p>Asia</p>
+<p>Asta</p>
+<p>Aster</p>
+<p>Atalanta</p>
+<p>Atlanta</p>
+<p>Athena</p>
+<p>Audrey</p>
+<p>Audrie</p>
+<p>Augusta</p>
+<p>Aurora</p>
+<p>Autumn</p>
+<p>Ava</p>
+<p>Avarae</p>
+<p>Aveena</p>
+<p>Avy</p>
+<p>Ayla</p>
+<p>Aza</p>
+<p>Azalea</p>
+<p>Aziza</p>
+<p>Aaron</p>
+<p>Abbott </p>
+<p>Abe</p>
+<p>Abraham </p>
+<p>Abel </p>
+<p>Abijah </p>
+<p>Abner</p>
+<p>Absalom </p>
+<p>Achilles </p>
+<p>Adair </p>
+<p>Adam </p>
+<p>Aden </p>
+<p>Adder </p>
+<p>Adlai </p>
+<p>Adolph </p>
+<p>Adon</p>
+<p>Adonis </p>
+<p>Adrian</p>
+<p>Adrico </p>
+<p>Agamemnon </p>
+<p>Ahab </p>
+<p>Aiken </p>
+<p>Ajax </p>
+<p>Alan </p>
+<p>Alastair </p>
+<p>Albert</p>
+<p>Alberto </p>
+<p>Albion </p>
+<p>Alder</p>
+<p>Aldous </p>
+<p>Aldren </p>
+<p>Aldridge </p>
+<p>Alec </p>
+<p>Alejandro </p>
+<p>Alexander</p>
+<p>Alford </p>
+<p>Alfred  </p>
+<p>Alistair </p>
+<p>Allister </p>
+<p>Almarcus </p>
+<p>Almer  </p>
+<p>Alvero </p>
+<p>Alvin</p>
+<p>Amadeus </p>
+<p>Amar</p>
+<p>Ambrose </p>
+<p>Amerigo </p>
+<p>Amistad </p>
+<p>Amos </p>
+<p>Ander </p>
+<p>Anders</p>
+<p>Anderson </p>
+<p>Andrew </p>
+<p>Andy </p>
+<p>Angelo</p>
+<p>Angus </p>
+<p>Ansel </p>
+<p>Anson</p>
+<p>Anthony </p>
+<p>Anton</p>
+<p>Antonio</p>
+<p>Anwar </p>
+<p>Apollo </p>
+<p>Archibald </p>
+<p>Ardell </p>
+<p>Argyle </p>
+<p>Argus </p>
+<p>Ari </p>
+<p>Arland </p>
+<p>Arlish </p>
+<p>Armond </p>
+<p>Armando </p>
+<p>Arnold </p>
+<p>Arsenio </p>
+<p>Art</p>
+<p>Arte </p>
+<p>Arthur </p>
+<p>Artie </p>
+<p>Arturo </p>
+<p>Arvin</p>
+<p>Asa </p>
+<p>Asher </p>
+<p>Ashley</p>
+<p>Aston </p>
+<p>Aubrey </p>
+<p>Augustus </p>
+<p>Austin </p>
+<p>Avery </p>
+<p>Axel </p>
+<p>Axelle </p>
+<p>Barbara</p>
+<p>Barbie</p>
+<p>Basilla </p>
+<p>Bathsheba </p>
+<p>Bay </p>
+<p>Bea</p>
+<p>Beata </p>
+<p>Beatrice </p>
+<p>Becky </p>
+<p>Belinda </p>
+<p>Belissa </p>
+<p>Bella </p>
+<p>Belle </p>
+<p>Berenice </p>
+<p>Bernadette</p>
+<p>Bernadine </p>
+<p>Berta </p>
+<p>Bertha </p>
+<p>Beryl </p>
+<p>Bess</p>
+<p>Bessie</p>
+<p>Beth</p>
+<p>Bethanne </p>
+<p>Bethany </p>
+<p>Betsy</p>
+<p>Bette</p>
+<p>Betty </p>
+<p>Beulah</p>
+<p>Beverly </p>
+<p>Bianca </p>
+<p>Billie </p>
+<p>Birgitta</p>
+<p>Blaire </p>
+<p>Blanche </p>
+<p>Bliss </p>
+<p>Blythe</p>
+<p>Bobbi</p>
+<p>Bonnie </p>
+<p>Bonita </p>
+<p>Brandi</p>
+<p>Brandy </p>
+<p>Bree </p>
+<p>Brenda </p>
+<p>Brendanna </p>
+<p>Brianna </p>
+<p>Briannan </p>
+<p>Brianne</p>
+<p>Bridget </p>
+<p>Britannia </p>
+<p>Brittany </p>
+<p>Bronwyn</p>
+<p>Brooke </p>
+<p>Brooklynn</p>
+<p>Buffy </p>
+<p>Byzantia </p>
+<p>Bailey </p>
+<p>Baird </p>
+<p>Baker </p>
+<p>Balthazar </p>
+<p>Baltic</p>
+<p>Balticio </p>
+<p>Banks </p>
+<p>Banquo </p>
+<p>Barack</p>
+<p>Barber </p>
+<p>Barnabas </p>
+<p>Barnaby </p>
+<p>Barnac </p>
+<p>Barnard</p>
+<p>Barney </p>
+<p>Baron </p>
+<p>Barry </p>
+<p>Bart </p>
+<p>Bartock </p>
+<p>Bartholomew </p>
+<p>Bartram </p>
+<p>Basil </p>
+<p>Bates</p>
+<p>Baxter </p>
+<p>Beau</p>
+<p>Beauregard </p>
+<p>Beck </p>
+<p>Becket </p>
+<p>Bembry </p>
+<p>Ben</p>
+<p>Benedict </p>
+<p>Benjamin </p>
+<p>Benjy </p>
+<p>Benlowe </p>
+<p>Benny</p>
+<p>Bentley </p>
+<p>Benton </p>
+<p>Bernard</p>
+<p>Bernie </p>
+<p>Bert</p>
+<p>Bertram </p>
+<p>Bill</p>
+<p>Billy</p>
+<p>Bing </p>
+<p>Bingo </p>
+<p>Birch</p>
+<p>Bjorn </p>
+<p>Blaine </p>
+<p>Blair </p>
+<p>Blake </p>
+<p>Blue </p>
+<p>Bo</p>
+<p>Boaz</p>
+<p>Bob</p>
+<p>Bobby </p>
+<p>Bogart</p>
+<p>Bonner </p>
+<p>Boris</p>
+<p>Boyd </p>
+<p>Brad</p>
+<p>Braden </p>
+<p>Bradford</p>
+<p>Bradley </p>
+<p>Brady</p>
+<p>Brandon </p>
+<p>Brant </p>
+<p>Brendan </p>
+<p>Brent </p>
+<p>Brett </p>
+<p>Brian</p>
+<p>Brice </p>
+<p>Bricker </p>
+<p>Brigham </p>
+<p>Brince </p>
+<p>Brock </p>
+<p>Brodin </p>
+<p>Brody </p>
+<p>Brom </p>
+<p>Bronson </p>
+<p>Brooks </p>
+<p>Browne</p>
+<p>Bruce </p>
+<p>Bryant </p>
+<p>Bryker </p>
+<p>Bubba </p>
+<p>Buck </p>
+<p>Buckie</p>
+<p>Buckingham </p>
+<p>Bud</p>
+<p>Buddy </p>
+<p>Burke </p>
+<p>Burt</p>
+<p>Buster</p>
+<p>Butler </p>
+<p>Butte </p>
+<p>Byrome </p>
+<p>Byron </p></div></div><div id="mod_17501883" class="module moduleImage"><div id="imgs_17501883">				<div id="img_url_6073746" class="inline_hub_image fullWidth">
+					<img src="http://s3.hubimg.com/u/6073746_f520.jpg" width="520" height="390" class="full" alt="Cameron" title="Cameron"/>
+					<div class="slideshowButton" onclick='jQuery(this).closest(".inline_hub_image").find("img").click()'>See all 10 photos</div>
+				</div>				<div class="caption_full" id="img_desc_6073746">
+					Cameron
+				</div></div></div><div id="mod_17501904" class="module moduleText color0"><h2 class="subtitle">List of baby names – baby girl names – C</h2><div style="" class="txtd" id="txtd_17501904"><p>Cadence</p>
+<p>Cailey </p>
+<p>Caitlyn </p>
+<p>Callie</p>
+<p>Callista </p>
+<p>Camellia</p>
+<p>Canaan </p>
+<p>Candace </p>
+<p>Candy</p>
+<p>Cannon </p>
+<p>Caprice</p>
+<p>Cara</p>
+<p>Cardissa </p>
+<p>Carelle </p>
+<p>Carey </p>
+<p>Carianne </p>
+<p>Carice </p>
+<p>Carina </p>
+<p>Carissa </p>
+<p>Carla </p>
+<p>Carleen</p>
+<p>Carley </p>
+<p>Carlista </p>
+<p>Carlita</p>
+<p>Carlotta </p>
+<p>Carol</p>
+<p>Carolann </p>
+<p>Caroline</p>
+<p>Carolyn </p>
+<p>Carmen </p>
+<p>Carmika </p>
+<p>Carrie </p>
+<p>Carsha</p>
+<p>Casey </p>
+<p>Cason </p>
+<p>Cassidy </p>
+<p>Catalina</p>
+<p>Catherine</p>
+<p>Cathlene </p>
+<p>Cathy </p>
+<p>Catrina </p>
+<p>Cayla</p>
+<p>Caylie</p>
+<p>Cecilia </p>
+<p>Celeste</p>
+<p>Celie</p>
+<p>Chablis </p>
+<p>Chanda</p>
+<p>Chandra </p>
+<p>Chantel </p>
+<p>Chantilly </p>
+<p>Chara </p>
+<p>Charissa </p>
+<p>Charity</p>
+<p>Charla </p>
+<p>Charleen</p>
+<p>Charlena </p>
+<p>Charli </p>
+<p>Charlianne </p>
+<p>Charlotte </p>
+<p>Charma </p>
+<p>Charmeeka </p>
+<p>Chastity </p>
+<p>Chelsea </p>
+<p>Chenoa</p>
+<p>Chenoya</p>
+<p>Cher</p>
+<p>Cherie </p>
+<p>Cherish </p>
+<p>Cherry</p>
+<p>Cheryl </p>
+<p>Cheyenne</p>
+<p>China </p>
+<p>Chloe</p>
+<p>Chris</p>
+<p>Christa </p>
+<p>Christal </p>
+<p>Christiana </p>
+<p>Christie</p>
+<p>Christina</p>
+<p>Christine</p>
+<p>Ciarra </p>
+<p>Cicely </p>
+<p>Cierra</p>
+<p>Cindilou</p>
+<p>Cindy </p>
+<p>Cinnamon</p>
+<p>Cissy</p>
+<p>Cisty </p>
+<p>Claire</p>
+<p>Clara </p>
+<p>Clarabel</p>
+<p>Clarice</p>
+<p>Clarinda </p>
+<p>Clarissa</p>
+<p>Claudia</p>
+<p>Claudine</p>
+<p>Cleo </p>
+<p>Cleone </p>
+<p>Cloris</p>
+<p>Colleen</p>
+<p>Collette</p>
+<p>Concetta</p>
+<p>Conmiga </p>
+<p>Connie</p>
+<p>Constance</p>
+<p>Cora</p>
+<p>Corabella</p>
+<p>Corabelle </p>
+<p>Coraleigh</p>
+<p>Coralline </p>
+<p>Cordelia </p>
+<p>Corinda</p>
+<p>Cornelia</p>
+<p>Corrine</p>
+<p>Cosette</p>
+<p>Courtney</p>
+<p>Cress </p>
+<p>Cressida </p>
+<p>Cristin</p>
+<p>Crystal</p>
+<p>Cybil </p>
+<p>Cynthia </p>
+<p>Cythera </p>
+
+
+
+
+
+
+
+
+
+
+<p><strong>List of baby names – baby boy names – C</strong></p>
+<p>Cab </p>
+<p>Cable </p>
+<p>Cabo </p>
+<p>Cade </p>
+<p>Caden </p>
+<p>Cadmus</p>
+<p>Caedmon</p>
+<p>Caesar </p>
+<p>Cain</p>
+<p>Cal </p>
+<p>Caleb</p>
+<p>Calhoun </p>
+<p>Calvero </p>
+<p>Calvert </p>
+<p>Calvin</p>
+<p>Cam</p>
+<p>Cameron </p>
+<p>Camillo </p>
+<p>Carey </p>
+<p>Carl</p>
+<p>Carlisle </p>
+<p>Carlos </p>
+<p>Carlton</p>
+<p>Carmine </p>
+<p>Carr </p>
+<p>Carroll</p>
+<p>Carrollton </p>
+<p>Carson </p>
+<p>Carter </p>
+<p>Carver </p>
+<p>Case </p>
+<p>Casey </p>
+<p>Cason </p>
+<p>Casper</p>
+<p>Cato </p>
+<p>Cecil </p>
+<p>Cedric </p>
+<p>Chase </p>
+<p>Chad</p>
+<p>Challis </p>
+<p>Champ </p>
+<p>Chance </p>
+<p>Chandler </p>
+<p>Charles</p>
+<p>Charlton </p>
+<p>Chauncey</p>
+<p>Chester </p>
+<p>Chet </p>
+<p>Chevy</p>
+<p>Chris</p>
+<p>Christian </p>
+<p>Christopher </p>
+<p>Chuck </p>
+<p>Clancey</p>
+<p>Clarence </p>
+<p>Clark </p>
+<p>Clarkston</p>
+<p>Claude </p>
+<p>Clay</p>
+<p>Clayton </p>
+<p>Cleef </p>
+<p>Clem</p>
+<p>Clement </p>
+<p>Clemmon </p>
+<p>Cleve </p>
+<p>Cliff</p>
+<p>Clifford</p>
+<p>Clifton </p>
+<p>Clint</p>
+<p>Clinton </p>
+<p>Clive </p>
+<p>Clyde </p>
+<p>Cody </p>
+<p>Cole</p>
+<p>Colin </p>
+<p>Collins </p>
+<p>Colorado </p>
+<p>Connelly </p>
+<p>Conner </p>
+<p>Conrad</p>
+<p>Cooper </p>
+<p>Cory </p>
+<p>Courtney </p>
+<p>Coy </p>
+<p>Craig </p>
+<p>Crawford </p>
+<p>Crispin</p>
+<p>Crispian </p>
+<p>Crosby</p>
+<p>Cub</p>
+<p>Cuba </p>
+<p>Curdith </p>
+<p>Curt </p>
+<p>Curtis </p>
+<p>Cyprian</p>
+<p>Cyril </p>
+<p>Cyrus </p>
+<p><strong>List of baby names – baby girl names – D</strong></p>
+<p>Dahlia </p>
+<p>Dakota </p>
+<p>Dale </p>
+<p>Dallas </p>
+<p>Damika </p>
+<p>Dana </p>
+<p>Daniella</p>
+<p>Danielle </p>
+<p>Dannette </p>
+<p>Danni </p>
+<p>Daphne</p>
+<p>Dara</p>
+<p>Darby</p>
+<p>Darlene </p>
+<p>Dashiki </p>
+<p>Dawn</p>
+<p>Dayla</p>
+<p>Deanna </p>
+<p>Deeann </p>
+<p>Debbie</p>
+<p>Debra</p>
+<p>Dee </p>
+<p>Deena </p>
+<p>Deidra</p>
+<p>Delaney</p>
+<p>Delia </p>
+<p>Delilah </p>
+<p>Della</p>
+<p>Delta </p>
+<p>Demi </p>
+<p>Denby </p>
+<p>Denise </p>
+<p>Denver </p>
+<p>Deshawn </p>
+<p>Desiree </p>
+<p>Destiny </p>
+<p>Devorah</p>
+<p>Dharma </p>
+<p>Diana </p>
+<p>Diane</p>
+<p>Dido </p>
+<p>Dinah </p>
+<p>Dionne </p>
+<p>Dixie</p>
+<p>Dodi </p>
+<p>Dolly</p>
+<p>Dolores</p>
+<p>Donna</p>
+<p>Donnalyn</p>
+<p>Dora </p>
+<p>Doreen</p>
+<p>Dori </p>
+<p>Dorienne </p>
+<p>Doris</p>
+<p>Dorothy</p>
+<p>Dottie</p>
+<p>Drew</p>
+<p>Drusilla</p>
+<p>Duanna</p>
+<p>Dulcinea</p>
+<p>Duranne </p>
+<p>Dusty </p>
+
+
+<p><strong>List of baby names – baby boy names – D</strong></p>
+<p>Dade </p>
+<p>Dakota </p>
+<p>Dale </p>
+<p>Daley</p>
+<p>Dallas</p>
+<p>Dalton</p>
+<p>Damien</p>
+<p>Damon</p>
+<p>Dan</p>
+<p>Dana</p>
+<p>Dane </p>
+<p>D’Angelo</p>
+<p>Daniel </p>
+<p>Danny </p>
+<p>Danton </p>
+<p>Darby </p>
+<p>Darcey</p>
+<p>Darnell </p>
+<p>Darrel</p>
+<p>Darren</p>
+<p>Darwin</p>
+<p>Dave</p>
+<p>David </p>
+<p>Davin</p>
+<p>Dayton</p>
+<p>Dean</p>
+<p>De’Ante </p>
+<p>Dedrick </p>
+<p>Deejay </p>
+<p>Del</p>
+<p>Delano</p>
+<p>Delmar</p>
+<p>Demarius </p>
+<p>Demarcus </p>
+<p>Demetrius</p>
+<p>Dempsey</p>
+<p>Dennis</p>
+<p>Denzel</p>
+<p>Derek</p>
+<p>Derrell</p>
+<p>Derrick</p>
+<p>Derwin</p>
+<p>Derwood</p>
+<p>Desmond</p>
+<p>Destin </p>
+<p>Devante</p>
+<p>Devon</p>
+<p>Dewayne </p>
+<p>Dewey</p>
+<p>Dexter</p>
+<p>Dick </p>
+<p>Dietrich</p>
+<p>Dillon</p>
+<p>Dino</p>
+<p>Dion</p>
+<p>Dirk </p>
+<p>Dixon</p>
+<p>Dodd</p>
+<p>Dolph</p>
+<p>Dominick</p>
+<p>Don </p>
+<p>Donald</p>
+<p>Donner </p>
+<p>Donnie</p>
+<p>Donovan</p>
+<p>Dorian</p>
+<p>Doug</p>
+<p>Douglas</p>
+<p>Doyle</p>
+<p>Drake</p>
+<p>Drew</p>
+<p>Duane</p>
+<p>Dudley</p>
+<p>Duff </p>
+<p>Duffie </p>
+<p>Duke</p>
+<p>Duncan</p>
+<p>Dunstan</p>
+<p>Duran</p>
+<p>Dustin</p>
+<p>Dusty</p>
+<p>Dwayne</p>
+<p>Dwight </p>
+<p>Dylan </p>
+
+<p><strong></strong></p>
+<p><strong></strong></p>
+<p><strong>List of baby names – baby girl names – E</strong></p>
+<p>Eartha</p>
+<p>Ebony</p>
+<p>Echo</p>
+<p>Eden </p>
+<p>Edena </p>
+<p>Edith </p>
+<p>Edmona</p>
+<p>Edwina</p>
+<p>Eiddwen</p>
+<p>Eidlynne </p>
+<p>Eileen </p>
+<p>Elaina </p>
+<p>Elaine </p>
+<p>Elanna </p>
+<p>Elanora</p>
+<p>Elberta </p>
+<p>Eleanor</p>
+<p>Eleanora </p>
+<p>Electra </p>
+<p>Elisa </p>
+<p>Elisabeth </p>
+<p>Elise </p>
+<p>Elisha </p>
+<p>Elizabeth </p>
+<p>Ella</p>
+<p>Elle</p>
+<p>Ellen </p>
+<p>Elliann </p>
+<p>Ellie </p>
+<p>Elmira </p>
+<p>Elsa</p>
+<p>Elsie </p>
+<p>Elvira </p>
+<p>Em</p>
+<p>Emanuelle </p>
+<p>Ember </p>
+<p>Emerald </p>
+<p>Emily </p>
+<p>Emma </p>
+<p>Emmaline </p>
+<p>Emmylou</p>
+<p>Ena</p>
+<p>Endora </p>
+<p>Enya</p>
+<p>Erica</p>
+<p>Erin</p>
+<p>Erleesha</p>
+<p>Erline </p>
+<p>Erlisha</p>
+<p>Erma</p>
+<p>Ernestinia </p>
+<p>Ernestine </p>
+<p>Esmerelda</p>
+<p>Estella</p>
+<p>Estelle </p>
+<p>Ester </p>
+<p>Esther </p>
+<p>Ethel </p>
+<p>Ethelene </p>
+<p>Etta </p>
+<p>Eugenia </p>
+<p>Eunice </p>
+<p>Eura </p>
+<p>Europa </p>
+<p>Eva</p>
+<p>Evaline</p>
+<p>Evana </p>
+<p>Evangeline </p>
+<p>Eve</p>
+<p>Evelyn </p>
+<p>Evette</p>
+<p>Evonne </p>
+<p>Ewana </p>
+
+<p><strong>List of baby names – baby boy names – E</strong></p>
+<p>Eagle </p>
+<p>Earl</p>
+<p>Earle</p>
+<p>Earnest</p>
+<p>Ebenezer </p>
+<p>Ed</p>
+<p>Eddie</p>
+<p>Edgar</p>
+<p>Edmund </p>
+<p>Edward</p>
+<p>Edwin</p>
+<p>Efraim </p>
+<p>Egbert</p>
+<p>Elbert </p>
+<p>Eldridge </p>
+<p>Eli</p>
+<p>Elias </p>
+<p>Elijah</p>
+<p>Elisha</p>
+<p>Ellery</p>
+<p>Elliot </p>
+<p>Ellis</p>
+<p>Elmar</p>
+<p>Elmer </p>
+<p>Elroy</p>
+<p>Elton </p>
+<p>Elvis </p>
+<p>Elwood</p>
+<p>Emerson </p>
+<p>Emory </p>
+<p>Emmanuel</p>
+<p>Emmett </p>
+<p>Endymion</p>
+<p>Ennis </p>
+<p>Enoch</p>
+<p>Enrique</p>
+<p>Eric</p>
+<p>Ericson</p>
+<p>Erlish</p>
+<p>Ernest </p>
+<p>Errol </p>
+<p>Erskine </p>
+<p>Erwin </p>
+<p>Esau </p>
+<p>Ethan </p>
+<p>Eugene </p>
+<p>Evan </p>
+<p>Everett </p>
+<p>Ewan </p>
+<p>Ezekiel</p>
+<p>Ezra </p>
+<p><strong></strong></p>
+<p><strong>List of baby names – baby girl names – F</strong></p>
+<p>Fabia</p>
+<p>Fabienne </p>
+<p>Fae</p>
+<p>Fairli</p>
+<p>Faith </p>
+<p>Falda </p>
+<p>Fallin </p>
+<p>Fallon </p>
+<p>Fannie</p>
+<p>Fantasia </p>
+<p>Fantina</p>
+<p>Fantine</p>
+<p>Farrah</p>
+<p>Fatima</p>
+<p>Fawn</p>
+<p>Fawna</p>
+<p>Faye </p>
+<p>February </p>
+<p>Felicia</p>
+<p>Felicity</p>
+<p>Fenella </p>
+<p>Feodora</p>
+<p>Fenn</p>
+<p>Fern </p>
+<p>Fifi </p>
+<p>Filippa</p>
+<p>Filoma </p>
+<p>Filomena </p>
+<p>Finn </p>
+<p>Fiona</p>
+<p>Fiorella</p>
+<p>Fleur</p>
+<p>Fleura</p>
+<p>Flo</p>
+<p>Flora</p>
+<p>Florence</p>
+<p>Florene  </p>
+<p>Floria</p>
+<p>Florida </p>
+<p>Fonda</p>
+<p>Fondella</p>
+<p>Fondelle</p>
+<p>Fran</p>
+<p>Frances</p>
+<p>Franchesca </p>
+<p>Francisca </p>
+<p>Frannie</p>
+<p>Frederica </p>
+<p>Fredrica </p>
+<p>Frida </p>
+<p>Fritzi </p>
+<p>Funne</p>
+<p>Fydora </p>
+
+
+
+<p><strong>List of baby names – baby boy names – F</strong></p>
+<p>Fabian</p>
+<p>Fabio</p>
+<p>Fagan</p>
+<p>Fallon </p>
+<p>Fargo </p>
+<p>Farley </p>
+<p>Farnsworth</p>
+<p>Farrell</p>
+<p>Felix</p>
+<p>Fenn</p>
+<p>Ferdinand</p>
+<p>Fergus</p>
+<p>Fernando</p>
+<p>Ferris</p>
+<p>Fess </p>
+<p>Festus </p>
+<p>Fidel</p>
+<p>Fielding</p>
+<p>Fields </p>
+<p>Figaro</p>
+<p>Finley</p>
+<p>Finnegan</p>
+<p>Fitzhugh</p>
+<p>Fitzpatrick </p>
+<p>Flavius</p>
+<p>Fletcher</p>
+<p>Floyd</p>
+<p>Flynn </p>
+<p>Fonzie</p>
+<p>Ford</p>
+<p>Forrest</p>
+<p>Foster </p>
+<p>Francis</p>
+<p>Frank</p>
+<p>Franklin</p>
+<p>Franz</p>
+<p>Frasier </p>
+<p>Fred</p>
+<p>Frederick</p>
+<p>Freeman </p>
+<p>Frisco </p>
+<p>Fritz </p>
+<p>Frodo </p>
+<p>Fuller </p>
+<p><strong></strong></p>
+<p><strong>List of baby names – baby girl names – G</strong></p>
+<p>Gabby </p>
+<p>Gabriella</p>
+<p>Gabrielle </p>
+<p>Gae</p>
+<p>Gail</p>
+<p>Gala</p>
+<p>Galan</p>
+<p>Galatea </p>
+<p>Galena </p>
+<p>Gardena</p>
+<p>Gardenia</p>
+<p>Garlana </p>
+<p>Garlanda</p>
+<p>Garnet</p>
+<p>Gaye</p>
+<p>Gayla</p>
+<p>Gena</p>
+<p>Geneva</p>
+<p>Genevieva</p>
+<p>Genevieve</p>
+<p>Georgetta</p>
+<p>Georgette </p>
+<p>Georgia</p>
+<p>Georgina</p>
+<p>Geraldine </p>
+<p>Gerda</p>
+<p>Germar </p>
+<p>Gertrude</p>
+<p>Gigi</p>
+<p>Gilda</p>
+<p>Gillian</p>
+<p>Gillienne</p>
+<p>Gina</p>
+<p>Ginger</p>
+<p>Ginny</p>
+<p>Giselle</p>
+<p>Gladys</p>
+<p>Glen</p>
+<p>Glenda </p>
+<p>Gloria</p>
+<p>Glynnis</p>
+<p>Golda</p>
+<p>Goldie </p>
+<p>Grace</p>
+<p>Gracelyn</p>
+<p>Grenadine </p>
+<p>Greta </p>
+<p>Gretchen</p>
+<p>Gretel </p>
+<p>Gretta </p>
+<p>Guinevere </p>
+<p>Gunda </p>
+<p>Gwen</p>
+<p>Gwendolyn </p>
+<p>Gwilla </p>
+<p>Gwyn</p>
+<p>Gwyneth </p>
+<p>Gurdah</p>
+<p>Gypsy </p>
+<p><strong>List of baby names – baby boy names – G</strong></p>
+<p>Gabby </p>
+<p>Gabe</p>
+<p>Gable</p>
+<p>Gabriel </p>
+<p>Gage</p>
+<p>Galahad</p>
+<p>Gale</p>
+<p>Gallagher</p>
+<p>Galord</p>
+<p>Galvin </p>
+<p>Gannon</p>
+<p>Garreth</p>
+<p>Garrett</p>
+<p>Garfield </p>
+<p>Garland </p>
+<p>Garmon</p>
+<p>Garth</p>
+<p>Garvin</p>
+<p>Gary</p>
+<p>Gaston </p>
+<p>Gavin</p>
+<p>Gaylord</p>
+<p>Genaldo </p>
+<p>Gene</p>
+<p>Geoff</p>
+<p>George</p>
+<p>Gerald</p>
+<p>Geraldo</p>
+<p>Gerard</p>
+<p>Germain </p>
+<p>Gibbs </p>
+<p>Gideon</p>
+<p>Giles</p>
+<p>Gillead </p>
+<p>Gilpatrick </p>
+<p>Gino</p>
+<p>Giovanni</p>
+<p>Glen</p>
+<p>Gomer</p>
+<p>Gordon </p>
+<p>Gore</p>
+<p>Grady </p>
+<p>Graham </p>
+<p>Grandy </p>
+<p>Grant </p>
+<p>Greg</p>
+<p>Gregory </p>
+<p>Griffin</p>
+<p>Grover</p>
+<p>Gunne </p>
+<p>Gunther</p>
+<p>Gus</p>
+<p>Guy </p>
+
+<p><strong></strong></p></div></div><div id="mod_17502003" class="module moduleImage"><div id="imgs_17502003">				<div id="img_url_6073750" class="inline_hub_image fullWidth">
+					<img src="http://s3.hubimg.com/u/6073750_f520.jpg" width="520" height="390" class="full" alt="middle name: Harris" title="middle name: Harris"/>
+					<div class="slideshowButton" onclick='jQuery(this).closest(".inline_hub_image").find("img").click()'>See all 10 photos</div>
+				</div>				<div class="caption_full" id="img_desc_6073750">
+					middle name: Harris
+				</div></div></div><div id="mod_17502004" class="module moduleText color0"><h2 class="subtitle">List of baby names – baby girl names – H</h2><div style="" class="txtd" id="txtd_17502004"><p>Hadria</p>
+<p>Haley </p>
+<p>Halle</p>
+<p>Hallie </p>
+<p>Hannah </p>
+<p>Happy </p>
+<p>Harmonia </p>
+<p>Harmony </p>
+<p>Harper </p>
+<p>Harriet </p>
+<p>Hattie</p>
+<p>Hazel</p>
+<p>Heather</p>
+<p>Hedda</p>
+<p>Heidi</p>
+<p>Helen</p>
+<p>Helena</p>
+<p>Helga</p>
+<p>Helma</p>
+<p>Henrietta</p>
+<p>Henriette</p>
+<p>Hera</p>
+<p>Hermosa</p>
+<p>Hester</p>
+<p>Hibernia</p>
+<p>Hilda </p>
+<p>Hildegard </p>
+<p>Hillary</p>
+<p>Holli</p>
+<p>Holly </p>
+<p>Honey</p>
+<p>Hope </p>
+<p>Hortense</p>
+<p>Huberta</p>
+<p>Hyacinth </p>
+<p>Hycinthia </p>
+<p><strong>List of baby names – baby boy names – H</strong></p>
+<p>Hadden</p>
+<p>Hadrian </p>
+<p>Hagan</p>
+<p>Haines</p>
+<p>Hal</p>
+<p>Hall </p>
+<p>Halsey </p>
+<p>Hamish</p>
+<p>Hamlet</p>
+<p>Handel</p>
+<p>Hank </p>
+<p>Hannibal</p>
+<p>Hans</p>
+<p>Hansel</p>
+<p>Hanson</p>
+<p>Hardy</p>
+<p>Harley </p>
+<p>Harold</p>
+<p>Harlan</p>
+<p>Harper </p>
+<p>Harpo</p>
+<p>Harris </p>
+<p>Harrison </p>
+<p>Harry </p>
+<p>Hart </p>
+<p>Harvey</p>
+<p>Harwood</p>
+<p>Hastings</p>
+<p>Hawke </p>
+<p>Hayden</p>
+<p>Hayward </p>
+<p>Heath </p>
+<p>Heathcliffe</p>
+<p>Helmut </p>
+<p>Henderson</p>
+<p>Henley</p>
+<p>Henri</p>
+<p>Henry</p>
+<p>Herb</p>
+<p>Herbert </p>
+<p>Herman </p>
+<p>Hershel</p>
+<p>Hilary </p>
+<p>Hill </p>
+<p>Hiram </p>
+<p>Hogan </p>
+<p>Hoke </p>
+<p>Holden </p>
+<p>Hollis </p>
+<p>Holmes</p>
+<p>Holt </p>
+<p>Homer</p>
+<p>Horace </p>
+<p>Horton</p>
+<p>Howard</p>
+<p>Howie</p>
+<p>Hubert </p>
+<p>Hugh</p>
+<p>Hugo </p>
+<p>Hull </p>
+<p>Humphrey</p>
+<p>Hunter</p>
+<p>Hyram</p>
+
+<p><strong></strong></p>
+<p><strong>List of baby names – baby girl names – I</strong></p>
+<p>Ianna </p>
+<p>Ida </p>
+<p>Idylla</p>
+<p>Ilena </p>
+<p>Ima</p>
+<p>Imelda</p>
+<p>Imogene </p>
+<p>Ina </p>
+<p>Inaclaire </p>
+<p>India</p>
+<p>Indigo </p>
+<p>Indira </p>
+<p>Inez </p>
+<p>Inga </p>
+<p>Ingmar </p>
+<p>Ingrid </p>
+<p>Io</p>
+<p>Iona</p>
+<p>Iphigena</p>
+<p>Iphigenia </p>
+<p>Irena</p>
+<p>Irene</p>
+<p>Iris</p>
+<p>Irisa</p>
+<p>Irma </p>
+<p>Isabella</p>
+<p>Isabelle</p>
+<p>Isis </p>
+<p>Isla</p>
+<p>Isladora</p>
+<p>Isolde</p>
+<p>Ivanna</p>
+<p>Ivory</p>
+<p>Ivy </p>
+<p>Iwana </p>
+<p>Izzah </p>
+<p><strong>List of baby names – baby boy names – I</strong></p>
+<p>Ian</p>
+<p>Ice </p>
+<p>Ichabod</p>
+<p>Igor</p>
+<p>Ike</p>
+<p>Ilias</p>
+<p>Imar </p>
+<p>Ingraham</p>
+<p>Ingram</p>
+<p>Ira</p>
+<p>Irving</p>
+<p>Isaac</p>
+<p>Isaiah </p>
+<p>Ishmael </p>
+<p>Ishtar</p>
+<p>Israel</p>
+<p>Itzaak</p>
+<p>Ivan </p>
+<p>Ivor </p>
+
+<p><strong></strong></p></div></div><div id="mod_17502019" class="module moduleText color0"><h2 class="subtitle">List of baby names – baby girl names – J</h2><div style="" class="txtd" id="txtd_17502019"><p>Jacinda </p>
+<p>Jacie </p>
+<p>Jackie</p>
+<p>Jaclyn </p>
+<p>Jacqueline </p>
+<p>Jada </p>
+<p>Jade</p>
+<p>Jadelynn </p>
+<p>Jaden </p>
+<p>Jamari </p>
+<p>Jamie </p>
+<p>Jamilah </p>
+<p>Jamisha</p>
+<p>Jarmisha </p>
+<p>Jan </p>
+<p>Janai </p>
+<p>Jane </p>
+<p>Janee </p>
+<p>Janella </p>
+<p>Janelle </p>
+<p>Janet</p>
+<p>Janette </p>
+<p>Janice </p>
+<p>Janine </p>
+<p>Janna </p>
+<p>Jarmila </p>
+<p>Jasmina </p>
+<p>Jasmine </p>
+<p>Jazira </p>
+<p>Jeanna</p>
+<p>Jeanne</p>
+<p>Jeanette</p>
+<p>Jemimah</p>
+<p>Jenna</p>
+<p>Jenny</p>
+<p>Jeraldine</p>
+<p>Jerri </p>
+<p>Jerrianne </p>
+<p>Jerusha</p>
+<p>Jessi</p>
+<p>Jessica </p>
+<p>Jetta</p>
+<p>Jewell</p>
+<p>Jewella</p>
+<p>Jezebel</p>
+<p>Jill</p>
+<p>Jillian</p>
+<p>Jin </p>
+<p>Jo </p>
+<p>Joan</p>
+<p>Joanie </p>
+<p>Joanna </p>
+<p>Joanne </p>
+<p>Jobeth </p>
+<p>Jocasta</p>
+<p>Jocelyn</p>
+<p>Jodi</p>
+<p>Joelle</p>
+<p>Johnnie </p>
+<p>Jolene </p>
+<p>Jolinda</p>
+<p>Joni</p>
+<p>Jordan </p>
+<p>Josephina</p>
+<p>Josephine</p>
+<p>Josie</p>
+<p>Joslynn</p>
+<p>Joy</p>
+<p>Joyce</p>
+<p>Juana </p>
+<p>Juanita</p>
+<p>Judith</p>
+<p>Judy </p>
+<p>Juli</p>
+<p>Julia</p>
+<p>Julianna</p>
+<p>Juliann</p>
+<p>Julie </p>
+<p>Julienne</p>
+<p>Juliet</p>
+<p>June</p>
+<p>Jurisha </p>
+<p>Justine </p>
+
+
+
+
+
+
+<p><strong>List of baby names – baby boy names – J</strong></p>
+<p>Jabez</p>
+<p>Jace </p>
+<p>Jack</p>
+<p>Jackson </p>
+<p>Jacob </p>
+<p>Jade </p>
+<p>Jaime </p>
+<p>Jaheem </p>
+<p>Jake </p>
+<p>Jaleel</p>
+<p>Jamal </p>
+<p>Jame </p>
+<p>James</p>
+<p>Jamie </p>
+<p>Jamishe </p>
+<p>Jan</p>
+<p>Janson </p>
+<p>Janus</p>
+<p>Jared</p>
+<p>Jarred </p>
+<p>Jarrell </p>
+<p>Jarreth</p>
+<p>Jarvis </p>
+<p>Jason</p>
+<p>Jasper</p>
+<p>Jay</p>
+<p>Jean</p>
+<p>Jed</p>
+<p>Jedediah</p>
+<p>Jedi </p>
+<p>Jeff</p>
+<p>Jefferi</p>
+<p>Jefferson</p>
+<p>Jeffrey</p>
+<p>Jefroe</p>
+<p>Jenkins </p>
+<p>Jerald</p>
+<p>Jerold</p>
+<p>Jeremiah </p>
+<p>Jeremy </p>
+<p>Jeriel </p>
+<p>Jerome</p>
+<p>Jerrard</p>
+<p>Jerry</p>
+<p>Jervis</p>
+<p>Jeryl </p>
+<p>Jesse</p>
+<p>Jethro</p>
+<p>Jett </p>
+<p>Jim</p>
+<p>Jimmy </p>
+<p>Joab</p>
+<p>Jock</p>
+<p>Jocko</p>
+<p>Jody</p>
+<p>Joe</p>
+<p>Joel</p>
+<p>Joey </p>
+<p>John</p>
+<p>Johnnie</p>
+<p>johnny</p>
+<p>Jon </p>
+<p>Jonah</p>
+<p>Jonas</p>
+<p>Jonathan</p>
+<p>Jordan</p>
+<p>Jose</p>
+<p> Joseph</p>
+<p>Josey </p>
+<p>Josh</p>
+<p>Joshua</p>
+<p>Josiah</p>
+<p>Joss </p>
+<p>Jubal </p>
+<p>Judah</p>
+<p>Judd</p>
+<p>Juddy </p>
+<p>Jude </p>
+<p>Judea </p>
+<p>Jules </p>
+<p>Julian </p>
+<p>Juliano </p>
+<p>Julius </p>
+<p>July </p>
+<p>Junior</p>
+<p>Justin </p>
+<p><strong></strong></p>
+<p><strong>List of baby names – baby girl names – K</strong></p>
+<p>Kade</p>
+<p>Kaden </p>
+<p>Kadie </p>
+<p>Kaitlyn </p>
+<p>Kalie </p>
+<p>Kam </p>
+<p>Kamali </p>
+<p>Kammi </p>
+<p>Kara </p>
+<p>Kardesha</p>
+<p>Karnesha </p>
+<p>Karen</p>
+<p>Karissa </p>
+<p>Karista </p>
+<p>Karla </p>
+<p>Karma</p>
+<p>Karmina</p>
+<p>Katarina </p>
+<p>Katherine </p>
+<p>Katie </p>
+<p>Katrina </p>
+<p>Kawanda </p>
+<p>Kay</p>
+<p>Kayla</p>
+<p>Keandra</p>
+<p>Keely</p>
+<p>Keira </p>
+<p>Keisha</p>
+<p>Kellianne </p>
+<p>Kellie</p>
+<p>Kendra</p>
+<p>Kenya</p>
+<p>Kerri</p>
+<p>Kesia </p>
+<p>Kevina </p>
+<p>Kiara </p>
+<p>Kiki </p>
+<p>Kim</p>
+<p>Kimberly</p>
+<p>Kimmie</p>
+<p>Kippy </p>
+<p>Kirby </p>
+<p>Kirstie </p>
+<p>Kirstin</p>
+<p>Kitty</p>
+<p>Koko</p>
+<p>Kordelia</p>
+<p>Krista</p>
+<p>Kristen</p>
+<p>Kyah </p>
+<p>Kyra </p>
+
+
+
+<p><strong>List of baby names – baby boy names – K</strong></p>
+<p>Kale</p>
+<p>Kaleb </p>
+<p>Kalihd</p>
+<p>Kareem </p>
+<p>Karl </p>
+<p>Karol </p>
+<p>Kasey</p>
+<p>Keane</p>
+<p>Keaton</p>
+<p>Keegan</p>
+<p>Keelor </p>
+<p>Keely</p>
+<p>Keenan</p>
+<p>Keith</p>
+<p>Keithley</p>
+<p>Kell</p>
+<p>Kelly</p>
+<p>Kelsey</p>
+<p>Kelvin</p>
+<p>Kem </p>
+<p>Ken</p>
+<p>Kendall</p>
+<p>Kendrick</p>
+<p>Kenisson </p>
+<p>Kenneth </p>
+<p>Kent</p>
+<p>Keon</p>
+<p>Kerby</p>
+<p>Kermit</p>
+<p>Kerry</p>
+<p>Kester</p>
+<p>Kevin</p>
+<p>Kieffer</p>
+<p>Kiko </p>
+<p>Killian </p>
+<p>Kingston</p>
+<p>Kipp</p>
+<p>Kirby</p>
+<p>Kirk</p>
+<p>Kitt</p>
+<p>Klaus</p>
+<p>Knight </p>
+<p>Knox</p>
+<p>Komar </p>
+<p>Kris</p>
+<p>Kumar</p>
+<p>Kurt</p>
+<p>kyle</p>
+<p><strong></strong></p>
+<p><strong>List of baby names – baby girl names – L</strong></p>
+<p>Lacey</p>
+<p>Ladonna </p>
+<p>Laine</p>
+<p>Lainey</p>
+<p>Lawana </p>
+<p>Lake </p>
+<p>Laken </p>
+<p>Lakeshia </p>
+<p>Lana </p>
+<p>Lane </p>
+<p>Lanelle </p>
+<p>Lanetta</p>
+<p>Lanette </p>
+<p>Laquesha </p>
+<p>Laquetta</p>
+<p>Lara </p>
+<p>Laramie </p>
+<p>Larissa </p>
+<p>Lashonda</p>
+<p>Latanya </p>
+<p>Latara </p>
+<p>Lateefah</p>
+<p>Latisha </p>
+<p>Latoya </p>
+<p>Latrelle </p>
+<p>Latrice</p>
+<p>Latricia </p>
+<p>Laura </p>
+<p>Laurel </p>
+<p>Lauren </p>
+<p>Laveria </p>
+<p>Laverne </p>
+<p>Lavinia</p>
+<p>Lavonne</p>
+<p>Layla </p>
+<p>Leah </p>
+<p>Leandra </p>
+<p>Leanne </p>
+<p>Leda </p>
+<p>Leeanna </p>
+<p>Leena</p>
+<p>Leigh</p>
+<p>Leila </p>
+<p>Lena </p>
+<p>Lenny </p>
+<p>Lenora </p>
+<p>Lenore </p>
+<p>Leonora</p>
+<p>Leslie</p>
+<p>Letha </p>
+<p>Letisha </p>
+<p>Libby </p>
+<p>Liberia </p>
+<p>Liberty </p>
+<p>Lidia</p>
+<p>Liesel </p>
+<p>Lil’ </p>
+<p>Lilah </p>
+<p>Lili</p>
+<p>Lilith</p>
+<p>Lillian </p>
+<p>Lillienne </p>
+<p>Lilly </p>
+<p>Lilo </p>
+<p>Linda</p>
+<p>Lindley</p>
+<p>Lindsey </p>
+<p>Lindy </p>
+<p>Linley </p>
+<p>Lioni </p>
+<p>Lisa</p>
+<p>Lisabeth</p>
+<p>Lisamarie </p>
+<p>Lise </p>
+<p>Lisette </p>
+<p>Lita </p>
+<p>Livia </p>
+<p>Liz</p>
+<p>Lizbeth</p>
+<p>Lizetta </p>
+<p>Lizette </p>
+<p>Lizzy</p>
+<p>Logan </p>
+<p>Lois </p>
+<p>Lolita </p>
+<p>Lolly </p>
+<p>Lorelei </p>
+<p>Loren </p>
+<p>Lorena </p>
+<p>Lori</p>
+<p>Lorna</p>
+<p>Lorraine</p>
+<p>Lorretta </p>
+<p>Lorrine </p>
+<p>Lottie</p>
+<p>Louisa</p>
+<p>Louise </p>
+<p>Luana</p>
+<p>Luanda </p>
+<p>Lucille</p>
+<p>Lucinda </p>
+<p>Lucretia </p>
+<p>Lucy</p>
+<p>Lulu</p>
+<p>Luma</p>
+<p>Luna</p>
+<p>Lunelle </p>
+<p>Lurlene</p>
+<p>Lydia</p>
+<p>Lynn</p>
+<p>Lynnette</p>
+<p>Lysandra </p>
+
+
+
+
+
+<p><strong>List of baby names – baby boy names – L</strong></p>
+<p>Labron</p>
+<p>Ladarius</p>
+<p>LaDon</p>
+<p>LaJuan </p>
+<p>Lamar</p>
+<p>Lamont </p>
+<p>Lance</p>
+<p>Lancelot </p>
+<p>Lancer</p>
+<p>Lando </p>
+<p>Landon </p>
+<p>Lane </p>
+<p>Lanier </p>
+<p>Laquay</p>
+<p>Larrin </p>
+<p>Larry</p>
+<p>Lassiter </p>
+<p>Lashawn </p>
+<p>Latrell</p>
+<p>Lawson</p>
+<p>Lawton </p>
+<p>Layton </p>
+<p>Lawrence </p>
+<p>Lee </p>
+<p>Leif </p>
+<p>Leigh </p>
+<p>Leland </p>
+<p>Lem </p>
+<p>Lemuel</p>
+<p>Len</p>
+<p>Lenny </p>
+<p>Leo</p>
+<p>Leon </p>
+<p>Leonard</p>
+<p>Leonardo </p>
+<p>Leopold </p>
+<p>Leow </p>
+<p>Leroy</p>
+<p>Leslie </p>
+<p>Lester </p>
+<p>Levi</p>
+<p>Levon </p>
+<p>Levy </p>
+<p>Lew </p>
+<p>Lewis </p>
+<p>Liam</p>
+<p>Lincoln </p>
+<p>Lindsey </p>
+<p>Link </p>
+<p>Lionel</p>
+<p>Lloyd </p>
+<p>Lobo </p>
+<p>Logan</p>
+<p>Lon </p>
+<p>London </p>
+<p>Lonnie </p>
+<p>Lorne </p>
+<p>Lott </p>
+<p>Louis</p>
+<p>Lucas</p>
+<p>Lucian</p>
+<p>Lucius </p>
+<p>Luke</p>
+<p>Luther</p>
+<p>Lyle</p>
+<p>Lynn</p>
+<p>Lynwood </p>
+<p><strong></strong></p></div></div><div id="mod_17502059" class="module moduleImage"><div id="imgs_17502059">				<div id="img_url_6073754" class="inline_hub_image halfWidth">
+					<img src="http://s3.hubimg.com/u/6073754_f260.jpg" width="260" height="537" class="half" alt="my niece, Madison" title="my niece, Madison"/>
+					<div class="slideshowButton" onclick='jQuery(this).closest(".inline_hub_image").find("img").click()'>See all 10 photos</div>
+				</div>				<div class="caption_full" id="img_desc_6073754">
+					my niece, Madison
+				</div>				<div id="img_url_6073757" class="inline_hub_image quarterWidth">
+					<img src="http://s2.hubimg.com/u/6073757_f120.jpg" width="120" height="170" class="quarter" alt="my youngest daughter, Melissa" title="my youngest daughter, Melissa"/>
+					
+				</div>				<div class="caption_full" id="img_desc_6073757">
+					my youngest daughter, Melissa
+				</div>				<div id="img_url_6073758" class="inline_hub_image halfWidth">
+					<img src="http://s3.hubimg.com/u/6073758_f260.jpg" width="260" height="195" class="half" alt="my oldest daughter, Mandy " title="my oldest daughter, Mandy "/>
+					<div class="slideshowButton" onclick='jQuery(this).closest(".inline_hub_image").find("img").click()'>See all 10 photos</div>
+				</div>				<div class="caption_full" id="img_desc_6073758">
+					my oldest daughter, Mandy 
+				</div></div></div><div id="mod_17502063" class="module moduleText color0"><h2 class="subtitle">List of baby names – baby girl names – M</h2><div style="" class="txtd" id="txtd_17502063"><p>Mabel</p>
+<p>Maddi</p>
+<p>Madeline</p>
+<p>Madge</p>
+<p>Madison</p>
+<p>Mae</p>
+<p>Magan</p>
+<p>Magda</p>
+<p>Magdalin</p>
+<p>Maggie</p>
+<p>Mahalia</p>
+<p>Mahogany</p>
+<p>Maia</p>
+<p>Mairin</p>
+<p>Maisey</p>
+<p>Maita</p>
+<p>Malaya</p>
+<p>Malika</p>
+<p>Mallory</p>
+<p>Mamie</p>
+<p>Mandy</p>
+<p>Manisha</p>
+<p>Manuella</p>
+<p>Mara</p>
+<p>Maranda</p>
+<p>Marci</p>
+<p>Marcia</p>
+<p>Mardella</p>
+<p>Maren</p>
+<p>Marena</p>
+<p>Margaret</p>
+<p>Marge</p>
+<p>Margie</p>
+<p>Margot</p>
+<p>Marguerite</p>
+<p>Maria</p>
+<p>Mariah</p>
+<p>Marian</p>
+<p>Marianna</p>
+<p>Marianne</p>
+<p>Maribeth</p>
+<p>Marie</p>
+<p>Marilou</p>
+<p>Marijo</p>
+<p>Marilyn</p>
+<p>Maris</p>
+<p>Marisha</p>
+<p>Marissa</p>
+<p>Marjorie</p>
+<p>Marla</p>
+<p>Marlena</p>
+<p>Marlene</p>
+<p>Marnie</p>
+<p>Marta</p>
+<p>Martenne</p>
+<p>Martha</p>
+<p>Marti</p>
+<p>Martina</p>
+<p>Mary</p>
+<p>Mary-Ann</p>
+<p>Mary-Beth</p>
+<p>Mary-Ellen</p>
+<p>Mary-Esther</p>
+<p>Mary-Jane</p>
+<p>Mary-Jo</p>
+<p>Mathilda</p>
+<p>Maude</p>
+<p>Maudie</p>
+<p>Maureen</p>
+<p>Mavis</p>
+<p>Maxine</p>
+<p>May</p>
+<p>Maya</p>
+<p>Meckenzie</p>
+<p>Medea</p>
+<p>Meg</p>
+<p>Meghan</p>
+<p>Mehitabel</p>
+<p>Mel</p>
+<p>Melanie</p>
+<p>Melba</p>
+<p>Melia</p>
+<p>Melissa</p>
+<p>Melody</p>
+<p>Mercedes</p>
+<p>Meredith</p>
+<p>Merle</p>
+<p>Merlyn</p>
+<p>Merrill</p>
+<p>Merry</p>
+<p>Mertha</p>
+<p>Merthyl</p>
+<p>Mertice</p>
+<p>Meryl</p>
+<p>Mia</p>
+<p>Michelle</p>
+<p>Micki</p>
+<p>Miderd</p>
+<p>Midori</p>
+<p>Midoria</p>
+<p>Mildred</p>
+<p>Miley</p>
+<p>Millicent</p>
+<p>Millennia</p>
+<p>Millie</p>
+<p>Mimi</p>
+<p>Mindy</p>
+<p>Minnie</p>
+<p>Miranda</p>
+<p>Miriam</p>
+<p>Misha</p>
+<p>Missie</p>
+<p>Missy</p>
+<p>Misty</p>
+<p>Mitzi</p>
+<p>Moira</p>
+<p>Moisha</p>
+<p>Mona</p>
+<p>Monday</p>
+<p>Monica</p>
+<p>Moreen</p>
+<p>Morgan</p>
+<p>Moyna</p>
+<p>Muffy</p>
+<p>Muriel</p>
+<p>Murphey</p>
+<p>Murron</p>
+<p>Myesha</p>
+<p>Myra</p>
+<p>Myrtle</p>
+<p><strong>List of baby names – baby boy names – M</strong></p>
+<p>Mac</p>
+<p>Macarius</p>
+<p>MacArthur</p>
+<p>Mace</p>
+<p>Mackenzie</p>
+<p>Maddox</p>
+<p>Magee</p>
+<p>Magus</p>
+<p>Major</p>
+<p>Malachai</p>
+<p>Malcolm</p>
+<p>Mallory</p>
+<p>Malloy</p>
+<p>Malone</p>
+<p>Manuel</p>
+<p>Manfred</p>
+<p>Mannie</p>
+<p>Marc</p>
+<p>Marcus</p>
+<p>Marcel</p>
+<p>Marco</p>
+<p>Mardell</p>
+<p>Mario</p>
+<p>Marion</p>
+<p>Marius</p>
+<p>Mark</p>
+<p>Marlowe</p>
+<p>Marsh</p>
+<p>Marshall</p>
+<p>Martin</p>
+<p>Marty</p>
+<p>Marvelle</p>
+<p>Maurice</p>
+<p>Mauricio</p>
+<p>Marvin</p>
+<p>Mason</p>
+<p>Matt</p>
+<p>Matthew</p>
+<p>Mattie</p>
+<p>Max</p>
+<p>Maxim</p>
+<p>Maximilian</p>
+<p>Maxwell</p>
+<p>Maynard</p>
+<p>Mel</p>
+<p>Melvin</p>
+<p>Menelaus</p>
+<p>Merle</p>
+<p>Merrill</p>
+<p>Merv</p>
+<p>Merve</p>
+<p>Mervin</p>
+<p>Merwin</p>
+<p>Micah</p>
+<p>Michael</p>
+<p>Mickey</p>
+<p>Miguel</p>
+<p>Mike</p>
+<p>Mikey</p>
+<p>Miles</p>
+<p>Millard</p>
+<p>Miller</p>
+<p>Milt</p>
+<p>Milton</p>
+<p>Mingo</p>
+<p>Mitch</p>
+<p>Mitchell</p>
+<p>Mitt</p>
+<p>Mohammed</p>
+<p>Monroe</p>
+<p>Montana</p>
+<p>Montgomery</p>
+<p>Monty</p>
+<p>Mordecai</p>
+<p>Morgan</p>
+<p>Morris</p>
+<p>Mort</p>
+<p>Mortimer</p>
+<p>Morton</p>
+<p>Moses</p>
+<p>Mundrickus</p>
+<p>Murdoch</p>
+<p>Murphy</p>
+<p>Murray</p>
+<p>Myron</p>
+<p><br /></p>
+<p><strong>List of baby names – baby girl names – N</strong></p>
+<p>Nada</p>
+<p>Nadia</p>
+<p>Nadine</p>
+<p>Naia</p>
+<p>Naila</p>
+<p>Nala</p>
+<p>Nalani</p>
+<p>Nan</p>
+<p>Nanahli</p>
+<p>Nandina</p>
+<p>Nanette</p>
+<p>Nancy</p>
+<p>Naomi</p>
+<p>Narella</p>
+<p>Naretha</p>
+<p>Nastasha</p>
+<p>Natala</p>
+<p>Natalie</p>
+<p>Natasha</p>
+<p>Natava</p>
+<p>Nativity</p>
+<p>Nautica</p>
+<p>Navaray</p>
+<p>Navarra</p>
+<p>Neala</p>
+<p>Neeta</p>
+<p>Nelda</p>
+<p>Nell</p>
+<p>Nellie</p>
+<p>Nessa</p>
+<p>Nettie</p>
+<p>Neva</p>
+<p>Nevada</p>
+<p>Neva-Jo</p>
+<p>Nicole</p>
+<p>Nicoletta</p>
+<p>Nicolette</p>
+<p>Nike</p>
+<p>Nikki</p>
+<p>Nina</p>
+<p>Nita</p>
+<p>Noe</p>
+<p>Noel</p>
+<p>Noelani</p>
+<p>Noelle</p>
+<p>Nola</p>
+<p>Nona</p>
+<p>Nora</p>
+<p>Nonnie</p>
+<p>Norma</p>
+<p>Nuala</p>
+<p>Nydia</p>
+<p>Nylah</p>
+<p><strong>List of baby names – baby boy names – N</strong></p>
+<p>Nadir</p>
+<p>Napoleon</p>
+<p>Nash</p>
+<p>Nat</p>
+<p>Nate</p>
+<p>Nathan</p>
+<p>Nathaniel</p>
+<p>Neal</p>
+<p>Ned</p>
+<p>Nelson</p>
+<p>Neo</p>
+<p>Nestor</p>
+<p>Nevada</p>
+<p>Neville</p>
+<p>Navin</p>
+<p>Nehemiah</p>
+<p>Nevin</p>
+<p>Newman</p>
+<p>Newt</p>
+<p>Newton</p>
+<p>Nicholas</p>
+<p>Nick</p>
+<p>Nickie</p>
+<p>Nico</p>
+<p>Nicodemus</p>
+<p>Nigel</p>
+<p>Nikita</p>
+<p>Niles</p>
+<p>Nimrod</p>
+<p>Nixon</p>
+<p>Noah</p>
+<p>Noel</p>
+<p>Norm</p>
+<p>Norman</p>
+<p>Norris</p>
+<p>Norton</p>
+<p>Norwood</p>
+<p>Nyles</p>
+<p><br /></p>
+<p><strong>List of baby names – baby girl names – O</strong></p>
+<p>Octavia</p>
+<p>Odelia</p>
+<p>Odessa</p>
+<p>Odette</p>
+<p>Okelani</p>
+<p>Olena</p>
+<p>Olita</p>
+<p>Olga</p>
+<p>Olita</p>
+<p>Olive</p>
+<p>Olivera</p>
+<p>Olivia</p>
+<p>Olympia</p>
+<p>Oma</p>
+<p>Omega</p>
+<p>Onida</p>
+<p>Oona</p>
+<p>Opal</p>
+<p>Opalette</p>
+<p>Opalina</p>
+<p>Opaline</p>
+<p>Ophelia</p>
+<p>Oprah</p>
+<p>Orinda</p>
+<p>Orlanda</p>
+<p>Owena</p>
+<p><strong>List of baby names – baby boy names – O</strong></p>
+<p>Oakley</p>
+<p>Oberon</p>
+<p>Obi</p>
+<p>Odell</p>
+<p>Odie</p>
+<p>Odin</p>
+<p>Odysseus</p>
+<p>Ogden</p>
+<p>Oglesby</p>
+<p>Olaf</p>
+<p>Olie</p>
+<p>Oliver</p>
+<p>Olivier</p>
+<p>Ollie</p>
+<p>Omar</p>
+<p>Orion</p>
+<p>Orlando</p>
+<p>Orrin</p>
+<p>Oscar</p>
+<p>Oscarl</p>
+<p>Osborne</p>
+<p>Oswald</p>
+<p>Othello</p>
+<p>Otis</p>
+<p>Owen</p>
+<p>Owens</p>
+<p>Oxford</p>
+<p>Oxley</p>
+<p>Ozander</p>
+<p>Ozzie</p>
+<p><br /></p>
+<p><strong>List of baby names – baby girl names – P</strong></p>
+<p>Paige</p>
+<p>Palestine</p>
+<p>Pally</p>
+<p>Paloma</p>
+<p>Pam</p>
+<p>Pamela</p>
+<p>Pandora</p>
+<p>Pansy</p>
+<p>Papillon</p>
+<p>Paris</p>
+<p>Parissa</p>
+<p>Pat</p>
+<p>Patience</p>
+<p>Patrice</p>
+<p>Patricia</p>
+<p>Patsy</p>
+<p>Patty</p>
+<p>Paula</p>
+<p>Paulana</p>
+<p>Paulette</p>
+<p>Pauline</p>
+<p>Pearl</p>
+<p>Peg</p>
+<p>Peggy</p>
+<p>Penelope</p>
+<p>Penny</p>
+<p>Peony</p>
+<p>Pepper</p>
+<p>Perri</p>
+<p>Persephone</p>
+<p>Persi</p>
+<p>Persia</p>
+<p>Petra</p>
+<p>Petula</p>
+<p>Phaedra</p>
+<p>Philippa</p>
+<p>Philomena</p>
+<p>Phoebe</p>
+<p>Phoenix</p>
+<p>Phoenixa</p>
+<p>Phyllis</p>
+<p>Phyllissa</p>
+<p>Pia</p>
+<p>Pinkie</p>
+<p>Pinkilee</p>
+<p>Piper</p>
+<p>Pipi</p>
+<p>Pippa</p>
+<p>Polly</p>
+<p>Pollyann</p>
+<p>Pollyanna</p>
+<p>Portia</p>
+<p>Prada</p>
+<p>Pramada</p>
+<p>Primavera</p>
+<p>Priscilla</p>
+<p>Prissie</p>
+<p>Prudence</p>
+<p>Psyche</p>
+<p>Pythia</p>
+<p><strong>List of baby names – baby boy names – P</strong></p>
+<p>Pablo</p>
+<p>Paco</p>
+<p>Paddy</p>
+<p>Paine</p>
+<p>Palmer</p>
+<p>Pancho</p>
+<p>Paris</p>
+<p>Parnell</p>
+<p>Pascal</p>
+<p>Pat</p>
+<p>Patrick</p>
+<p>Paul</p>
+<p>Pearce</p>
+<p>Penn</p>
+<p>Pepe</p>
+<p>Pepper</p>
+<p>Percy</p>
+<p>Pernell</p>
+<p>Perry</p>
+<p>Pete</p>
+<p>Peter</p>
+<p>Piers</p>
+<p>Pip</p>
+<p>Phelps</p>
+<p>Phillip</p>
+<p>Phineas</p>
+<p>Phoenix</p>
+<p>Placido</p>
+<p>Pomeroy</p>
+<p>Pony</p>
+<p>Powers</p>
+<p>Prakash</p>
+<p>Prentice</p>
+<p>Prescott</p>
+<p>Price</p>
+<p>Prince</p>
+<p>Publico</p>
+<p>Pugh</p>
+<p><br /></p>
+<p><strong>List of baby names – baby girl names – Q</strong></p>
+<p>Qadira</p>
+<p>Qatari</p>
+<p>Quarenda</p>
+<p>Quavay</p>
+<p>Queen</p>
+<p>Queenie</p>
+<p>Questina</p>
+<p>Quincy</p>
+<p>Quintessa</p>
+<p>Quirita</p>
+<p><strong>List of baby names – baby boy names – Q</strong></p>
+<p>Qadir</p>
+<p>Qatar</p>
+<p>Quay</p>
+<p>Quavius</p>
+<p>Quent</p>
+<p>Quentin</p>
+<p>Quincy</p>
+<p>Quinn</p>
+<p>Quint</p>
+<p>Quintin</p>
+<p>Quixote</p>
+<p><br /></p>
+<p><strong>List of baby names – baby girl names – R</strong></p>
+<p>Rachel</p>
+<p>Rae</p>
+<p>Raeann</p>
+<p>Rafaela</p>
+<p>Raine</p>
+<p>Rainey</p>
+<p>Rajani</p>
+<p>Ramira</p>
+<p>Ramona</p>
+<p>Rana</p>
+<p>Randi</p>
+<p>Raniece</p>
+<p>Raquel</p>
+<p>Rasha</p>
+<p>Rashida</p>
+<p>Reanna</p>
+<p>Reba</p>
+<p>Rebana</p>
+<p>Rebecca</p>
+<p>Regan</p>
+<p>Regina</p>
+<p>Renalda</p>
+<p>Renata</p>
+<p>Renee</p>
+<p>Rhea</p>
+<p>Rhiannon</p>
+<p>Rhoda</p>
+<p>Rhodalyn</p>
+<p>Rhodonna</p>
+<p>Rhonda</p>
+<p>Riley</p>
+<p>Rita</p>
+<p>Riva</p>
+<p>Roberta</p>
+<p>Robertia</p>
+<p>Robin</p>
+<p>Rochelle</p>
+<p>Rogan</p>
+<p>Roi</p>
+<p>Rolanda</p>
+<p>Rona</p>
+<p>Ronni</p>
+<p>Rosa</p>
+<p>Rosalee</p>
+<p>Rosalind</p>
+<p>Rosalyn</p>
+<p>Rosamunde</p>
+<p>Rosanna</p>
+<p>Rose</p>
+<p>Roseanne</p>
+<p>Rosemarie</p>
+<p>Rosemary</p>
+<p>Rosie</p>
+<p>Roslyn</p>
+<p>Rowena</p>
+<p>Roxanne</p>
+<p>Roz</p>
+<p>Rozella</p>
+<p>Ruby</p>
+<p>Rudi</p>
+<p>Ruth</p>
+<p>Ruthanne</p>
+<p>Ruthie</p>
+<p><strong>List of baby names – baby boy names – R</strong></p>
+<p>Rabbie</p>
+<p>Radcliffe</p>
+<p>Radley</p>
+<p>Raford</p>
+<p>Rafe</p>
+<p>Ragnar</p>
+<p>Rainier</p>
+<p>Rainsford</p>
+<p>Raleigh</p>
+<p>Ralph</p>
+<p>Ralphie</p>
+<p>Ramiro</p>
+<p>Rance</p>
+<p>Rand</p>
+<p>Randall</p>
+<p>Ranger</p>
+<p>Raphael</p>
+<p>Rastus</p>
+<p>Raul</p>
+<p>Rawlins</p>
+<p>Ray</p>
+<p>Raynard</p>
+<p>Red</p>
+<p>Reece</p>
+<p>Reeves</p>
+<p>Reid</p>
+<p>Rence</p>
+<p>Regis</p>
+<p>Remy</p>
+<p>Rene</p>
+<p>Reuben</p>
+<p>Rhett</p>
+<p>Rich</p>
+<p>Richard</p>
+<p>Richie</p>
+<p>Rico</p>
+<p>Riley</p>
+<p>Ringo</p>
+<p>River</p>
+<p>Robbie</p>
+<p>Robert</p>
+<p>Roberto</p>
+<p>Robin</p>
+<p>Rock</p>
+<p>Rocky</p>
+<p>Rod</p>
+<p>Roddie</p>
+<p>Rodrigo</p>
+<p>Roger</p>
+<p>Rogue</p>
+<p>Roland</p>
+<p>Rolf</p>
+<p>Rollo</p>
+<p>Roman</p>
+<p>Ron</p>
+<p>Ronald</p>
+<p>Ronnie</p>
+<p>Ronny</p>
+<p>Roscoe</p>
+<p>Roth</p>
+<p>Rowdy</p>
+<p>Rowland</p>
+<p>Roy</p>
+<p>Royce</p>
+<p>Riley</p>
+<p>Ruben</p>
+<p>Rudolph</p>
+<p>Rudy</p>
+<p>Rudyard</p>
+<p>Rufus</p>
+<p>Rudyard</p>
+<p>Rupert</p>
+<p>Rush</p>
+<p>Russ</p>
+<p>Russell</p>
+<p>Rusty</p>
+<p>Ryan</p></div></div><div id="mod_17502119" class="module moduleImage"><div id="imgs_17502119">				<div id="img_url_6073767" class="inline_hub_image halfWidth">
+					<img src="http://s4.hubimg.com/u/6073767_f260.jpg" width="260" height="263" class="half" alt="my middle daughter, Shannon" title="my middle daughter, Shannon"/>
+					<div class="slideshowButton" onclick='jQuery(this).closest(".inline_hub_image").find("img").click()'>See all 10 photos</div>
+				</div>				<div class="caption_full" id="img_desc_6073767">
+					my middle daughter, Shannon
+				</div></div></div><div id="mod_17502123" class="module moduleText color0"><h2 class="subtitle">List of baby names – baby girl names – S</h2><div style="" class="txtd" id="txtd_17502123"><p>Sabia</p>
+<p>Sabina</p>
+<p>Sable</p>
+<p>Sabra</p>
+<p>Sabrina</p>
+<p>Sade</p>
+<p>Sadie</p>
+<p>Sage</p>
+<p>Sakari</p>
+<p>Sally</p>
+<p>Salma</p>
+<p>Salome</p>
+<p>Salvia</p>
+<p>Sam</p>
+<p>Samantha</p>
+<p>Sammi</p>
+<p>Sandra</p>
+<p>Sandy</p>
+<p>Sahara</p>
+<p>Sapphira</p>
+<p>Sara</p>
+<p>Sarah</p>
+<p>Sari</p>
+<p>Sarita</p>
+<p>Sasha</p>
+<p>Sashana</p>
+<p>Savannah</p>
+<p>Scarlett</p>
+<p>Scheherazade</p>
+<p>Sela</p>
+<p>Selena</p>
+<p>Selma</p>
+<p>September</p>
+<p>Serafina</p>
+<p>Serenity</p>
+<p>Shadee</p>
+<p>Shae</p>
+<p>Shahira</p>
+<p>Shaina</p>
+<p>Shamika</p>
+<p>Shanay</p>
+<p>Shandra</p>
+<p>Shanna</p>
+<p>Shannon</p>
+<p>Shantall</p>
+<p>Shantay</p>
+<p>Shantell</p>
+<p>Shari</p>
+<p>Sharmilla</p>
+<p>Sharmetha</p>
+<p>Sharon</p>
+<p>Sharonda</p>
+<p>Shasta</p>
+<p>Shavonne</p>
+<p>Shawna</p>
+<p>Shana</p>
+<p>Sheba</p>
+<p>Sheena</p>
+<p>Sheila</p>
+<p>Shelby</p>
+<p>Shellie</p>
+<p>Shelly</p>
+<p>Sheree</p>
+<p>Sherry</p>
+<p>Shiloh</p>
+<p>Shirley</p>
+<p>Shoshana</p>
+<p>Sienna</p>
+<p>Sierra</p>
+<p>Sigourney</p>
+<p>Silva</p>
+<p>Simone</p>
+<p>Sinead</p>
+<p>Sirena</p>
+<p>Sis</p>
+<p>Sissie</p>
+<p>Sisty</p>
+<p>Skye</p>
+<p>Skylark</p>
+<p>Sloane</p>
+<p>Soledad</p>
+<p>Sonia</p>
+<p>Sonya</p>
+<p>Sophia</p>
+<p>Sparkelle</p>
+<p>Sparkle</p>
+<p>Spice</p>
+<p>Stacy</p>
+<p>Starr</p>
+<p>Steff</p>
+<p>Steffi</p>
+<p>Stella</p>
+<p>Stephanie</p>
+<p>Stockard</p>
+<p>Sue</p>
+<p>Sueanne</p>
+<p>Suellen</p>
+<p>Summer</p>
+<p>Summerlee</p>
+<p>Sunni</p>
+<p>Susan</p>
+<p>Susie</p>
+<p>Suzanna</p>
+<p>Suzanne</p>
+<p>Suzette</p>
+<p>Sybil</p>
+<p>Sydney</p>
+<p>Sylvan</p>
+<p>Sylvia</p>
+<p><strong>List of baby names – baby boy names – S</strong></p>
+<p>Sabre</p>
+<p>Salter</p>
+<p>Salvador</p>
+<p>Sam</p>
+<p>Sammie</p>
+<p>Sampson</p>
+<p>Samuel</p>
+<p>Sanborne</p>
+<p>Sanders</p>
+<p>Sanderson</p>
+<p>Sandy</p>
+<p>Sanford</p>
+<p>Santiago</p>
+<p>Santos</p>
+<p>Saul</p>
+<p>Saunders</p>
+<p>Sawyer</p>
+<p>Saxby</p>
+<p>Saxon</p>
+<p>Scott</p>
+<p>Scottie</p>
+<p>Scout</p>
+<p>Scully</p>
+<p>Seaborne</p>
+<p>Seamus</p>
+<p>Sean</p>
+<p>Sebastian</p>
+<p>Seger</p>
+<p>Sennett</p>
+<p>Sergeant</p>
+<p>Sergio</p>
+<p>Seth</p>
+<p>Seton</p>
+<p>Seward</p>
+<p>Seymour</p>
+<p>Shamus</p>
+<p>Shane</p>
+<p>Shannon</p>
+<p>Shaquille</p>
+<p>Sharkie</p>
+<p>Shaw</p>
+<p>Shawn</p>
+<p>Shelby</p>
+<p>Sheldar</p>
+<p>Shelder</p>
+<p>Sheldon</p>
+<p>Shelley</p>
+<p>Shepherd</p>
+<p>Sheridan</p>
+<p>Sherlock</p>
+<p>Sherman</p>
+<p>Shermane</p>
+<p>Sherwin</p>
+<p>Sherwood</p>
+<p>Shylock</p>
+<p>Sidney</p>
+<p>Sigfried</p>
+<p>Sigmund</p>
+<p>Silas</p>
+<p>Simeon</p>
+<p>Simon</p>
+<p>Sinclair</p>
+<p>Sirman</p>
+<p>Skip</p>
+<p>Slate</p>
+<p>Sly</p>
+<p>Smith</p>
+<p>Smithfield</p>
+<p>Solomon</p>
+<p>Sonny</p>
+<p>Sorrel</p>
+<p>Sparky</p>
+<p>Spence</p>
+<p>Spencer</p>
+<p>Spicer</p>
+<p>Squire</p>
+<p>Stacy</p>
+<p>Stan</p>
+<p>Standish</p>
+<p>Stanford</p>
+<p>Stanley</p>
+<p>Stedman</p>
+<p>Steed</p>
+<p>Steedmon</p>
+<p>Steel</p>
+<p>Stephan</p>
+<p>Stephano</p>
+<p>Stephen</p>
+<p>Steve</p>
+<p>Steven</p>
+<p>Stew</p>
+<p>Stewie</p>
+<p>Stewart</p>
+<p>Stormy</p>
+<p>Stuart</p>
+<p>Styles</p>
+<p>Sullivan</p>
+<p>Sully</p>
+<p>Sutton</p>
+<p>Sutter</p>
+<p>Sven</p>
+<p>Sweeney</p>
+<p>Sylvester</p>
+<p>Syrus</p></div></div><div id="mod_17502139" class="module moduleImage"><div id="imgs_17502139">				<div id="img_url_6073773" class="inline_hub_image fullWidth">
+					<img src="http://s2.hubimg.com/u/6073773_f520.jpg" width="520" height="390" class="full" alt="Tristan " title="Tristan "/>
+					<div class="slideshowButton" onclick='jQuery(this).closest(".inline_hub_image").find("img").click()'>See all 10 photos</div>
+				</div>				<div class="caption_full" id="img_desc_6073773">
+					Tristan 
+				</div></div></div><div id="mod_17502140" class="module moduleText color0"><h2 class="subtitle">List of baby names – baby girl names – T</h2><div style="" class="txtd" id="txtd_17502140"><p>Tabbi</p>
+<p>Tabitha</p>
+<p>Taffy</p>
+<p>Tahira</p>
+<p>Tai</p>
+<p>Takira</p>
+<p>Talia</p>
+<p>Tallulah</p>
+<p>Tam</p>
+<p>Tamar</p>
+<p>Tamara</p>
+<p>Tamisha</p>
+<p>Tammie</p>
+<p>Tanasha</p>
+<p>Tanisha</p>
+<p>Tansy</p>
+<p>Tanya</p>
+<p>Tara</p>
+<p>Tareshia</p>
+<p>Tasha</p>
+<p>Tatianna</p>
+<p>Tatum</p>
+<p>Tawny</p>
+<p>Taylor</p>
+<p>Tealie</p>
+<p>Teeny</p>
+<p>Temina</p>
+<p>Temperance</p>
+<p>Teresa</p>
+<p>Terri</p>
+<p>Tess</p>
+<p>Thalia</p>
+<p>Thea</p>
+<p>Thelma</p>
+<p>Theodocia</p>
+<p>Thetis</p>
+<p>Thisbe</p>
+<p>Thomasina</p>
+<p>Thora</p>
+<p>Tia</p>
+<p>Tierney</p>
+<p>Tiffany</p>
+<p>Tildie</p>
+<p>Tillie</p>
+<p>Tina</p>
+<p>Tobi</p>
+<p>Tonya</p>
+<p>Tory</p>
+<p>Torrance</p>
+<p>Toti</p>
+<p>Tracie</p>
+<p>Tramahn</p>
+<p>Tremayne</p>
+<p>Trina</p>
+<p>Trinity</p>
+<p>Trish</p>
+<p>Trisha</p>
+<p>Trixie</p>
+<p>Trudy</p>
+<p>Tuesday</p>
+<p>Tuti</p>
+<p>Twyla</p>
+<p>Tyler</p>
+<p><strong>List of baby names – baby boy names – T</strong></p>
+<p>Tab</p>
+<p>Tad</p>
+<p>Talbot</p>
+<p>Tanner</p>
+<p>Tate</p>
+<p>Tavish</p>
+<p>Taylor</p>
+<p>Ted</p>
+<p>Teddy</p>
+<p>Tennyson</p>
+<p>Terelle</p>
+<p>Terrell</p>
+<p>Terrence</p>
+<p>Terry</p>
+<p>Tex</p>
+<p>Thad</p>
+<p>Thaddeus</p>
+<p>Thane</p>
+<p>Thatcher</p>
+<p>Theo</p>
+<p>Theon</p>
+<p>Theron</p>
+<p>Thom</p>
+<p>Thomas</p>
+<p>Thor</p>
+<p>Thorpe</p>
+<p>Tiberius</p>
+<p>Tim</p>
+<p>Timmie</p>
+<p>Timothy</p>
+<p>Titan</p>
+<p>Tito</p>
+<p>Titus</p>
+<p>Tobias</p>
+<p>Toby</p>
+<p>Todd</p>
+<p>Tom</p>
+<p>Tommy</p>
+<p>Tony</p>
+<p>Touchstone</p>
+<p>Tracy</p>
+<p>Travis</p>
+<p>Trent</p>
+<p>Trevor</p>
+<p>Trey</p>
+<p>Trinity</p>
+<p>Tripp</p>
+<p>Tristan</p>
+<p>Troy</p>
+<p>Tucker</p>
+<p>Turner</p>
+<p>Ty</p>
+<p>Tyler</p>
+<p>Tyrone</p>
+<p>Tyson</p>
+<p><br /></p>
+<p><strong>List of baby names – baby girl names – U</strong></p>
+<p>Ula</p>
+<p>Ulani</p>
+<p>Uma</p>
+<p>Una</p>
+<p>Unity</p>
+<p>Ursula</p>
+<p>Utah</p>
+<p>Utica</p>
+<p><strong>List of baby names – baby boy names – U</strong></p>
+<p>Ubal</p>
+<p>Udell</p>
+<p>Ulmer</p>
+<p>Umberto</p>
+<p>Upton</p>
+<p>Uriah</p>
+<p>Uriel</p>
+<p>Ursell</p>
+<p>Utah</p>
+<p>Uzziah</p>
+<p><br /></p>
+<p><strong>List of baby names – baby girl names – V</strong></p>
+<p>Vada</p>
+<p>Val</p>
+<p>Valencia</p>
+<p>Valentine</p>
+<p>Valeria</p>
+<p>Valerie</p>
+<p>Vanda</p>
+<p>Vanessa</p>
+<p>Vannah</p>
+<p>Vanne</p>
+<p>Vanora</p>
+<p>Vasanti</p>
+<p>Vashti</p>
+<p>Veda</p>
+<p>Vedara</p>
+<p>Velda</p>
+<p>Velma</p>
+<p>Venetia</p>
+<p>Venus</p>
+<p>Vera</p>
+<p>Veronica</p>
+<p>Vesper</p>
+<p>Vesta</p>
+<p>Vicky</p>
+<p>Victoria</p>
+<p>Viera</p>
+<p>Viola</p>
+<p>Violet</p>
+<p>Violette</p>
+<p>Virginia</p>
+<p>Vita</p>
+<p>Vivi</p>
+<p>Vivian</p>
+<p>Vivienne</p>
+<p>Voletta</p>
+<p>Vonnie</p>
+<p>Vonshay</p>
+<p><strong>List of baby names – baby boy names – V</strong></p>
+<p>Vachel</p>
+<p>Vahar</p>
+<p>Vail</p>
+<p>Valdar</p>
+<p>Valdemar</p>
+<p>Valentino</p>
+<p>Van</p>
+<p>Vance</p>
+<p>Varden</p>
+<p>Varrick</p>
+<p>Verne</p>
+<p>Vernon</p>
+<p>Verome</p>
+<p>Victor</p>
+<p>Vidal</p>
+<p>Viggo</p>
+<p>Vilhelm</p>
+<p>Vince</p>
+<p>Vincent</p>
+<p>Vinny</p>
+<p>Vinson</p>
+<p>Virgil</p>
+<p>Vito</p>
+<p>Vittorio</p>
+<p>Vladimir</p>
+<p>Voltimor</p>
+<p>Vuitton</p>
+<p><br /></p>
+<p><strong>List of baby names – baby girl names – W</strong></p>
+<p>Wallis</p>
+<p>Wanda</p>
+<p>Wapita</p>
+<p>Washara</p>
+<p>Wednesday</p>
+<p>Wendy</p>
+<p>Whitney</p>
+<p>Wilhelmina</p>
+<p>Willa</p>
+<p>Willamina</p>
+<p>Willow</p>
+<p>Wilma</p>
+<p>Winifred</p>
+<p>Winkie</p>
+<p>Winnie</p>
+<p>Winona</p>
+<p>Winter</p>
+<p>Wrena</p>
+<p>Wynona</p>
+<p><strong>List of baby names – baby boy names – W</strong></p>
+<p>Wade</p>
+<p>Wagner</p>
+<p>Wainwright</p>
+<p>Waldo</p>
+<p>Walker</p>
+<p>Wallace</p>
+<p>Walter</p>
+<p>Ward</p>
+<p>Warner</p>
+<p>Warren</p>
+<p>Warwick</p>
+<p>Washington</p>
+<p>Watkins</p>
+<p>Watson</p>
+<p>Wayland</p>
+<p>Waylon</p>
+<p>Wayne</p>
+<p>Wade</p>
+<p>Webb</p>
+<p>Weber</p>
+<p>Webster</p>
+<p>Wellington</p>
+<p>Wes</p>
+<p>Wesley</p>
+<p>West</p>
+<p>Wheeler</p>
+<p>Whitcombe</p>
+<p>Whitfield</p>
+<p>Whitmore</p>
+<p>Wilbur</p>
+<p>Wilburn</p>
+<p>Wiley</p>
+<p>Wilfred</p>
+<p>Wilkes</p>
+<p>Will</p>
+<p>Willard</p>
+<p>William</p>
+<p>Willie</p>
+<p>Willis</p>
+<p>Wilson</p>
+<p>Winchester</p>
+<p>Winston</p>
+<p>Winthrop</p>
+<p>Winton</p>
+<p>Wolf</p>
+<p>Wolfgang</p>
+<p>Woodrow</p>
+<p>Woody</p>
+<p>Wright</p>
+<p>Wyatt</p>
+<p>Wyneder</p>
+<p>Wyoming</p>
+<p><br /></p>
+<p><strong>List of baby names – baby girl names – X</strong></p>
+<p>Xanda</p>
+<p>Xandy</p>
+<p>Xaviera</p>
+<p>Xena</p>
+<p>Xylia</p>
+<p><strong>List of baby names – baby boy names – X</strong></p>
+<p>Xavier</p>
+<p>Xenos</p>
+<p>Xerxes</p>
+<p>Xylon</p>
+<p><br /></p>
+<p><strong>List of baby names – baby girl names – Y</strong></p>
+<p>Yamini</p>
+<p>Yanira</p>
+<p>Yashika</p>
+<p>Yasmin</p>
+<p>Yasmina</p>
+<p>Ydel</p>
+<p>Yemena</p>
+<p>Ynes</p>
+<p>Yoko</p>
+<p>Yolanda</p>
+<p>Yoshi</p>
+<p>Yvetta</p>
+<p>Yvette</p>
+<p>Yvonne</p>
+<p><strong>List of baby names – baby boy names – Y</strong></p>
+<p>Yadkin</p>
+<p>Yale</p>
+<p>Yancey</p>
+<p>Yates</p>
+<p>Yogi</p>
+<p>York</p>
+<p>Yosef</p>
+<p>Yuma</p>
+<p>Yumal</p>
+<p>Yves</p>
+<p><br /></p>
+<p><strong>List of baby names – baby girl names – Z</strong></p>
+<p>Zada</p>
+<p>Zahara</p>
+<p>Zaira</p>
+<p>Zanna</p>
+<p>Zea</p>
+<p>Zeeba</p>
+<p>Zelda</p>
+<p>Zena</p>
+<p>Zeta</p>
+<p>Zinnia</p>
+<p>Ziva</p>
+<p>Zoe</p>
+<p>Zoey</p>
+<p>Zuzu</p>
+<p><strong>List of baby names – baby boy names – Z</strong></p>
+<p>Zachariah</p>
+<p>Zachary</p>
+<p>Zackary</p>
+<p>Zadok</p>
+<p>Zahir</p>
+<p>Zalman</p>
+<p>Zander</p>
+<p>Zane</p>
+<p>Zavier</p>
+<p>Zeb</p>
+<p>Zebadiah</p>
+<p>Zebulon</p>
+<p>Zechariah</p>
+<p>Zeke</p>
+<p>Zeus</p>
+<p>Ziggy</p>
+<p>Zion</p>
+<p>Zoroaster</p>
+<p>Zuriel</p>
+<p><br /></p></div></div><div id="mod_17502730" class="module moduleAmazon color0"><h2 class="subtitle">Baby names books:</h2><div class="single_product"><div class="product_image"><a rel="nofollow" href="http://www.amazon.com/Baby-Name-Wizard-Revised-Edition/dp/0770436471%3FSubscriptionId%3D14H876SFAKFS0EHBYQ02%26tag%3Dhubpages00d3-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0770436471"><img src="http://ecx.images-amazon.com/images/I/41Dl1MM-eiL._SL75_.jpg" border="0" alt="The Baby Name Wizard, Revised 3rd Edition: A Magical Method for Finding the Perfect Name for Your Baby" width="50" height="75"/></a></div><div class="product_details"><a rel="nofollow" href="http://www.amazon.com/Baby-Name-Wizard-Revised-Edition/dp/0770436471%3FSubscriptionId%3D14H876SFAKFS0EHBYQ02%26tag%3Dhubpages00d3-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D0770436471">The Baby Name Wizard, Revised 3rd Edition: A Magical Method for Finding the Perfect Name for Your Baby</a><div class="price"><strong>Amazon Price:</strong> $7.88<br/>List Price: $14.99</div></div><img src="http://www.assoc-amazon.com/e/ir?t=hubpages00d3-20&amp;l=am2&amp;o=1&amp;a=0770436471" width="1" height="1" border="0" alt="" class="imp_tracker" style="border:none !important; margin:0px !important;" /></div></div><div id="mod_new16" class="module moduleAdSpot color0">
+<br/><div style="padding-bottom:5px"><script type="text/javascript">
+GA_googleFillSlot("family_hub_share_520x200");
+</script>
+</div>
+</div><div id="mod_new17" class="module moduleAdSpot color0">
+
+<script type="text/javascript"><!--
+google_ad_client = 'ca-pub-6958755572607374';
+google_ad_output = 'js';
+google_max_num_ads = '0'; // we only want link units, not customjs
+google_num_radlinks = '5';
+google_ad_channel = '8618064443+5439060739+8103449537+7963848736';
+google_max_radlink_len = '40';
+google_radlinks_per_unit = '5';
+google_rl_filter = 'high';
+hubpages_category_url = 'family-and-parenting';
+hubpages_landingspot = 'hub_linkland_above_share';
+//--></script>
+<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+</div><div id="mod_new10" class="module moduleFeedback color0"><p class="muted"><small>&nbsp;<span class="lastUpdated">Last updated on February 4, 2012</span></small></p><div id="vote_bubble" style="display: none"><p>You can help the HubPages community highlight top quality content by ranking this article up or down.</p><div class="bubble_carrot"></div></div><div class="hub_feedback"><div id="hub_vote"><a href="#" class="hub_vote_up"></a><a href="#" class="hub_vote_down"></a></div><div class="hub_praise_choices"><span id="praise_item_1"><a href="#" onclick="return praiseHub(2948749, 1);">Useful</a>&nbsp;{6}</span> &bull; <span id="praise_item_2"><a href="#" onclick="return praiseHub(2948749, 2);">Funny</a>&nbsp;{1}</span> &bull; <span id="praise_item_3"><a href="#" onclick="return praiseHub(2948749, 3);">Awesome</a>&nbsp;{1}</span> &bull; <span id="praise_item_4"><a href="#" onclick="return praiseHub(2948749, 4);">Beautiful</a>&nbsp;</span> &bull; <span id="praise_item_5"><a href="#" onclick="return praiseHub(2948749, 5);">Interesting</a>&nbsp;</span></div></div></div><div id="mod_new8" class="module moduleRelated color0"><div class="related_head head_two">Discover More Hubs</div><div id="related_hubs"><ul class="curled_page_row"><li class='curled_page'><a rel="hub_1_419920" title="Baby Names from Gods and Goddesses" class="tracked_link" href="http://isabellasnow.hubpages.com/hub/Baby-Names-From-Gods-and-Goddesses"><span class="page_curl"></span>
+<img src="http://s4.hubimg.com/u/771651_100.jpg" alt="Baby Names from Gods and Goddesses" title="Baby Names from Gods and Goddesses"/>
+Baby Names from Gods and Goddesses</a></li><li class='curled_page'><a rel="hub_2_3554468" title="Surnames as First Names: Baby Name Trends" class="tracked_link" href="http://faithamullen.hubpages.com/hub/Surnames-as-First-Names-Baby-Name-Trends"><span class="page_curl"></span>
+<img src="http://s2.hubimg.com/u/7676365_100.jpg" alt="Surnames as First Names: Baby Name Trends" title="Surnames as First Names: Baby Name Trends"/>
+Surnames as First Names: Baby Name Trends</a></li></ul><ul class="curled_page_row"><li class='curled_page'><a rel="hub_3_2909873" title="Cute Baby Names for Girls" class="tracked_link" href="http://smartandfun.hubpages.com/hub/Cute-Baby-Names-for-Girls"><span class="page_curl"></span>
+<img src="http://s4.hubimg.com/u/5986255_100.jpg" alt="Cute Baby Names for Girls" title="Cute Baby Names for Girls"/>
+Cute Baby Names for Girls</a></li><li class='curled_page'><a rel="hub_4_2918923" title="Retro-Cool, Vintage Baby Names for Girls" class="tracked_link" href="http://hubpages.com/hub/Retro-Cool-Vintage-Baby-Nmes-for-Girls"><span class="page_curl"></span>
+<img src="http://s1.hubimg.com/u/6411628_100.jpg" alt="Retro-Cool, Vintage Baby Names for Girls" title="Retro-Cool, Vintage Baby Names for Girls"/>
+Retro-Cool, Vintage Baby Names for Girls</a></li></ul><ul class="curled_page_row"><li class='curled_page'><a rel="hub_5_3816171" title="Unique Baby Names From Literature" class="tracked_link" href="http://hubpages.com/hub/Baby-Girls-and-Boys-Names-From-Literature"><span class="page_curl"></span>
+<img src="http://s4.hubimg.com/u/8525987_100.jpg" alt="Unique Baby Names From Literature" title="Unique Baby Names From Literature"/>
+Unique Baby Names From Literature</a></li><li class='curled_page'><a rel="hub_6_48390" title="Top 200 Baby Names" class="tracked_link" href="http://gregorious.hubpages.com/hub/Top-200-Baby-Names"><span class="page_curl"></span>
+<img src="http://s1.hubimg.com/u/65568_100.jpg" alt="Top 200 Baby Names" title="Top 200 Baby Names"/>
+Top 200 Baby Names</a></li></ul><ul class="curled_page_row"><li class='curled_page'><a rel="hub_7_3010406" title="Why your name is so important to you" class="tracked_link" href="http://case1worker.hubpages.com/hub/Why-your-name-is-so-important-to-you"><span class="page_curl"></span>
+<img src="http://s1.hubimg.com/u/6230484_100.jpg" alt="Why your name is so important to you" title="Why your name is so important to you"/>
+Why your name is so important to you</a></li><li class='curled_page'><a rel="hub_8_2341120" title="Naming Your Baby Boy: Boy Names &amp; Their Meanings" class="tracked_link" href="http://diyweddingplanner.hubpages.com/hub/Baby-Boy-Names-Their-Meanings"><span class="page_curl"></span>
+<img src="http://s1.hubimg.com/u/4915936_100.jpg" alt="Naming Your Baby Boy: Boy Names &amp; Their Meanings" title="Naming Your Baby Boy: Boy Names &amp; Their Meanings"/>
+Naming Your Baby Boy: Boy Names &amp; Their Meanings</a></li></ul><script type="text/javascript">if (typeof(relatedHubStats) != "undefined") { relatedHubStats.recordImpression(2948749, 1, 419920); }
+if (typeof(relatedHubStats) != "undefined") { relatedHubStats.recordImpression(2948749, 2, 3554468); }
+if (typeof(relatedHubStats) != "undefined") { relatedHubStats.recordImpression(2948749, 3, 2909873); }
+if (typeof(relatedHubStats) != "undefined") { relatedHubStats.recordImpression(2948749, 4, 2918923); }
+if (typeof(relatedHubStats) != "undefined") { relatedHubStats.recordImpression(2948749, 5, 3816171); }
+if (typeof(relatedHubStats) != "undefined") { relatedHubStats.recordImpression(2948749, 6, 48390); }
+if (typeof(relatedHubStats) != "undefined") { relatedHubStats.recordImpression(2948749, 7, 3010406); }
+if (typeof(relatedHubStats) != "undefined") { relatedHubStats.recordImpression(2948749, 8, 2341120); }
+if(typeof(relatedHubStats)!="undefined") relatedHubStats.commitImpressions();
+</script></div></div><div id="comFirst"></div><div id="mod_17501839" class="module moduleComment"><h2 class="subtitle"><a class="button small green_bg follow_article follow_article_2948749 " style="float: right" id="" href="http://hubpages.com/signin?explain=follow+Hubs&url=http%3A%2F%2Fhabee.hubpages.com%2Fhub%2FLots-of-Baby-Names" title="Follow this Hub"><span class="follow_hack">&nbsp;</span><span class="icon arrow_right"></span>Follow (3)</a>Comments <span class="comment_count">9 comments</span></h2><div><a class="jumplink" href="#lastcomment">Go to last comment</a></div><div class="comment dwarfCommenter" id="comment7333682"><div class="author_photo"><div class="tiny_aplus_badge"><span title="Apprenticeship Alum">&nbsp;</span></div><img src="http://s3.hubimg.com/u/4984914_50.jpg"   alt="ThePracticalMommy profile image" title="ThePracticalMommy profile image"/></div><p class="comment_meta"><strong>ThePracticalMommy&nbsp;</strong><span class='timestamp'>22 months ago  from United States <small>Level 3 Commenter</small> </span></p><div class="comment_body"><p class="">Wow! That's quite a list! Why didn't I think to write down students' names when I was teaching? ;) I'm glad to see my name there--Marissa. It was not very popular when I was growing up, but I'm proud to know quite a few Marissas now.</p><p class="">Voted up and sharing! I'm sure there's plenty of moms and dads to be who will want to take a look!</p></div></div><div class="comment" id="comment7335124"><div class="author_photo"><img src="http://s3.hubimg.com/u/7223682_50.jpg"   alt="KimberlyLake profile image" title="KimberlyLake profile image"/></div><p class="comment_meta"><strong>KimberlyLake&nbsp;</strong><span class='timestamp'>22 months ago  from California </span></p><div class="comment_body"><p class="">Thanks for sharing! Love the names.</p></div></div><div class="comment dwarfCommenter starCommenter" id="comment7336532"><div class="author_photo"><img src="http://s1.hubimg.com/u/1465972_50.jpg"   alt="drbj profile image" title="drbj profile image"/></div><p class="comment_meta"><strong>drbj&nbsp;</strong><span class='timestamp'>22 months ago  from south Florida <small>Level 8 Commenter</small> </span></p><div class="comment_body"><p class="">You did your good deed for the month, Holle, with this extensive list of ubiquitous names for the new boy or girl baby. You saved a lotta new parents a lotta time trying to come up with names for new offspring. Well done.</p><p class="">BTW - I saw Holli and Holly but not Holle on your list???</p></div></div><div class="comment dwarfCommenter starCommenter" id="comment7341328"><div class="author_photo"><div class="tiny_aplus_badge"><span title="Apprenticeship Alum">&nbsp;</span></div><img src="http://s4.hubimg.com/u/6403399_50.jpg"   alt="Cardisa profile image" title="Cardisa profile image"/></div><p class="comment_meta"><strong>Cardisa&nbsp;</strong><span class='timestamp'>22 months ago  from Jamaica <small>Level 5 Commenter</small> </span></p><div class="comment_body"><p class="">When I was younger before I really appreciated my name "Carolee", I wanted to be called Diandra or Samantha. When I read Sherly Schrift's (Shelly Winters) biography, I fell in love with Vitorina, her daughter's name. Her son's name is Vitorio. I love Italian and Spanish names...lol</p></div></div><div class="comment" id="comment7361902"><div class="author_photo"><img src="http://s4.hubimg.com/u/6080059_50.jpg"   alt="sunbun143 profile image" title="sunbun143 profile image"/></div><p class="comment_meta"><strong>sunbun143&nbsp;</strong><span class='timestamp'>22 months ago  from Los Angeles, CA </span></p><div class="comment_body"><p class="">I'm Sunny with a Y, not an I at the end, like on your list :) You'd be surprised how often I have to correct people when I say my name...like "Yes, it's Sunny, like "sunny day" or I get the takeout order, and the name on there is "Funny". Funny, really??! Hahaha. That said, my boys are Jake and Logan, and my future girl is going to be Katie. I love baby name lists!</p></div></div><div class="comment" id="comment7722752"><div class="author_photo"></div><p class="comment_meta"><strong>breezy&nbsp;</strong><span class='timestamp'>20 months ago   </span></p><div class="comment_body"><p class="">i like the list of names. my name is bridget and before now i knew no one else with the same name. i'm a new mother and not sure wether i'm having a boy or girl yet. i still like looking at the names for possibilities. i like madison or meckenzie for a girl and tyler or zachary for a boy. thanx.</p></div></div><div class="comment" id="comment11459109"><div class="author_photo"></div><p class="comment_meta"><strong>brandy&nbsp;</strong><span class='timestamp'>9 months ago   </span></p><div class="comment_body"><p class="">i loved all the names</p></div></div><div class="comment" id="comment11882846"><div class="author_photo"><img src="http://s2.hubimg.com/u/4934869_50.jpg"   alt="babynology profile image" title="babynology profile image"/></div><p class="comment_meta"><strong>babynology&nbsp;</strong><span class='timestamp'>6 months ago  from New York </span></p><div class="comment_body"><p class="">I admire list of names. I have really liked few names in this posting</p><p class="">for boys:</p><p class="">Jacob</p><p class="">Alexander</p><p class="">Aden</p><p class="">Olivier</p><p class="">Nicholas</p><p class="">Mark</p><p class="">Michael</p><p class="">Leonard</p><p class="">and for girls:</p><p class="">Jasmine</p><p class="">Chloe</p><p class="">Isabella</p><p class="">Sophia</p><p class="">Olivera</p><p class="">Nora</p><p class="">Millie</p><p class="">Lisa</p></div></div><a id="lastcomment" name="lastcomment" class="commentanchor"></a><div class="comment very_last_comment" id="comment12057993"><div class="author_photo"><img src="http://s2.hubimg.com/u/4934869_50.jpg"   alt="babynology profile image" title="babynology profile image"/></div><p class="comment_meta"><strong>babynology&nbsp;</strong><span class='timestamp'>4 months ago  from New York </span></p><div class="comment_body"><p class="">A website that really helps you in baby naming, no matter what your origin, you will get baby names of all origin in www.babynology.com. In the website, they even organize baby photo contest every month.</p></div></div><div id="comment_tgt" class="more_comments"></div><form name="comment_17501839" id="comment_17501839" method="get" action="/xml/comment.php"><input type="hidden" name="mod_id" value="17501839" /><div id='formErrors_17501839' class='alert'><ul></ul></div><div id="member_call" class="alerts alert-block"><p><a href="https://hubpages.com/signin/">Sign in</a> or <a href="https://hubpages.com/user/new/?utm_source=tocomment&utm_nooverride=1">sign up</a> and post using a HubPages account.</p></div><div class="commenter_anon"></div><input type="text" id="name" class="text_input" name="name" value=""/><div class="compose_comment"><textarea wrap="virtual" autocomplete="off" onfocus="jq('#comText_17501839').select();" id="comText_17501839" name="comText_17501839" rows="6"></textarea></div><div class="post"><div class="comment_char_count" id="comCharDiv_17501839"><span id="comText_17501839_chars">8192 characters left.</span></div><a href="#" id="comment_submit_17501839" class="button green_bg btn btn-primary btn-small btn-block">Post Comment</a><p class="comment_warning muted">No HTML is allowed in comments, but URLs will be hyperlinked. Comments are not for promoting your Hubs or other sites.</p><div id="spinner" style="text-align:center; display: none;"><img src="http://z.hubimg.com/x/spinner.gif" alt="sending" class="spinner"/> working</div></div><p class="follow_comments"></p></form><script type="text/javascript">
+jq(document).ready( function() {
+initCommentsCapsule('17501839', false, { signInRequired: false, url: 'http://habee.hubpages.com/hub/Lots-of-Baby-Names#comText_17501839', success: false });
+});
+</script><br style="clear:both"/></div></div>				<script type="text/javascript">
+				    jq(document).ready(function() {
+				        // wait a short interval for pageload to completely finish before ajax call
+				        var slideshowAjax = setTimeout(function() {
+				            HubPages.Lightbox.Slideshow.create({
+				                id: 2948749,
+				                title: 'Lots of Baby Names!',
+				                url: 'http://habee.hubpages.com/hub/Lots-of-Baby-Names',
+				                type: 'Hub'
+				            });
+				        }, 20000);
+
+				        HubPages.Lightbox.Slideshow.init( 2948749, 'Lots of Baby Names!', 'http://habee.hubpages.com/hub/Lots-of-Baby-Names', '.moduleImage div:not(.thumbnails) img', 'Hub' );
+
+				        // change pointer to indicate clickable images
+				        var imgIdList = [6073739,6073731,6073718,6073729,6073746,6073750,6073754,6073758,6073767,6073773];
+				        for (var i = 0; i < imgIdList.length; i++) {
+				            selector = '#img_url_' + imgIdList[i];
+				            jQuery(selector).css('cursor', 'pointer');
+				        }
+
+				        jQuery('.moduleImage').mouseover(function() {
+				            jQuery(this).find('.slideshowButton').show();
+				        });
+
+				        jQuery('.moduleImage').mouseout(function() {
+				            jQuery(this).find('.slideshowButton').hide();
+				        });
+
+				    });
+				</script></div><div id="turbo_hub_sidebar"><div id="share_hub"><div class="moduleAdSpot">
+<div style="padding-bottom:5px"><script type="text/javascript">
+GA_googleFillSlot("family_hub_sidebar_120x600");
+</script>
+</div><div style="width:100%; height:8px"></div>
+</div><div id="hub_scrolling_sidebar"><div class="moduleAdSpot hub_linkunit" style="padding:10px 0px">
+
+<script type="text/javascript"><!--
+google_ad_client = 'ca-pub-6958755572607374';
+google_ad_output = 'js';
+google_max_num_ads = '0'; // we only want link units, not customjs
+google_num_radlinks = '6';
+google_ad_channel = '8618064443+5439060739+8103449537+7963848736+8618064443';
+google_max_radlink_len = '16';
+google_radlinks_per_unit = '6';
+google_rl_filter = 'high';
+hubpages_category_url = 'family-and-parenting';
+hubpages_landingspot = 'hub_linkland_sidebar';
+//--></script>
+<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+
+</div><div id="share_hub_social"><div class="head_three">Like This Hub?</div><div id="ratethispage" class="socialbuttons" style="display:none"><div id="fb-root"></div><div class="fb_share_wrap"><div class="fb-like" href="http://habee.hubpages.com/hub/Lots-of-Baby-Names" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div></div><span class="twitter_wrap"><div class="twitter-btn"><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fhub.me%2Facn6t&text=Lots+of+Baby+Names%21"><i></i><span>Tweet</span></a></div></span><span class="pinit_wrap"><a href="http://pinterest.com/pin/create/button/?url=http://habee.hubpages.com/hub/Lots-of-Baby-Names&amp;media=http://s4.hubimg.com/u/6073739.jpg&amp;description=Lots+of+Baby+Names%21" class="pin-it-button" count-layout="horizontal"> </a></span></div><p>Want an audience? HubPages receives over 37 million visitors every month. <a href="http://hubpages.com/info/hubsb" class="join_today">Join today</a></p></div></div><div class="share_clear"></div></div></div><div class="clear"></div></div></article></div><div style="clear:left;"><div class="moduleYieldBuild" style="float:left;">
+<div style="padding-bottom:5px"><script type="text/javascript">
+GA_googleFillSlot("family_hub_footer_bf_300X250");
+</script>
+</div><div style="width:100%; height:8px"></div>
+</div><div class="moduleYieldBuild" style="float:right;">
+<div style="width:300px;">
+<script type="text/javascript"><!--
+google_ad_host = "pub-6958755572607374";
+google_ad_client = "ca-pub-5348433792252343"; 
+google_alternate_ad_url = "http://hubpages.com/google_adsense_script.html";
+google_ad_width = 300;
+google_ad_height = 250;
+google_ad_format = "300x250_as";
+google_ad_type = "image";
+google_ad_channel = "";
+google_color_border = "FFFFFF";
+google_color_bg = "FFFFFF";
+google_color_link = "297CCF";
+google_color_url = "333333";
+google_color_text = "333333";
+google_ui_features = "rc:0";
+
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div><div style="width:100%; height:8px"></div>
+</div><div class="clear"></div></div>
+<!-- YB: special (1x1) -->
+<script type="text/javascript"><!--
+yieldbuild_site = 1;
+yieldbuild_layout = "hpads_hub";
+yieldbuild_loc = "special";
+//--></script>
+<script type="text/javascript" src="http://hook.yieldbuild.com/s_ad.js"></script>
+<a href="#" id="open_hub_rating" class="green_bg">Click to Rate This Article</a><div id="rate_hub" class="rate_hub" style="display: none;"><a href="#" id="close_hub_rating"><span class="icon close"></span></a><div class="head_one">How good is this article?</div><div id="hop_explain">
+<div class="rate_explain" id="default_explain">
+  <p>Please rate this article using the scale below. The scale is from 1 to 10, where 10 is the best and 1 is the worst.</p>
+</div>
+</div><div id="rating_submission">
+<div class="slider_set"><div class="head_two">Your Rating: <strong>?</strong></div>
+<div id="quality" class="hub_rating_slider"></div></div>
+<p><a href="#" id="rating_submit" class="button green_bg">submit</a></p>
+</div>
+
+</div></div><script type="text/javascript">jq(window).sampleDurationNew(2948749,1);</script><script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "6035233" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script></div><div id="footer_wrap"><div id="footer"><a id="footer_home" href="http://hubpages.com/" title="To the HubPages home page">HubPages</a><ul id="footerlist"><li><a href="http://hubpages.com/about/us">about us</a></li><li><a href="http://hubpages.com/help-wizard/">help</a></li><li><a href="http://blog.hubpages.com">blog</a></li><li><a href="#" onclick="showLinkArticle('http://habee.hubpages.com/hub/Lots-of-Baby-Names','Lots of Baby Names!'); return false;">link to this page</a></li><li><a href="http://hubpages.com/help/copyright_infringement">copyright</a></li><li><a href="http://hubpages.com/directory">directory</a></li></ul><div class="glam_logo"></div><p>Copyright &copy; 2013 HubPages Inc. and respective owners.</p><p class="disclaimer">Other product and company names shown may be trademarks of their respective owners.</p><p>HubPages<sup>&reg;</sup> is a registered Service Mark of HubPages, Inc.</p><p><a href="http://hubpages.com/help/user_agreement">terms of use</a> <a href="http://hubpages.com/help/privacy_policy">privacy policy</a> (0.48 sec)</p></div></div>	<div id="ajaxing"><div id="ajaxing_box"><img src="http://z.hubimg.com/x/spinner.gif" alt="Please wait" class="spinner"/> <span>working</span></div></div>
+	<script type="text/javascript">
+_qevents.push({
+qacct:"p-40hb1Sup4Jk_U",
+labels:"family-and-parenting.babies-and-baby-care"
+});
+</script>
+<noscript>
+<img src="//pixel.quantserve.com/pixel/p-40hb1Sup4Jk_U.gif" style="display:none" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+</body>
+</html>
+<!-- rendered by hubwbe05 at Fri, 29 Nov 13 05:12:07 -0800 -->
+<!-- uncategorized hpads-authorshare -->
+<!-- served from cache Fri, 29 Nov 13 05:12:49 -0800 -->
