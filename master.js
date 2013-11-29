@@ -1,91 +1,145 @@
 function Master(ws, listener) {
   // time for the first client to make a sound
-  // after master sends request.
+  // after master sends requests.
   var OFFSET = 1000;
-  var INTERVAL = 1000;
+  var INTERVAL = 500;
   var FREQ = 18000;
+  var BORDER_LINE = 5;
+  var NUM_REQS = 2;
+  var CONVERGE_FACTOR = 1.5;
+
+  var lastChunkFromNow = 0;
   listener.setFrequency(FREQ);
 
   mysend(ws, ["master"]);
   log("master inited");
 
-  var n, offsets = {}, request;
-  var penalties = {};
+  var n = 0, offsets = {}, penalties = {}, requests = [];
 
   function init(room) {
-    var it;
-    n = room.ids.length;
-    for (it = 0; it < n; ++it) {
-      offsets[room.ids[it]] = 0;
-      penalties[room.ids[it]] = 0;
-    } 
+    var names = [];
+    for (var id in room.ids) {
+      ++n;
+      offsets[id] = 0;
+      penalties[id] = 0;
+      names.push(id);
+    }
+    log("room has " + n + " clients. " + names.join(", "));
   }
 
   function buildRequest() {
-    var _request = {}, now = myClock.clock();
+    requests = [];
+    var now = myClock.clock();
     for (var id in offsets) {
-      _request[id] = {
-        whenPretend : now + OFFSET,
-        when: now + OFFSET + offsets[id],
-        freq: FREQ,
-      };
-      now += INTERVAL;
+      for (var j = 0; j < NUM_REQS; ++j) {
+        requests.push({
+            id: id,
+            whenPretend : now + OFFSET,
+            when: now + OFFSET + offsets[id],
+            freq: FREQ
+        });
+        now += INTERVAL;
+      }
     }
-    request = JSON.parse(JSON.stringify(_request));
+    lastChunkFromNow = INTERVAL + now - myClock.clock();
   }
 
   function handleBeep() {
     var t = myClock.clock();
-    var minDist = 100000, whichOne = null;
-    for (var id in offsets) {
-      var dist = Math.abs(request[id].when - t);
+    var minDist = 100000, whichOne = null, whichIt = null;
+    for (it = 0; it < requests.length; ++it) {
+      var dist = Math.abs(requests[it].when - t);
       if (dist < minDist) {
         minDist = dist;
-        whichOne = id;
+        whichOne = requests[it].id;
+        whichIt = it;
       }
     }
-    // log("i heard you, " + whichOne);
-    request[whichOne].heard = t;
+    if (whichOne) {
+      // log("got you " + whichOne);
+      requests[whichIt].heard = t;
+    }
+  }
+
+  // return must be average without outliers
+  function statistics(deltas) {
+    return deltas.reduce(function(a,b){return a+b;})
+      / deltas.length;
+  }
+
+  function killShow(id) {
+    var x = document.getElementById(id);
+    if (x) {
+      x.innerHTML = "";
+    }
+  }
+
+  function drawShow(id, latency) {
+    var node = document.getElementById(id);
+    if (!node) {
+      node = document.createElement("div");
+      node.id = id;
+      document.getElementById("show").appendChild(node);
+    }
+    node.innerHTML = "<b>" + id + "</b> has latency " + latency;
   }
 
   function analyzeResults() {
+    // log("stopped");
     listener.stop();
-    var ready = true, haveHeard = false;
-    for (var id in request) {
-      if ('heard' in request[id]) {
-        haveHeard = true;
-        var delta = request[id].heard - request[id].whenPretend;
-        if (Math.abs(delta) > INTERVAL) {
-          log(id + " is outlying");
-        } else {
-          if (Math.abs(delta) > 10) {
-            ready = false;
-          }
-          log(id + " has latency " + delta);
-          offsets[id] -= delta / 2;
-        }
-        penalties[id] = 0;
-      } else {
-        penalties[id] ++;
-        if (penalties[id] == 5) {
-          --n;
-          log("kicking out " + id);
-          delete offsets[id];
+    var ready = true, haveHeard = false, deltas = {};
+    // initialize deltas to 0
+    for (var id in offsets) {
+      deltas[id] = [];
+    }
+    // collect deltas
+    for (var it = 0; it < requests.length; ++it) {
+      var id = requests[it].id;
+      if ('heard' in requests[it]) {
+        var delta = requests[it].heard - requests[it].whenPretend;
+        if (Math.abs(delta) < INTERVAL) {
+          deltas[id].push(delta);
         }
       }
     }
-    if (!(ready && haveHeard)) {
-      doEverything();
+    // do penalites and statistics
+    var ready = true;
+    for (var id in offsets) {
+      if (deltas[id].length == 0) {
+        --n;
+        log("kicking out " + id);
+        mysend(ws, {special:"kill",id:id});
+        killShow(id);
+        delete offsets[id];
+        delete penalties[id];
+      } else {
+        var avg = statistics(deltas[id]);
+        log(id + " has " + Math.floor(avg));
+        drawShow(id, Math.floor(avg));
+        offsets[id] -= avg / CONVERGE_FACTOR;
+        if (Math.abs(avg) > BORDER_LINE) {
+          ready = false;
+        }
+      }
+    }
+    // repeat or call play
+    if (ready) {
+      mysend(ws, {offsets:offsets});
+      header.addEventListener('click', function() {
+        mysend(ws, {special:"play"});
+        shout("We Plays! ");
+      });
+      shout("We Play? ");
     } else {
-      mysend(ws, ["play", offsets]);
+      doEverything();
     }
   }
 
   function doEverything() {
     buildRequest();
     listener.onBeep(handleBeep, INTERVAL / 2);
-    mysend(ws, request);
-    setTimeout(analyzeResults, 2 * OFFSET + n * INTERVAL);
+    mysend(ws, requests);
+    setTimeout(analyzeResults, lastChunkFromNow);
   }
 
   myrecv(ws, function(room) {

@@ -1,5 +1,7 @@
 function Client(ws, player) {
-  var id = null;
+  var BEEP_LENGTH_MS = 100;
+
+  var id = null, canPlay = false;
   mysend(ws, ["client", navigator.userAgent]);
 
   myrecv(ws, function(msg) {
@@ -9,17 +11,39 @@ function Client(ws, player) {
     beClient();
   });
 
+  function handlePlay(offsets) {
+    if (id in offsets) {
+      shout("I will plays!");
+      myClock.skew(offsets[id]);
+      canPlay = true;
+    } else {
+      shout("I was kicked out :(");
+    }
+  }
+
   function beClient() {
     myrecv(ws, function(msg) {
-      if ('length' in msg && msg.length && msg[0] === 'play') {
-        shout("I plays!");
+      if ('offsets' in msg) {
+        handlePlay(msg.offsets);
         return;
       }
       if ('url' in msg) {
-        player.addChunk({data:JSON.stringify(msg)});
+        if (canPlay) {
+          player.addChunk(msg);
+        }
       } else {
-        // msg { id: {when:, freq:}, ... }
-        player.tick(msg[id].when,  msg[id].freq, 0.1);
+        // msg [{id:, when:, freq:}, ...]
+        var found = false;
+        for (var it = 0; it < msg.length; ++it) {
+          if (msg[it].id == id) {
+            found = true;
+            player.tick(msg[it].when, msg[it].freq,
+                BEEP_LENGTH_MS / 1000);
+          }
+        }
+        if (!found) {
+          shout("i was killed :(");
+        }
       }
     });
   };

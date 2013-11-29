@@ -87,7 +87,6 @@ var Player = function(getTime, volumeElement, colorElement) {
   // when message is received, start downloading mp3 chunk and decode it.
   this.addChunk = function(msg) {
     var request = new XMLHttpRequest();
-    var msg = JSON.parse(msg.data);
     request.open('GET', msg.url, true);
     request.responseType = 'arraybuffer';
     request.addEventListener('load', function(evt) {

@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>master</title>
     <link href="favicon.ico" rel="icon" type="image/ico" />
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="util.js"></script>
     <script type="text/javascript" src="clock.js"></script>
     <script type="text/javascript" src="player.js"></script>
     <script type="text/javascript" src="syncer.js"></script>
@@ -27,11 +29,11 @@
         var listener = new Listener();
         header.addEventListener('click', function() {
           if (did) {return;}
-          var socket = new WebSocket("ws://lieutier.me:8080");
+          var socket = new WebSocket(ws_server());
           header.innerHTML = "syncing...";
           socket.onopen = function() {
             new Syncer(socket, function() {
-              header.innerHTML = "master synced!";
+              shout("master synced!");
               did = true;
               new Master(socket, listener);
             });
@@ -42,5 +44,6 @@
   </head>
   <body>
     <h1 id="header">master. click here to start.</h1>
+    <div id="show"></div>
   </body>
 </html>

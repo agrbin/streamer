@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>master</title>
     <link href="favicon.ico" rel="icon" type="image/ico" />
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="util.js"></script>
     <script type="text/javascript" src="clock.js"></script>
     <script type="text/javascript" src="player.js"></script>
     <script type="text/javascript" src="syncer.js"></script>
@@ -26,7 +28,7 @@
         var start = false;
         header.addEventListener('click', function() {
           if (did) {return;}
-          var socket = new WebSocket("ws://lieutier.me:8080");
+          var socket = new WebSocket(ws_server());
           var player = new Player(myClock.clock);
           header.innerHTML = "syncing...";
           socket.onopen = function() {
@@ -37,16 +39,6 @@
                 start = true;
               },1000);
               new Client(socket, player);
-              window.addEventListener("devicemotion", function sync(event) {
-                var r =
-                  event.acceleration.x*event.acceleration.x +
-                  event.acceleration.y*event.acceleration.y +
-                  event.acceleration.z*event.acceleration.z;
-                if (start && r > 0.6) {
-                  shout(myClock.clock());
-                  window.removeEventListener("devicemotion", sync);
-                }
-              });
             });
           };
         });
