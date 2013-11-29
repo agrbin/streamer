@@ -11,8 +11,12 @@ function Client(ws, player) {
 
   function beClient() {
     myrecv(ws, function(msg) {
-      // msg { id: {when:, freq:}, ... }
-      player.tick(msg[id].when,  msg[id].freq, 0.1);
+      if ('url' in msg) {
+        player.addChunk(msg);
+      } else {
+        // msg { id: {when:, freq:}, ... }
+        player.tick(msg[id].when,  msg[id].freq, 0.1);
+      }
     });
   };
 };

@@ -6,6 +6,7 @@ exports.Router = function() {
   var masterSock = null,
       socks = [], ids = [],
       nextClientId = 'A';
+  var offsets = null; 
 
   this.addClient = function(sock, ua) {
     var myId = nextClientId;
@@ -18,11 +19,23 @@ exports.Router = function() {
     });
   };
 
+  function sendHandler(msg) {
+    for (clientSockIndex in socks) {
+      msg.start += offsets[clientSockIndex];
+      socks[clientSockIndex].send(msg);
+    }
+  };
+
   this.newMaster = function(sock) {
     console.log("new master request");
     masterSock = sock;
     masterSock.send({ids:ids});
     masterSock.recv(function (msg) {
+      if ('length' in msg && msg.length && msg[0] === "play") {
+        offsets = msg[1];
+        console.log("i have my offsets ", offsets);
+        new Streamer(sendHandler);
+      }
       var clientSock;
       for (clientSockIndex in socks) {
         socks[clientSockIndex].send(msg); 

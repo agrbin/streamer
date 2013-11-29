@@ -54,13 +54,22 @@ var Player = function(getTime, volumeElement, colorElement) {
     oscillator.noteOff(0.01);
   })();
 
+  var osc = null, oscGain = null;
   this.tick = function(when, freq, tickLength) {
     when = transponseTime(when);
-    var oscillator = audioContext.createOscillator();
-    oscillator.frequency.value = freq;
-    oscillator.connect(audioContext.destination);
-    oscillator.noteOn(when);
-    oscillator.noteOff(when + tickLength);
+    if (osc === null) {
+      //
+      oscGain = audioContext.createGainNode();
+      oscGain.connect(audioContext.destination);
+      oscGain.gain.value = 0;
+      // 
+      osc = audioContext.createOscillator();
+      osc.frequency.value = freq;
+      osc.connect(oscGain);
+      osc.noteOn(0);
+    }
+    oscGain.gain.setValueAtTime(1, when);
+    oscGain.gain.setValueAtTime(0, when + tickLength);
   };
 
   this.tickMultiple = function(freq, tickLength, num) {
