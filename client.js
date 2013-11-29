@@ -16,7 +16,7 @@ function Client(ws, player) {
         return;
       }
       if ('url' in msg) {
-        player.addChunk(JSON.stringify(msg));
+        player.addChunk({data:JSON.stringify(msg)});
       } else {
         // msg { id: {when:, freq:}, ... }
         player.tick(msg[id].when,  msg[id].freq, 0.1);
