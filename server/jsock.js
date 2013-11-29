@@ -9,7 +9,14 @@ exports.JSock = function(sock) {
 
   this.recv = function(cb) {
     sock.onmessage = function(msg) {
-      cb(JSON.parse(msg.data));
+      var parsed = null;
+      try {
+        parsed = JSON.parse(msg.data);
+      } catch (err) {
+        console.log(err);
+        return;
+      }
+      cb(parsed);
     };
   };
 };
