@@ -1,5 +1,6 @@
 var clock = require('./clock.js')
   , config = require('./config.js').router
+  , Streamer = require('./streamer.js').Streamer
   ;
 
 exports.Router = function() {

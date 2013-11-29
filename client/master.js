@@ -49,11 +49,11 @@ function Master(ws, listener) {
   }
 
   function analyzeResults() {
-    log("stopped listening");
     listener.stop();
-    var ready = true;
+    var ready = true, haveHeard = false;
     for (var id in request) {
       if ('heard' in request[id]) {
+        haveHeard = true;
         var delta = request[id].heard - request[id].whenPretend;
         if (Math.abs(delta) > INTERVAL) {
           log(id + " is outlying");
@@ -74,10 +74,10 @@ function Master(ws, listener) {
         }
       }
     }
-    if (!ready) {
+    if (!(ready && haveHeard)) {
       doEverything();
     } else {
-      ws.send(["play", offsets]);
+      mysend(ws, ["play", offsets]);
     }
   }
 
