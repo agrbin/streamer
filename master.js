@@ -4,7 +4,7 @@ function Master(ws, listener) {
   var OFFSET = 1000;
   var INTERVAL = 500;
   var FREQ = 18000;
-  var BORDER_LINE = 5;
+  var BORDER_LINE = 10;
   var NUM_REQS = 2;
   var CONVERGE_FACTOR = 1.5;
 
