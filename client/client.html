@@ -23,9 +23,16 @@
        *  player and streamer on server will continue to communicate.
        */
       window.addEventListener('load', function() {
+        var body = document.getElementsByTagName('body')[0];
+        function colorAcceleration(e) {
+          if (body) {
+            body.style.backgroundColor = 'rgb('+ Math.round(255 - e.acceleration.x * 10) +','+ Math.round(255 - e.acceleration.y * 10) +','+ Math.round(255 - e.acceleration.z * 10) +')';
+          }
+        }
         var did = false;
         var header = document.getElementById("header");
         var start = false;
+        window.addEventListener("devicemotion", colorAcceleration, true);
         header.addEventListener('click', function() {
           if (did) {return;}
           var socket = new WebSocket(ws_server());
