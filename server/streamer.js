@@ -23,12 +23,13 @@ exports.Streamer = function(sendHandler) {
   // http://chimera.labs.oreilly.com/books/1234000001552/ch02.html
   // 
   function checkSchedule() {
+    var sent;
     if (chunkToSendPlayTime < clock.clock() + sendAhead) {
-      sendHandler({
+      sent = sendHandler({
         url   : config.chunkHostUrl + "tg." + chunkToSend + ".mp3",
         start : chunkToSendPlayTime
       });
-      chunkToSend = (chunkToSend + 1) % numberOfChunks;
+      chunkToSend = sent ? (chunkToSend + 1) % numberOfChunks : 0;
       chunkToSendPlayTime += chunkDuration - overlapTime;
       checkSchedule();
     } else {

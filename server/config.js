@@ -21,7 +21,7 @@ exports.streamer = {
   chunkDuration : 2.448,
   overlapTime   : 0.048,
   chunkHostUrl  : "frags/",
-  numberOfChunks: 150
+  numberOfChunks: 57
 };
 
 // synchronization params.
@@ -29,3 +29,30 @@ exports.sync = {
   NumberOfSamples : 10,
   MaxClockDeviation : 10
 };
+
+exports.sonic = {
+  roundRobinInterval : 1000,
+  recordsQueue : 30,
+  recordsInliersRatio : 0.6,
+  buildGraph : 3000,
+  ignoreSelfHear : false,
+  minReports : 3,
+  maxDevInComponent : 10,
+};
+
+exports.socket = {
+  // ping will be sent  every pingInterval seconds to client
+  // to keep the connection alive across non patient firewalls.
+  pingInterval : 60,
+
+  // this will turn of clock skew checks and sleepyPeriod checks
+  ignoreNetworkProblems : false,
+
+  // if socket notices sleepyPeriod seconds without user activity, that user
+  // will get disconnected.
+  sleepyPeriod : 30 * 60,
+
+  // maximum ping
+  maxPing : 500,
+};
+

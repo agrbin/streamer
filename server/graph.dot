@@ -1,0 +1,14 @@
+digraph {
+subgraph cluster_0 {
+label = "X can hear Y";
+__0__matija [label="matija"];
+}
+subgraph cluster_1 {
+label = "X plays after Y (mean ~stddev)";
+__1__matija [label="matija"];
+}
+subgraph cluster_2 {
+label = "shortest paths";
+__2__matija [label="matija"];
+}
+}

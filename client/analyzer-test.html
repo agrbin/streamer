@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+  <head>
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="analyzer.js"></script>
+    <script type="text/javascript" src="distribution.js"></script>
+    <script type="text/javascript" src="gui.js"></script>
+    <script>
+      window.AudioContext =
+        window.AudioContext ||
+        window.webkitAudioContext;
+
+      window.addEventListener('load', function() {
+        var
+          ctx = new AudioContext(),
+          gui = new Gui(document.getElementById('canvas')),
+          analyzer = new Analyzer(ctx, gui.onBeep, config, gui);
+      }, false);
+    </script>
+  </head>
+  <body>
+    <canvas id ="canvas"
+      width=960
+      height=600
+      style="position: absolute; top: 5%; left: 5%">
+    </canvas>
+  </body>
+</html>
