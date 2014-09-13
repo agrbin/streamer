@@ -1,12 +1,11 @@
 Streamer
 ========
 
-Stream synchronised music on multiple network devices without latency. Live
-example at
+Stream synchronised music on multiple network devices without latency.
 
-    http://agrbin.github.io/streamer/
+**Live example at <http://agrbin.github.io/streamer/>**
 
-Open this page from a more than one device including at least one device with
+Open this page from more than one device including at least one device with
 browser that can use your microphone. Turn the speakers on. What should happen
 is this:
 
