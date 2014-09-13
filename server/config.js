@@ -15,7 +15,7 @@ exports.streamer = {
   chunkDuration : 2.448,
   overlapTime   : 0.048,
   chunkHostUrl  : process.env.DEV ? "frags/" :
-                                    "http://agrbin.github.io/streamer/frags/",
+                                    "//agrbin.github.io/streamer/frags/",
   numberOfChunks: 57
 };
 
