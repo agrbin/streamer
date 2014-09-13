@@ -3,6 +3,43 @@ streamer
 
 Stream music synchronised. 
 
+The Real Problem
+================
+
+How can below algorithm be used to synchronise the music? Didn't we just need
+to synchronise clocks and then play the music at the same time from all
+devices?
+
+The problem is output latency. When application schedules the sound to be
+played on speakers, various buffers inside the music card driver and music card
+itself will cause output latency, eg. sound will be played with some delay.
+This delay can be noticeable.
+
+Speed of sound will also add some latency. For every 3.3 meters there will be 1
+ms of latency. The subjective effect of latency is as follows:
+
+    latency (ms)
+    10            no effect
+    20            slight vocalizer effect, hardly noticeable 
+    30            guitar sounds doubled, like there was a small sample rate.
+    40            guitar sounds even more doubled. vocal is still slightly changed,
+                  like reverb
+    50            clearly two guitars. hard to listen. vocal is like on megaphone
+    80            two music streams are clearly recognizable. sounds awful
+
+There is also an input latency that makes it hard to measure output latency.
+This is the interval of time from when microphone picks up a signal to the
+actual moment when this signal can be processed in application.
+
+Analogy to the riddle problem given below is as follows:
+
+* message times are TCP/IP network message times,
+* time to climb up the lighthouse is output latency,
+* blinking the light means moving the membrane of the speaker,
+* time to go down to the bottom of the lighthouse is input latency,
+* if two sounds are played at the same time it may be hard to detect them
+  precisely.
+
 Algorithm
 =========
 
@@ -12,17 +49,17 @@ solve.
 The riddle
 ----------
 
-There are 3 lighthouses on an island each employing a keeper. Lightouse keeper
+There are 3 lighthouses on an island each employing a keeper. Lighthouse keeper
 can be located on the bottom or on the top of the building. When located on the
 bottom, keeper can look at the clock installed on the wall or exchange messages
 with us using a currier. Message speeds are different every time, but each
 message will be delivered under an hour. Clocks are precise, but they are not
 synchronised. When located on the top, keeper can spot the blink from other
 lighthouses or blink with it's own light. It takes time to do the stairs up or
-down and that time doesn't change. These durations may be different for each
-lighthouse, and none of those 6 durations are greater than 1 hour. When one
-lighthouse blinks the light, it drains whole island's energy sources for 2
-hours.
+down and that time is constant for each lighthouse. These times may be
+different for each lighthouse, and none of those 6 values are greater than 1
+hour. When one lighthouse blinks the light, it drains whole island's energy
+sources for 2 hours and no one else can blink.
 
 We and our precise clock are located far away from the island and we can't
 see the lights. Can we communicate with keepers in order to be able to blink
@@ -35,7 +72,7 @@ Easier subproblems
 * message times are constant and keeper can fall down instantly
 * message times are constant, no energy problems
 * message times are constant
-* communication chanell is symmetric (send and recieve times are equal)
+* communication chanel is symmetric (send and recieve times are equal)
 
 Solution
 --------
@@ -56,7 +93,7 @@ fixed time delayed by message time.
     light3 = X - t(up_3) + t(message) + t(up_3) = X + t(message)
 
 What if down time exists, but message times are still constant? Note that if we
-could calcluate **differences between up times** of all pairs of lighthouses, we
+could calculate **differences between up times** of all pairs of lighthouses, we
 could find a solution. Having the:
 
     t(up_12) = t(up_2) - t(up_1),
@@ -65,7 +102,7 @@ could find a solution. Having the:
 We can light up all lights by fixing the constant time in future and sending
 light request to first lighthouse at that moment. Second request will be sent
 at the fixed time decreased by difference of second's up time and first's up
-time. Third request similary. Lights will then be turned on in:
+time. Third request similarly. Lights will then be turned on in:
 
     light(1) = X + t(message) + t(up_1)
     light(2) = X - t(up_12) + t(message) + t(up_2)
@@ -89,7 +126,7 @@ And third keeper will note the following times:
 
 While clock from third keeper may not be synchronised with any other clock, we
 know that his clock is precise and that he can precisely measure an interval of
-time. By substracting those two times, we have:
+time. By subtracting those two times, we have:
 
     saw_light(2) - saw_light(1) = X + t(message) + t(up_2) + t(down_3) -
                                   X + 2 + t(message) + t(up_1) + t(down_3)
@@ -112,8 +149,8 @@ Non constant message times
 
 The equations showed below are not necessary to fully understand the solution
 when message times are not constant. The idea is as follows. Say that at the
-begining of the time you send messages to all keepers to change their clocks to
-zero (eg. to read the clock in future by substracting the moment when they've
+beginning of the time you send messages to all keepers to change their clocks to
+zero (eg. to read the clock in future by subtracting the moment when they've
     received this first message).
 Now all clocks in system are synchronised with maximum error of 1 hour. These
 errors are not known, but they are fixed for each lighthouse. If we now issue
@@ -134,9 +171,9 @@ but bounded. If return message traveled exactly 1 hour then the current time at
 lighthouse will be received time increased by 1 hour, and if return message came
 instantly then received time will be correct.
 
-If we take a look at our clock when message was received we can calcluate
+If we take a look at our clock when message was received we can calculate 
 difference between that value and written remote time. In that moment, remote
-time written inside the message will be current remote time substracted by
+time written inside the message will be current remote time subtracted by
 return message time.
 
     delta(j) = clock(ours) - (clock(j) - t(sync_return_message))
@@ -181,8 +218,8 @@ offset. `light(j)` is given in our local time.
              
 Third keeper will observe difference in time between the two blinks regardless
 of his clock offset against ours and time to go down the stairs. If we add a
-delay between the blinks in order not to drain the energy, thrid keeper can
-send us experienced delay between the blinks from which we can substract the
+delay between the blinks in order not to drain the energy, third keeper can
+send us experienced delay between the blinks from which we can subtract the
 added delay. Time interval in message from third keeper will be:
 
     saw_light(2) - saw_light(1)
@@ -198,47 +235,8 @@ keeper sent us the exact time difference between the two blinks. We can now
 delay the first light by this value in order to synchronize first two lights.
 Third light can be synchronised by one of the other keepers as a watcher.
 
-Note that if message times are symmetric for sending and recieving to one
+Note that if message times are symmetric for sending and receiving to one
 lighthouse, we can measure the return message time by dividing round trip time
 by two. This would gave us opportunity to determine `t(up_2) - t(up_1)` just
 like when message times where constant. In that scenario, clocks would also be
 easily synchronised.
-
-
-The Real Problem
-================
-
-How can this be used to synchronise the music? Didn't we just need to
-synchronise clocks and than play the music at the same time from all devices?
-
-The problem is output latency. When application schedules the sound to be
-played on speakers, various buffers inside the music card driver and music card
-itself will cause output latency, eg. sound will be played with some delay.
-This delay can be noticable.
-
-Speed of sound will also add some latency. For every 3.3 meters there will be 1
-ms of latency. The subjective effect of latency is as follows:
-
-    latency (ms)
-    10            no effect
-    20            slight vocalizer effect, hardly noticable
-    30            guitar sounds doubled, like there was a small sample rate.
-    40            guitar sounds even more doubled. vocal is still slightly changed,
-                  like reverb
-    50            clearly two guitars. hard to listen. vocal is like on megaphone
-    80            two music streams are clearly recognizable. not listenable.
-
-There is also an input latency that makes it hard to measure output latency.
-This is the interval of time from when microphone picks up a signal to the
-actuall moment when this signal can be processed in application.
-
-Analogy to our model is as follows:
-
-* message times are TCP/IP network message times,
-* time to climb up the lighthouse is output latency,
-* blinking the light means moving the membrane of the speaker,
-* time to go down to the bottom of the lighthouse is input latency,
-* if two sounds are played at the same time it may be hard to detect them
-  precisely.
-
-
