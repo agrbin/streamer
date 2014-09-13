@@ -1,5 +1,5 @@
 var config = {
-  server : 'ws://agrbin-streamer.heroku.com',
+  server : 'wss://agrbin-streamer.herokuapp.com/',
 
   /* ms */
   beepDuration : 30,
