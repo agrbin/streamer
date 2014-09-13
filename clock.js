@@ -1,21 +1,12 @@
 /*
- * This is clock instance used for synchronization between clients and server.
+ * this clock takes time always from audioContext and returns it's value
+ * multiplied by 1000 and rounded.
  */
-var myClock = new (function() {
+function Clock(audioContext) {
 
-  var offset = 0;
-
-  this.originalClock = function() {
-    return (new Date().getTime());
+  this.clock = function () {
+    return Math.round(audioContext.currentTime * 1000);
   };
 
-  this.clock = function() {
-    return (new Date().getTime() + offset);
-  };
-
-  this.skew = function(x) {
-    offset += x;
-  };
-
-})();
+}
 
