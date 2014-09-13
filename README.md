@@ -1,7 +1,23 @@
-streamer
+Streamer
 ========
 
-Stream synchronised music on multiple network devices.
+Stream synchronised music on multiple network devices without latency. Live
+example at
+
+    http://agrbin.github.io/streamer/
+
+Open this page from a more than one device including at least one device with
+browser that can use your microphone. Turn the speakers on. What should happen
+is this:
+
+- for a minute or so you should be able to hear high-freq beeps, these are
+  synchronisation impulses
+- when clients are synchronized good enough, the music should start to play.
+- when music starts to play the beeps will stop, but you can add more devices
+  to the group by opening the same page in the same room
+
+Wait for a minute and see the magic happens. If you managed to test this stuff
+using more than a few devices, tell me about it!
 
 The Real Problem
 ================
