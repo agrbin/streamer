@@ -47,6 +47,10 @@ module.exports.DotBuilder = function () {
     console.log(buf + "}\n");
   };
 
+  this.get = function () {
+    return (buf + "}\n");
+  };
+
   this.saveSynced = function (filename) {
     fs.writeFileSync(filename, buf + "}\n");
   }

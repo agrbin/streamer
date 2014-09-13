@@ -2,7 +2,8 @@ var config = require('./config.js').sonic,
   distribution = require('./distribution.js'),
   Distribution = distribution.Distribution,
   DotBuilder = require('./dot.js').DotBuilder,
-  util = require('./graphutils.js');
+  util = require('./graphutils.js'),
+  dotOutput = "digraph {}";
 
 function Graph () {
   var
@@ -204,9 +205,7 @@ function Graph () {
     // build and analyze components
     buildComponents();
 
-    if (process.env.DEV) {
-      dot.saveSynced('graph.dot');
-    }
+    dotOutput = dot.get();
   };
 
   this.getComponents = function () {
@@ -215,6 +214,9 @@ function Graph () {
 }
 
 module.exports.Graph = Graph;
+module.exports.getGraph = function () {
+  return dotOutput;
+};
 
 (function () {
   config.minReports = 1;
