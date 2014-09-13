@@ -204,7 +204,9 @@ function Graph () {
     // build and analyze components
     buildComponents();
 
-    dot.saveSynced('graph.dot');
+    if (process.env.DEV) {
+      dot.saveSynced('graph.dot');
+    }
   };
 
   this.getComponents = function () {

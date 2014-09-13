@@ -1,0 +1,17 @@
+{
+  "name": "agrbin-streamer",
+  "version": "1.0.0-1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agrbin/streamer.git"
+  },
+  "dependencies": {
+    "ws": "0.4.x"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

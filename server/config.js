@@ -1,9 +1,3 @@
-var currentEnv = process.env.NODE_ENV || 'developement';
-
-exports.server = {
-  port  : 8080
-};
-
 // server and client have synced clocks. if chunk is to be played less than
 // sendAhead seconds in the future, dispatch process for that chunk will begin.
 // every setTimeout-ed 0.5 seconds streamer will check above condition.
@@ -20,7 +14,8 @@ exports.streamer = {
   checkInterval : 0.5,
   chunkDuration : 2.448,
   overlapTime   : 0.048,
-  chunkHostUrl  : "frags/",
+  chunkHostUrl  : process.env.DEV ? "frags/" :
+                                    "http://agrbin.github.io/streamer/frags/",
   numberOfChunks: 57
 };
 

@@ -37,15 +37,6 @@ var streamer = new Streamer(function (chunk) {
   return sent;
 });
 
-(function () {
-  var ws = require('ws'),
-    httpServer = require('http').createServer(),
-    server = new ws.Server({server: httpServer});
-
-  server.on('connection', function(sock) {
-    sonic.newClient(new SockWrapper(sock));
-  });
-
-  httpServer.listen(config.port);
-}());
-
+module.exports = function (sock) {
+  sonic.newClient(new SockWrapper(sock));
+};
