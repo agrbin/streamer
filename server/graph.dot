@@ -1,14 +1,23 @@
 digraph {
 subgraph cluster_0 {
 label = "X can hear Y";
-__0__matija [label="matija"];
+__0__ruza [label="ruza"];
+__0__nada [label="nada"];
+__0__ruza -> __0__ruza [label=" "];
+__0__ruza -> __0__nada [label=" "];
+__0__nada -> __0__ruza [label=" "];
+__0__nada -> __0__nada [label=" "];
 }
 subgraph cluster_1 {
 label = "X plays after Y (mean ~stddev)";
-__1__matija [label="matija"];
+__1__ruza [label="ruza"];
+__1__nada [label="nada"];
+__1__ruza -> __1__nada [label="22 (~6)"];
 }
 subgraph cluster_2 {
 label = "shortest paths";
-__2__matija [label="matija"];
+__2__ruza [label="ruza"];
+__2__nada [label="nada"];
+__2__ruza -> __2__nada [label="22 (~6)"];
 }
 }

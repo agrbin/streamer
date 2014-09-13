@@ -1,7 +1,7 @@
 streamer
 ========
 
-Stream music synchronised. 
+Stream synchronised music on multiple network devices.
 
 The Real Problem
 ================
@@ -240,3 +240,14 @@ lighthouse, we can measure the return message time by dividing round trip time
 by two. This would gave us opportunity to determine `t(up_2) - t(up_1)` just
 like when message times where constant. In that scenario, clocks would also be
 easily synchronised.
+
+Future Work
+===========
+
+* The only source of uncertaninty in the system is detection when the beep
+  sound has started. Beep shape and classification can be further polished to
+  push this deviation closer to zero.
+  One could use beep that is not constant frequency to achieve this.
+
+
+

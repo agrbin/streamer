@@ -1,4 +1,6 @@
 var config = {
+  server : 'wc://192.168.0.103:8080',
+
   /* ms */
   beepDuration : 30,
 

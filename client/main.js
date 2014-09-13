@@ -34,7 +34,7 @@ function main(gui, audioContext) {
   analyzer = new Analyzer(audioContext, onBeep, onDeny,
                           clock, beeper, config, gui);
   player = new Player(audioContext, gui);
-  ws = new SockWrapper(new WebSocket('ws://192.168.0.110:8080'), onClose);
+  ws = new SockWrapper(new WebSocket(config.server), onClose);
   ws.onClose(onClose);
 
   ws.onMessage('beep', doBeep);
