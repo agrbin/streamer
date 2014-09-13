@@ -168,9 +168,9 @@ the constraints is 4 hours.
 Non constant message times
 --------------------------
 
-The equations showed below are not necessary to fully understand the solution
+The equations shown below are not necessary to fully understand the solution
 when message times are not constant. The idea is as follows. Say that at the
-beginning of the time you send messages to all keepers to change their clocks to
+beginning of the time we send messages to all keepers to change their clocks to
 zero (eg. to read the clock in future by subtracting the moment when they've
     received this first message).
 Now all clocks in system are synchronised with maximum error of 1 hour. These
