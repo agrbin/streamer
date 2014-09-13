@@ -14,9 +14,15 @@ is this:
 - when clients are synchronized good enough, the music should start to play.
 - when music starts to play the beeps will stop, but you can add more devices
   to the group by opening the same page in the same room
+- Wait for a minute and see the magic happens.
 
-Wait for a minute and see the magic happens. If you managed to test this stuff
-using more than a few devices, tell me about it!
+To see some debug information you can take a look at the internal data
+structure used by server:
+
+    curl http://agrbin-streamer.herokuapp.com | dot -Tsvg | display
+
+If you managed to test this stuff using more than a few devices,
+tell me about it!
 
 The Real Problem
 ================
@@ -263,6 +269,4 @@ Future Work
   sound has started. Beep shape and classification can be further polished to
   push this deviation closer to zero.
   One could use beep that is not constant frequency to achieve this.
-
-
 
