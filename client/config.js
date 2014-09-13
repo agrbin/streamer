@@ -1,5 +1,5 @@
 var config = {
-  server : 'ws://192.168.0.103:8080',
+  server : 'wss://agrbin-streamer.herokuapp.com/',
 
   /* ms */
   beepDuration : 30,
