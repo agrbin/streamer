@@ -15,7 +15,8 @@ module.exports.Sonic = function () {
     graph = new Graph(),
     that = this;
 
-  function info() {
+  function info(msg) {
+    // console.log("Sonic: Info: "+ msg);
   }
 
   function log(msg) {
