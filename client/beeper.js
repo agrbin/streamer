@@ -30,24 +30,28 @@ function Beeper(audioContext, gui) {
     paused = false;
   };
 
+  function beepOnce(options, t) {
+    var dur = options.beepDuration / 1000;
+    oscillator.frequency.setValueAtTime(options.beepFreqLow, t);
+    oscillator.frequency.linearRampToValueAtTime(options.beepFreqHigh, t + dur);
+
+    gain.gain.setValueAtTime(0, t);
+    gain.gain.linearRampToValueAtTime(0.3, t + 0.010);
+    gain.gain.linearRampToValueAtTime(1, t + dur);
+    gain.gain.linearRampToValueAtTime(0, t + dur + 0.005);
+  }
+
   this.beep = function (options, when) {
     if (!inBeep && !paused) {
-      var t = (when / 1000) || audioContext.currentTime,
-        dur = options.beepDuration / 1000;
+      var t = (when / 1000) || audioContext.currentTime;
       if (t < audioContext.currentTime) {
         return gui.log('beep late for ' + (audioContext.currentTime - t));
       }
-      // play the beep
-      oscillator.frequency.value = options.beepFreq;
-      gain.gain.setValueAtTime(volume, t);
-      gain.gain.setValueAtTime(0.0, t + dur);
-      /*
-      gain.gain.linearRampToValueAtTime(0.1, t + dur * 0.45);
-      gain.gain.linearRampToValueAtTime(0.9, t + dur * 0.5);
-      gain.gain.linearRampToValueAtTime(0.1, t + dur * 0.55);
-      gain.gain.linearRampToValueAtTime(0.0, t + dur * 1.0);
-      */
-      // toggle inBeep variable
+
+      //for (var i = 0; i < 20; ++i) {
+        beepOnce(options, t);
+      //}
+
       toggle();
       setTimeout(toggle, options.beepDuration);
     }
@@ -55,6 +59,9 @@ function Beeper(audioContext, gui) {
 
   (function () {
     // create gain
+    if (!audioContext.output) {
+      audioContext.output = audioContext.destination;
+    }
     gain = audioContext.createGain();
     gain.gain.value = 0;
     gain.connect(audioContext.output);

@@ -1,6 +1,5 @@
 function main(gui, audioContext) {
-  var clock,
-    analyzer,
+  var analyzer,
     beeper,
     player,
     myId,
@@ -21,18 +20,20 @@ function main(gui, audioContext) {
   }
 
   function onClose(e) {
-    analyzer.stop();
+    if (analyzer) {
+      analyzer.stop();
+    }
     gui.fatal(e);
   }
 
   audioContext.output = audioContext.createAnalyser();
   audioContext.output.connect(audioContext.destination);
-  new Waveform(audioContext, audioContext.output,
-               document.getElementById('canvas'));
-  clock = new Clock(audioContext);
+  microphone = new Microphone(audioContext, onDeny, function () {
+    new Waveform(microphone, document.getElementById('canvas'));
+    analyzer = new QueueBeepDetector(microphone, onBeep, config);
+  });
+
   beeper = new Beeper(audioContext, gui);
-  analyzer = new Analyzer(audioContext, onBeep, onDeny,
-                          clock, beeper, config, gui);
   player = new Player(audioContext, gui);
   ws = new SockWrapper(new WebSocket(config.server), onClose);
   ws.onClose(onClose);
@@ -52,7 +53,7 @@ function main(gui, audioContext) {
   ws.onMessage('clock', function (id) {
     myId = id;
     gui.status("client " + myId + " - sync in progress");
-    ws.sendType('clock', {localTime: clock.clock()});
+    ws.sendType('clock', {localTime: microphone.getCurrentTime()});
   });
 }
 

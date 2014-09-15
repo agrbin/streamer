@@ -1,3 +1,7 @@
+// snimam tisinu u 5 blokova.
+// uzmem najtisi od tih 5 za tisinu.
+// ako analyzer moze odustat od beepa
+
 /**
  *  audioContext should be audio context.
  *
@@ -41,9 +45,6 @@ function Analyzer(
     );
   }
 
-  function transformSample(x) {
-    return Math.exp((x - analyserNode.minDecibels) / 20);
-  }
 
   function getEnergy(spectrum, freq1, freq2) {
     var f, sol = 0;
@@ -117,54 +118,10 @@ function Analyzer(
     loopTimeout = setTimeout(loop, 10);
   }
 
-  function gotStream(stream) {
-    var audioInput,
-      zeroGain;
-
-    // create analyser
-    analyserNode = audioContext.createAnalyser();
-    analyserNode.fftSize = 2048;
-    analyserNode.smoothingTimeConstant = 0;
-
-    // Create an AudioNode from the stream.
-    audioInput = audioContext.createMediaStreamSource(stream);
-    audioInput.connect(analyserNode);
-
-    // create zero gain
-    zeroGain = audioContext.createGain();
-    zeroGain.gain.value = 0.0;
-    analyserNode.connect(zeroGain);
-
-    // sink
-    zeroGain.connect(audioContext.destination);
-
-    // noise distribution
-    noiseDistribution = new Distribution(transformSample);
-    clapDistribution = new Distribution();
-    loop();
-  }
 
   this.stop = function () {
     stopped = true;
     clearTimeout(loopTimeout);
   };
 
-  (function () {
-    var getMedia =
-      (navigator.getUserMedia ||
-      navigator.webkitGetUserMedia ||
-      navigator.mozGetUserMedia ||
-      navigator.msGetUserMedia);
-
-    if (!getMedia) {
-      return onDeny("browser doesn't support user media");
-    }
-
-    getMedia.call(
-      navigator,
-      {audio:true},
-      gotStream,
-      onDeny
-    );
-  }());
 }

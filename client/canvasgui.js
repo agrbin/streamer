@@ -8,6 +8,10 @@ function CanvasGui(canvas) {
     ctx.clearRect(0, height * 0.1, width, height);
   }
 
+  this.getContext = function () {
+    return ctx;
+  };
+
   this.status = function (msg) {
     ctx.fillStyle = 'black';
     ctx.font = '20px Verdana';
@@ -20,31 +24,34 @@ function CanvasGui(canvas) {
     that.drawBars(tmp[0], tmp[1]);
   };
 
-  this.drawBars = function (bars, calcFreq) {
+  this.drawBars = function (bars, calcFreq, range) {
     var it, n = bars.length,
-      barSpacing = width / n,
-      barWidth = 0.9 * barSpacing,
       h,
       gradient=ctx.createLinearGradient(0, 0, 0, height * 0.8),
       numLabels = 10,
-      freq;
+      freq,
+      lo = range ? range[0] : 0,
+      hi = range ? range[1] : n,
+      barSpacing = width / (hi - lo),
+      barWidth = 0.9 * barSpacing;
 
     gradient.addColorStop("1.0","blue");
     gradient.addColorStop("0.5","red");
 
     clean();
     ctx.fillStyle = gradient;
-    for (it = 0; it < n; ++it) {
+
+    for (it = lo; it < hi; ++it) {
       h = (bars[it] / 255) * 0.8 * height;
-      ctx.fillRect(it * barSpacing, height * 0.9 - h, barWidth, h);
+      ctx.fillRect((it - lo) * barSpacing, height * 0.9 - h, barWidth, h);
     }
 
     if (calcFreq) {
       ctx.fillStyle = 'black';
       ctx.font = '12px Verdana';
-      for (it = 0; it < n; it += Math.ceil(n / numLabels)) {
+      for (it = lo; it < hi; it += Math.ceil((hi - lo) / numLabels)) {
         freq = Math.round(calcFreq(it) * 1000) / 1000;
-        ctx.fillText(freq, (it + 0.5) * barSpacing, height * 0.95);
+        ctx.fillText(freq, ((it - lo) + 0.5) * barSpacing, height * 0.95);
       }
     }
   };
@@ -57,8 +64,8 @@ function CanvasGui(canvas) {
   };
 
   function resize() {
-    width = canvas.width = window.innerWidth * 0.9;
-    height = canvas.height = window.innerHeight * 0.9;
+    width = ctx.width = canvas.width = window.innerWidth * 0.9;
+    height = ctx.height = canvas.height = window.innerHeight * 0.9;
   }
 
   (function () {
