@@ -95,7 +95,7 @@ function QueueBeepDetector(
       err -= queueF[it];
       sol += err * err;
     }
-    return sol / queueF.length;
+    return queueF.length ? sol / queueF.length : null;
   }
 
   function getDistribution(samples) {
@@ -113,6 +113,9 @@ function QueueBeepDetector(
 
   function analyze() {
     var it, n = queueT.length - 1, s, samples = [], d;
+    if (!n) {
+      return;
+    }
     for (it = 0; it < n; ++it) {
       s = (queueF[it] - indexRange[0]) / freqSpan;
       s *= options.beepDuration;
