@@ -17,13 +17,14 @@
 
       window.addEventListener(what, function() {
         if (inited) return;
+        try {
         var body = document.getElementsByTagName("BODY")[0],
           ctx = new AudioContext(),
           gui = {
             log : function (msg) {console.log(msg);},
             toggleBlink : function () {
               inBeep ^= 1;
-              body.style['background-color']  = inBeep ? 'white' : 'black';
+              body.style.backgroundColor = inBeep ? 'white' : 'black';
             }
           },
           beeper = new Beeper(ctx, gui),
@@ -36,6 +37,7 @@
 
         inited = true;
         body.addEventListener(what, beep, false);
+        } catch (err) { alert(err); }
       }, false);
     </script>
   </head>
