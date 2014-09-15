@@ -28,33 +28,6 @@ function Player(audioContext, gui) {
   })();
 
   var osc = null, oscGain = null;
-  this.tick = function(when, freq, tickLength) {
-    when = transponseTime(when);
-    if (osc === null) {
-      //
-      oscGain = audioContext.createGainNode();
-      oscGain.connect(audioContext.destination);
-      oscGain.gain.value = 0;
-      // 
-      osc = audioContext.createOscillator();
-      osc.frequency.value = freq;
-      osc.connect(oscGain);
-      osc.noteOn(0);
-    }
-    oscGain.gain.setValueAtTime(1, when);
-    oscGain.gain.setValueAtTime(0, when + tickLength);
-  };
-
-  this.tickMultiple = function(freq, tickLength, num) {
-    var t = audioContext.currentTime, j;
-    for (j = 0; j < num; ++j) {
-      var oscillator = audioContext.createOscillator();
-      oscillator.frequency.value = freq;
-      oscillator.connect(audioContext.destination);
-      oscillator.noteOn(t + j);
-      oscillator.noteOff(t + j + tickLength);
-    }
-  };
 
   // socket.onmessage will be binded to this method.
   // when message is received, start downloading mp3 chunk and decode it.

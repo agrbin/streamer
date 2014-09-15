@@ -1,10 +1,11 @@
-function Waveform(audioContext, analyserNode, canvas) {
+function Waveform(microphone, canvas) {
   var that = this,
     ctx = canvas.getContext('2d'),
+    wave,
     width,
     height;
 
-  this.drawBars = function (wave) {
+  this.drawWave = function (wave) {
     var it, n = wave.length, path;
     ctx.clearRect(0, 0, width, height);
     ctx.beginPath();
@@ -18,9 +19,8 @@ function Waveform(audioContext, analyserNode, canvas) {
   };
 
   function drawWaveform() {
-    var wave = new Uint8Array(analyserNode.fftSize / 2);
-    analyserNode.getByteTimeDomainData(wave);
-    that.drawBars(wave);
+    microphone.getByteWaveform(wave);
+    that.drawWave(wave);
     window.requestAnimationFrame(drawWaveform);
   }
 
@@ -30,6 +30,7 @@ function Waveform(audioContext, analyserNode, canvas) {
   }
 
   (function () {
+    wave = new Uint8Array(microphone.getDataLength());
     window.addEventListener('resize', resize, false);
     window.requestAnimationFrame(drawWaveform);
     resize();

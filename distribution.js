@@ -1,5 +1,4 @@
-
-
+// just get the distribution params
 function Distribution(transform) {
   var params = null,
     samples = [],
