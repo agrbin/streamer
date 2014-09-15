@@ -6,7 +6,7 @@ Stream synchronised music on multiple network devices without latency.
 **Live example at <http://agrbin.github.io/streamer/>**
 
 Open this page from more than one device including at least one device with
-browser that can use your microphone. Turn the speakers on. What should happen
+browser that can use your microphone. [check mic here](http://agrbin.github.io/streamer/spectogram.html). Turn the speakers on. What should happen
 is this:
 
 - for a minute or so you should be able to hear high-freq beeps, these are
@@ -268,5 +268,4 @@ Future Work
 * The only source of uncertaninty in the system is detection when the beep
   sound has started. Beep shape and classification can be further polished to
   push this deviation closer to zero.
-  One could use beep that is not constant frequency to achieve this.
-
+  
