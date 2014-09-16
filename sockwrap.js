@@ -18,7 +18,7 @@ function SockWrapper(sock, onFatal) {
   };
 
   this.sendType = function (type, data) {
-    console.log('<- ', type, data);
+    //console.log('<- ', type, data);
     sock.send(JSON.stringify({
       type : type, data : data
     }));
@@ -33,7 +33,7 @@ function SockWrapper(sock, onFatal) {
   };
 
   sock.onmessage = function (message) {
-    console.log('-> ', message.data);
+    //console.log('-> ', message.data);
     var data;
     try {
       data = JSON.parse(message.data);

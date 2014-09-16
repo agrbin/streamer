@@ -1,9 +1,14 @@
 function Gui() {
   var h1 = document.getElementById("h1"),
-    that = this;
+    that = this,
+    currentStatus = '';
 
   this.status = function (msg) {
-    h1.innerHTML = msg;
+    h1.innerHTML = currentStatus = msg;
+  };
+
+  this.append = function (a) {
+    that.status(currentStatus + a);
   };
 
   this.color = function (color) {

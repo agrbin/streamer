@@ -3,13 +3,18 @@
  */
 function Microphone(audioContext, onDeny, onReady, options) {
   var node = null,
+    audioInput,
+    zeroGain,
     opt = options || {},
     that = this,
     t0 = new Date().getTime();
 
+  this.getAudioContext = function () {
+    return audioContext;
+  };
+
   this.getCurrentTime = function () {
     return new Date().getTime() - t0;
-    //return audioContext.currentTime * 1000;
   };
 
   this.getSampleRate = function () {
@@ -26,7 +31,16 @@ function Microphone(audioContext, onDeny, onReady, options) {
 
   this.getNode = function () {
     return node;
-  }
+  };
+
+  this.getSinkNode = function () {
+    return zeroGain;
+  };
+
+  this.getInputNode = function () {
+    return audioInput;
+  };
+
 
   /**
    * next 4 functionsreturns audio context time right after data is taken.
@@ -79,9 +93,6 @@ function Microphone(audioContext, onDeny, onReady, options) {
   };
 
   function gotStream(stream) {
-    var audioInput,
-      zeroGain;
-
     // create analyser, non 
     node = audioContext.createAnalyser();
     node.fftSize = opt.fftSize || 2048;
@@ -89,14 +100,13 @@ function Microphone(audioContext, onDeny, onReady, options) {
 
     // Create an AudioNode from the stream.
     audioInput = audioContext.createMediaStreamSource(stream);
-    audioInput.connect(node);
 
     // create zero gain
     zeroGain = audioContext.createGain();
     zeroGain.gain.value = 0.0;
-    node.connect(zeroGain);
 
-    // sink
+    audioInput.connect(node);
+    node.connect(zeroGain);
     zeroGain.connect(audioContext.destination);
     onReady(that);
   }
