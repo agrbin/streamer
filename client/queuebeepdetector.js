@@ -1,3 +1,10 @@
+/*
+  beepDuration : 500,
+  beepFreqLow :  1000,
+  beepFreqHigh : 5000,
+  testBeepFreq : false,
+  beepCode : [0,0.5,0.2,0.7,0.5,1],
+ */
 function QueueBeepDetector(
   microphone,
   onBeep,

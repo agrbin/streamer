@@ -27,5 +27,6 @@ var config = {
 
   detectorSampleRate : 20,
   detectorRetain : 100,
+
 };
 
