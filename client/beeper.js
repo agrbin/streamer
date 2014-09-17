@@ -48,8 +48,8 @@ function Beeper(audioContext, gui) {
         return gui.log('beep late for ' + (audioContext.currentTime - t));
       }
 
-      //for (var i = 0; i < 20; ++i) {
-        beepOnce(options, t);
+      //for (var i = 0; i < 100; ++i) {
+        beepOnce(options, t + i);
       //}
 
       toggle();
