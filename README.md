@@ -1,20 +1,23 @@
 Streamer
 ========
 
-Stream synchronised music on multiple network devices without latency.
+Stream synchronised music on multiple network devices without latency. This
+repository serves as prototype and implementation test for designed algorithm.
 
 **Live example at <http://agrbin.github.io/streamer/>**
 
 Open this page from more than one device including at least one device with
-browser that can use your microphone. [check mic here](http://agrbin.github.io/streamer/spectogram.html). Turn the speakers on. What should happen
-is this:
+browser that can use your microphone.
+[check mic here](http://agrbin.github.io/streamer/spectogram.html).
+Turn the speakers on. What should happen is this:
 
 - for a minute or so you should be able to hear high-freq beeps, these are
-  synchronisation impulses
-- when clients are synchronized good enough, the music should start to play.
+  synchronisation impulses.
+- at least one of your devices should print 'b!' on screen, it means that beep
+  was detected
+- when clients are synchronized tight enough, the music should start to play.
 - when music starts to play the beeps will stop, but you can add more devices
-  to the group by opening the same page in the same room
-- Wait for a minute and see the magic happens.
+  to the group by opening the same page on other device in the same room
 
 To see some debug information you can take a look at the internal data
 structure used by server:
@@ -262,10 +265,81 @@ by two. This would gave us opportunity to determine `t(up_2) - t(up_1)` just
 like when message times where constant. In that scenario, clocks would also be
 easily synchronised.
 
-Future Work
-===========
+Beep detection
+==============
 
-* The only source of uncertaninty in the system is detection when the beep
-  sound has started. Beep shape and classification can be further polished to
-  push this deviation closer to zero.
-  
+The problem
+-----------
+
+In the algorithm described above if the lighthouse keeper wants to turn on the
+light he or she firstly must to climb the stairs and then blink the light. In
+order for this information to be coupled with local time of lighthouse
+receiver, its keeper needs to spot the flash and then take the stairs down and
+write it down against the clock.
+
+In audio processing, we can schedule a signal to be played on speakers at
+specific future time, but this signal will be emitted into air only after a
+constant output latency. Likewise, receiving application can inspect the sound
+spectrum or waveform of a sound that appeared in communication channel before
+some constant input latency which is unknown but constant.
+
+Having the algorithm that is robust to input/output latency makes the design of
+signal generator and detector easier in such way that if detector would make
+another constant latency in detection of a signal, that latency wouldn't
+interfere.
+
+The only constraint on signal generator/detector system is thus the following:
+
+* If generator emits two signals at specific remote times, detector must report
+local times that have the same difference as remote ones. 
+
+The constraint was used directly to test various solutions in such way that
+signal generator was instructed to emit signals at regular time intervals T,
+       that are significantly greater than expected error in system. Output
+       from detector is always subtracted from previous output to get the
+       detected time interval. If there was a false negative the next detected
+       interval would be significantly greater than expected error and then we
+       would subtract known T from it until we have expected value. Those error
+       values are in the end statistically processed in order to determine the
+       system under test that performs better than others.
+
+Additional requirements for the system is that there are no false positives
+detected and robustness to noise. False negative is less expensive from false
+positive because it would just prolong the synchronization which is iterative
+process while false positive will yield wrong results. Also, short signal
+duration is better as it means that sound would not be as clobbered as much
+during the synchronization. 
+
+Implementation
+--------------
+
+We experimented with three types of signal generators:
+
+* Constant frequency tone
+* Variable frequency tone
+* Multiple constant/variable tones
+
+And tried the following detection methods:
+
+* Watch for anomalies in only one frequency in the spectrum that corresponds to
+  signal frequency.
+* Watch for anomalies in one frequency, but don't report signal detection if
+  surrounding frequency image also changes.
+* Construct a signal as a linear sweep in frequency and then find the loudest
+  frequencies in spectrum window where beep appears. Plot those frequencies
+  against time, fit a line and then determine where the beep probably started.
+* With every iteration push loudest frequency in signal frequency window to
+  queue. If queue forms a line with expected slope based on signal
+  construction, determine when the signal probably started based on each sample
+  in queue.
+* Convolute audio input with reversed signal that is used in generator
+  (cross-corelation). Watch for strong impulses in such convoluted output.
+
+Although it seemed that last option would work best, we ended up using queue
+option due to good performance in experimental tests.
+
+Source code is visible in `client/queuebeepdetector.js`.
+
+In silence, on 45 samples, detector made no mistakes and time intervals between
+reported signals are averaged to 0.0290 ms with standard deviation of 3.005 ms.
+
