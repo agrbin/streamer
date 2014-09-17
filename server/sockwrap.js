@@ -23,7 +23,7 @@ exports.SockWrapper = function (sock) {
       var rtt = stopwatch.get();
       pingTimeout = null;
       if (rtt > config.maxPing) {
-        that.close("your ping was too large.");
+        that.close("your ping is too large: " + rtt);
       }
     });
   }
