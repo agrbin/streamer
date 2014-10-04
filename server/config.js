@@ -26,7 +26,7 @@ exports.sync = {
 };
 
 exports.sonic = {
-  roundRobinInterval : 2000,
+  roundRobinInterval : 4000,
   recordsQueue : 30,
   recordsInliersRatio : 0.8,
   buildGraph : 1000,
