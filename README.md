@@ -39,7 +39,7 @@ played on speakers, various buffers inside the music card driver and music card
 itself will cause output latency, eg. sound will be played with some delay.
 This delay can be noticeable.
 
-Speed of sound will also add some latency. For every 3.3 meters there will be 1
+Speed of sound will also add some latency. For every 0.33 meters there will be 1
 ms of latency. The subjective effect of latency is as follows:
 
     latency (ms)
