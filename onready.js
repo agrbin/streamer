@@ -18,12 +18,12 @@ function requireWarmAudioContextAndGui(callback) {
     var oscillator = audioContextInstance.createOscillator();
     oscillator.frequency.value = 666;
     oscillator.connect(audioContextInstance.destination);
-    source.noteOn ?
-      source.noteOn(0) :
-      source.start(0);
-    source.noteOff ?
-      source.noteOff(0.1) :
-      source.stop(0.1);
+    oscillator.noteOn ?
+      oscillator.noteOn(0) :
+      oscillator.start(0);
+    oscillator.noteOff ?
+      oscillator.noteOff(0.1) :
+      oscillator.stop(0.1);
   }
 
   function windowReady() {
