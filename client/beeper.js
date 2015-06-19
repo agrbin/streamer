@@ -68,7 +68,9 @@ function Beeper(audioContext, gui) {
     // create oscillator
     oscillator = audioContext.createOscillator();
     oscillator.connect(gain);
-    oscillator.noteOn(0);
+    oscillator.noteOn ?
+      oscillator.noteOn(0) :
+      oscillator.start(0);
   } ());
 
 }
