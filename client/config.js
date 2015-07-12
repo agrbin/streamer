@@ -8,10 +8,10 @@ var config = {
   server : 'wss://agrbin-streamer.herokuapp.com/',
 
   /* ms */
-  beepDuration : 200,
+  beepDuration : 300,
 
   /* hz */
-  beepFreqLow :  12000,
+  beepFreqLow :  10000,
   beepFreqHigh : 14000,
 
   /* test sync with beeping */
