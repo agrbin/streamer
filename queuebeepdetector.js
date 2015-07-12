@@ -1,10 +1,4 @@
-/*
-  beepDuration : 500,
-  beepFreqLow :  1000,
-  beepFreqHigh : 5000,
-  testBeepFreq : false,
-  beepCode : [0,0.5,0.2,0.7,0.5,1],
- */
+// onBeep is called with time in Ms of the beep start.
 function QueueBeepDetector(
   microphone,
   onBeep,
@@ -90,7 +84,7 @@ function QueueBeepDetector(
   function calcNextDelay() {
     var sol = 0;
     sol += options.detectorSampleRate + lastLoopCalled;
-    sol -= microphone.getCurrentTime();
+    sol -= microphone.getCurrentTimeMs();
     return sol > 0 ? sol : 0;
   }
 
@@ -135,7 +129,7 @@ function QueueBeepDetector(
 
   function loop() {
     var delay, s;
-    lastLoopCalled = microphone.getCurrentTime();
+    lastLoopCalled = microphone.getCurrentTimeMs();
     microphone.getByteSpectrum(spectrum);
     queueT.push(lastLoopCalled);
     queueF.push(findHighestFreqIndex());
@@ -182,7 +176,6 @@ function QueueBeepDetector(
       microphone.getIndexForFreq(options.beepFreqHigh)
     ];
     freqSpan = indexRange[1] - indexRange[0];
-    console.log(indexRange);
     loop();
   }());
 }

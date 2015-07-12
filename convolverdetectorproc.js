@@ -81,7 +81,7 @@ function ConvolverDetector(
 
     microphone.getInputNode().connect(convNode);
     convNode.connect(microphone.getSinkNode());
-    loop();
+    //TODO: not connected
   }());
 }
 

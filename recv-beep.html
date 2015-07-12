@@ -5,15 +5,21 @@
     <script type="text/javascript" src="gui.js"></script>
     <script type="text/javascript" src="onready.js"></script>
     <script type="text/javascript" src="microphone.js"></script>
+    <script type="text/javascript" src="queuebeepdetector.js"></script>
     <script type="text/javascript" src="spectogram.js"></script>
     <script>
       requireWarmAudioContextAndGui(function (gui, ctx) {
+        function onBeep(startMs) {
+          gui.append('b! ');
+        }
         var microphone = new Microphone(ctx, 
           function (msg) {
             alert("This device wont let us use microphone: " + msg);
           },
           function (microphone) {
+            var detector = new QueueBeepDetector(microphone, onBeep, config);
             var spectogram = new Spectogram(microphone, gui);
+            spectogram.setRange([config.beepFreqLow, config.beepFreqHigh]);
           }
         );
       });
@@ -21,9 +27,6 @@
   </head>
   <body>
     <h1 id="h1">touch your screen to start</h1>
-    <p>
-      tip: add #range=1000-2000 to the URL to see freqs in specific range.
-    </p>
     <canvas id ="canvas"
       width=960
       height=600

@@ -1,4 +1,4 @@
-function Spectogram(audioContext, gui, onDeny) {
+function Spectogram(microphone, gui) {
   var microphone,
     spectrum,
     range;
@@ -17,22 +17,23 @@ function Spectogram(audioContext, gui, onDeny) {
     }
   }
 
+  this.setRange = function (newRange) {
+    var low = newRange[0], high = newRange[1];
+    if (low < high && low >= 0 && high <= 30e3) {
+      range = [microphone.getIndexForFreq(low),
+               microphone.getIndexForFreq(high)];
+    }
+  };
+
   function drawSpectrum() {
     microphone.getByteSpectrum(spectrum, true);
     gui.drawBars(spectrum, microphone.getFreqForIndex, range);
     window.requestAnimationFrame(drawSpectrum);
   }
 
-  var last = 0;
-  function blink(t) {
-    console.log("asd " + (t - last));
-    last = t;
-  }
-
-  microphone = new Microphone(audioContext, onDeny, function () {
+  (function () {
     spectrum = new Uint8Array(microphone.getDataLength());
-    setInterval(getRange, 1000);
     drawSpectrum();
-  });
+    setInterval(getRange, 1000);
+  })();
 }
-

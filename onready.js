@@ -1,3 +1,5 @@
+// Returned audioContext has analyser output that is connected to destination.
+// So instead of connecting your network to destination, connect it to output.
 function requireWarmAudioContextAndGui(callback) {
   var AudioContext =
     window.AudioContext ||
@@ -26,9 +28,14 @@ function requireWarmAudioContextAndGui(callback) {
       oscillator.stop(0.1);
   }
 
+  function createOutputAnalyser() {
+    audioContextInstance.output = audioContextInstance.createAnalyser();
+    audioContextInstance.output.connect(audioContextInstance.destination);
+  }
+
   function windowReady() {
     var waitForAudio,
-      gui = new Gui();
+      gui = new Gui(document.getElementById("h1"));
     window.removeEventListener(getLoadEvent(), windowReady);
     if (!AudioContext) {
       return gui.fatal("web audio not available");
@@ -40,6 +47,7 @@ function requireWarmAudioContextAndGui(callback) {
     waitForAudio = setInterval(function () {
       if (audioContextInstance.currentTime > 0) {
         clearTimeout(waitForAudio);
+        createOutputAnalyser();
         callback(gui, audioContextInstance);
       }
     }, 100);
