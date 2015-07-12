@@ -17,6 +17,8 @@ var config = {
   /* test sync with beeping */
   testBeepFreq : false,
 
+  beepRepeatedlyIntervalMs : 2000,
+
   anomalySampleInterval : 15,
 
   /* to trigger beep detection clasificator sums this many samples in frequency

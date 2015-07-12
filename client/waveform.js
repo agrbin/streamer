@@ -1,6 +1,5 @@
-function Waveform(analyserNode, canvas) {
+function Waveform(analyserNode, ctx) {
   var that = this,
-    ctx = canvas.getContext('2d'),
     wave,
     width,
     height;

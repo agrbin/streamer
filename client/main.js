@@ -1,6 +1,6 @@
 function main(gui, audioContext) {
   var microphone,
-    analyser,
+    detector,
     beeper,
     player,
     myId,
@@ -17,8 +17,8 @@ function main(gui, audioContext) {
   }
 
   function onClose(e) {
-    if (analyser) {
-      analyser.stop();
+    if (detector) {
+      detector.stop();
     }
     if (e.reason) {
       gui.fatal(e.reason);
@@ -45,15 +45,12 @@ function main(gui, audioContext) {
       gui.status(myId + (isListener ?
                  " is sending and listening for beeps.. " :
                  " is sending beeps.."));
-      ws.sendType('clock', {localTime: microphone.getCurrentTime()});
+      ws.sendType('clock', {localTime: microphone.getCurrentTimeMs()});
     });
   };
 
   (function () { 
-    audioContext.output = audioContext.createAnalyser();
-    audioContext.output.connect(audioContext.destination);
-
-    new Waveform(audioContext.output, document.getElementById('canvas'));
+    new Waveform(audioContext.output, gui.getCanvasContext());
     beeper = new Beeper(audioContext, beepSignals[0], gui);
     player = new Player(audioContext, gui);
 
@@ -65,7 +62,7 @@ function main(gui, audioContext) {
       },
       function () {
         isListener = true;
-        analyser = new QueueBeepDetector(microphone, onBeep, config);
+        detector = new QueueBeepDetector(microphone, onBeep, config);
         setUpNetwork();
       }
     );

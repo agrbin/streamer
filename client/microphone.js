@@ -13,7 +13,7 @@ function Microphone(audioContext, onDeny, onReady, options) {
     return audioContext;
   };
 
-  this.getCurrentTime = function () {
+  this.getCurrentTimeMs = function () {
     return new Date().getTime() - t0;
   };
 
@@ -50,7 +50,7 @@ function Microphone(audioContext, onDeny, onReady, options) {
       throw "spectrum should be Uint8Array";
     }
     that.getNode().getByteTimeDomainData(wave);
-    return that.getCurrentTime();
+    return that.getCurrentTimeMs();
   };
 
   this.getFloatWaveform = function (wave) {
@@ -58,7 +58,7 @@ function Microphone(audioContext, onDeny, onReady, options) {
       throw "spectrum should be Float32Array";
     }
     that.getNode().getFloatTimeDomainData(wave);
-    return that.getCurrentTime();
+    return that.getCurrentTimeMs();
   };
 
   this.getByteSpectrum = function (spectrum) {
@@ -66,7 +66,7 @@ function Microphone(audioContext, onDeny, onReady, options) {
       throw "spectrum should be Uint8Array";
     }
     that.getNode().getByteFrequencyData(spectrum);
-    return that.getCurrentTime();
+    return that.getCurrentTimeMs();
   };
 
   /**
@@ -77,7 +77,7 @@ function Microphone(audioContext, onDeny, onReady, options) {
       throw "spectrum should be Float32Array";
     }
     that.getNode().getFloatFrequencyData(spectrum);
-    return that.getCurrentTime();
+    return that.getCurrentTimeMs();
   };
 
   this.getIndexForFreq = function (freq) {

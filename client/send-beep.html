@@ -4,26 +4,18 @@
     <script type="text/javascript" src="config.js"></script>
     <script type="text/javascript" src="gui.js"></script>
     <script type="text/javascript" src="onready.js"></script>
-    <script type="text/javascript" src="microphone.js"></script>
-    <script type="text/javascript" src="spectogram.js"></script>
+    <script type="text/javascript" src="beeper.js"></script>
+    <script type="text/javascript" src="waveform.js"></script>
     <script>
       requireWarmAudioContextAndGui(function (gui, ctx) {
-        var microphone = new Microphone(ctx, 
-          function (msg) {
-            alert("This device wont let us use microphone: " + msg);
-          },
-          function (microphone) {
-            var spectogram = new Spectogram(microphone, gui);
-          }
-        );
+        var beeper = new Beeper(ctx, gui);
+        var waveform = new Waveform(ctx.output, gui.getCanvasContext());
+        beeper.beepRepeatedly(config);
       });
     </script>
   </head>
   <body>
     <h1 id="h1">touch your screen to start</h1>
-    <p>
-      tip: add #range=1000-2000 to the URL to see freqs in specific range.
-    </p>
     <canvas id ="canvas"
       width=960
       height=600

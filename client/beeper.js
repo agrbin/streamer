@@ -16,7 +16,8 @@ function Beeper(audioContext, gui) {
     gain = null,
     volume = 0.3,
     inBeep = false,
-    paused = false;
+    paused = false,
+    that = this;
 
   function toggle() {
     inBeep ^= 1;
@@ -30,10 +31,10 @@ function Beeper(audioContext, gui) {
     paused = false;
   };
 
-  function beepOnce(options, t) {
-    var dur = options.beepDuration / 1000;
-    oscillator.frequency.setValueAtTime(options.beepFreqLow, t);
-    oscillator.frequency.linearRampToValueAtTime(options.beepFreqHigh, t + dur);
+  function beepOnce(config, t) {
+    var dur = config.beepDuration / 1000;
+    oscillator.frequency.setValueAtTime(config.beepFreqLow, t);
+    oscillator.frequency.linearRampToValueAtTime(config.beepFreqHigh, t + dur);
 
     gain.gain.setValueAtTime(0, t);
     gain.gain.linearRampToValueAtTime(0.3, t + 0.010);
@@ -41,18 +42,38 @@ function Beeper(audioContext, gui) {
     gain.gain.linearRampToValueAtTime(0, t + dur + 0.005);
   }
 
-  this.beep = function (options, when) {
-    if (!inBeep && !paused) {
+  this.beep = function (config, when) {
+    if (!paused) {
       var t = (when / 1000) || audioContext.currentTime;
       if (t < audioContext.currentTime) {
         return gui.log('beep late for ' + (audioContext.currentTime - t));
       }
 
-      beepOnce(options, t);
+      beepOnce(config, t);
 
       toggle();
-      setTimeout(toggle, options.beepDuration);
+      setTimeout(toggle, config.beepDuration);
     }
+  };
+
+  var beepRepeatedlyStartTime = 0;
+  var beepRepeatedlyLastScheduledTime = 0;
+
+  function checkBeepRepeatedlyQueue() {
+    var t = audioContext.currentTime;
+    var interval = config.beepRepeatedlyIntervalMs / 1000;
+    while (beepRepeatedlyLastScheduledTime - t < 10 * interval) {
+      beepRepeatedlyLastScheduledTime += interval;
+      that.beep(config, beepRepeatedlyLastScheduledTime * 1000);
+    }
+  }
+
+  this.beepRepeatedly = function (config) {
+    var t0 = audioContext.currentTime + 1;
+    // Send first beep in 1 second from now.
+    beepRepeatedlyLastScheduledTime = t0;
+    that.beep(config, t0 * 1000);
+    setInterval(checkBeepRepeatedlyQueue, config.beepRepeatedlyIntervalMs);
   };
 
   (function () {
@@ -70,6 +91,5 @@ function Beeper(audioContext, gui) {
       oscillator.noteOn(0) :
       oscillator.start(0);
   } ());
-
 }
 
