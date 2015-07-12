@@ -22,7 +22,7 @@ Turn the speakers on. What should happen is this:
 To see some debug information you can take a look at the internal data
 structure used by server:
 
-    curl http://agrbin-streamer.herokuapp.com | dot -Tsvg | display
+    http://agrbin-streamer.herokuapp.com
 
 If you managed to test this stuff using more than a few devices,
 tell me about it!

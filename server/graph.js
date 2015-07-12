@@ -214,8 +214,22 @@ function Graph () {
 }
 
 module.exports.Graph = Graph;
+
 module.exports.getGraph = function () {
   return dotOutput;
+};
+
+module.exports.getGraphHTML = function () {
+  return '<head>' +
+    '<script src="http://mdaines.github.io/viz.js/viz.js" type="text/javascript"></script>' +
+    '<script id="a" type="text/vnd.graphviz">' + dotOutput + '</script>' +
+    '<script>' +
+    ' function render() {' +
+    '  document.getElementById("b").innerHTML = Viz(document.getElementById("a").innerHTML, "svg", "dot");\n' +
+    ' }' +
+    '</script>' +
+    '</head>' +
+    '<body onload="render()"><div id="b"></div></body>';
 };
 
 (function () {
