@@ -7,14 +7,15 @@ function Microphone(audioContext, onDeny, onReady, options) {
     zeroGain,
     opt = options || {},
     that = this,
-    t0 = new Date().getTime();
+    t0 = 0;
 
   this.getAudioContext = function () {
     return audioContext;
   };
 
   this.getCurrentTimeMs = function () {
-    return new Date().getTime() - t0;
+    // return new Date().getTime() - t0;
+    return audioContext.currentTime * 1000;
   };
 
   this.getSampleRate = function () {
@@ -128,5 +129,7 @@ function Microphone(audioContext, onDeny, onReady, options) {
       gotStream,
       onDeny
     );
+
+    t0 = that.getCurrentTimeMs();
   }());
 }

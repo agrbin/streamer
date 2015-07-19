@@ -7,10 +7,17 @@
     <script type="text/javascript" src="microphone.js"></script>
     <script type="text/javascript" src="queuebeepdetector.js"></script>
     <script type="text/javascript" src="spectogram.js"></script>
+    <script type="text/javascript" src="distribution.js"></script>
     <script>
       requireWarmAudioContextAndGui(function (gui, ctx) {
+        var intervalDistribution = new StreamedIntervalDistribution(
+          config.beepRepeatedlyIntervalMs, "ms");
         function onBeep(startMs) {
+          intervalDistribution.push(startMs);
           gui.append('b! ');
+          gui.status(
+            JSON.stringify(
+              intervalDistribution.getParams(), null, "<br/>"));
         }
         var microphone = new Microphone(ctx, 
           function (msg) {

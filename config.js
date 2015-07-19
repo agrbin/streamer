@@ -11,34 +11,23 @@ var config = {
   beepDuration : 300,
 
   /* hz */
-  beepFreqLow :  10000,
-  beepFreqHigh : 14000,
+  beepFreqLow :  2000,
+  beepFreqHigh : 5000,
 
-  /* test sync with beeping */
+  // (Note: not implemented yet: test sync with beeping)
   testBeepFreq : false,
 
-  beepRepeatedlyIntervalMs : 2000,
+  // In Beeper::beepRepeatedly, what's the bepp interval?
+  beepRepeatedlyIntervalMs : 1000,
 
-  anomalySampleInterval : 15,
-
-  /* to trigger beep detection clasificator sums this many samples in frequency
-   * range and creates one sample of that. if sound of that one sample is
-   * greater than usual, beep detection is triggered.
-   */
-  analyzeTriggerEnergySamples : 10,
+  // In Beeper::beepRepeatedly, how many beeps to send?
+  maxBeepRepeatedlyBeeps : -1,
 
   detectorSampleRate : 20,
   detectorRetain : 100,
 
-  anomalySampleInterval : 15,
-
-  /* to trigger beep detection clasificator sums this many samples in frequency
-   * range and creates one sample of that. if sound of that one sample is
-   * greater than usual, beep detection is triggered.
-   */
-  analyzeTriggerEnergySamples : 10,
-
-  detectorSampleRate : 20,
-  detectorRetain : 100,
+  // If audioContext.currentTime and Date::getTime became unsynced for more
+  // than this value, crash the application.
+  maximumClocksDriftMs : 100,
 };
 

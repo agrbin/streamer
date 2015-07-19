@@ -1,10 +1,11 @@
-// just get the distribution params
-function Distribution(transform) {
+/*
+ * A simple class that calculates distribution over a set of params
+ * string unit which is used with this distribution.
+ */
+function Distribution(unit) {
   var params = null,
     samples = [],
     that = this;
-
-  transform = transform || function (x) {return x;};
 
   /**
    * sets the new samples
@@ -12,10 +13,9 @@ function Distribution(transform) {
   this.setSamples = function (s) {
     samples = [];
     for (var it = 0; it < s.length; ++it) {
-      samples.push(transform(s[it]));
+      samples.push(s[it]);
     }
     params = null;
-    that.getParams();
   };
 
   this.getHist = function () {
@@ -37,53 +37,99 @@ function Distribution(transform) {
 
   /**
    * this will output params
+   * {
+   *   size :
+   *   avg :
+   *   stddev :
+   *   min :
+   *   max :
+   *   unit : unit
+   * }
    */
   this.getParams = function () {
     var it;
     if (params === null) {
-      params = { mean : 0, dev : 0 };
+      params = {
+        avg : 0,
+        stddev : 0,
+        size : samples.length,
+        min : Infinity,
+        max : -Infinity,
+        unit : unit
+      };
       for (it = 0; it < samples.length; ++it) {
-        params.mean += samples[it];
+        var s = samples[it];
+        params.avg += s;
+        params.min = Math.min(params.min, s);
+        params.max = Math.max(params.max, s);
       }
-      params.mean /= samples.length;
-
+      params.avg /= params.size;
       for (it = 0; it < samples.length; ++it) {
-        params.dev += Math.pow(samples[it] - params.mean, 2);
+        params.stddev += Math.pow(samples[it] - params.avg, 2);
       }
-      params.dev = Math.sqrt(params.dev / samples.length);
+      params.stddev = Math.sqrt(params.stddev / params.size);
     }
     return params;
-  };
-
-  /**
-   * is sample in population?
-   */
-  this.contains = function (sample) {
-    return Math.abs(transform(sample) - params.mean) < 3 * params.dev;
   };
 }
 
 /*
-  // erf implementation from
-  // https://github.com/AndreasMadsen/mathfn/blob/master/functions/erf.js
-
-  var ERF_A = [
-    0.254829592,
-    -0.284496736,
-    1.421413741,
-    -1.453152027,
-    1.061405429
-  ];
-  var ERF_P = 0.3275911;
-
-  function erf(x) {
-    var sign = 1;
-    if (x < 0) sign = -1;
-
-    x = Math.abs(x);
-    var t = 1.0/(1.0 + ERF_P*x);
-    var y = 1.0 - (((((ERF_A[4]*t + ERF_A[3])*t) + ERF_A[2])*t +
-                    ERF_A[1])*t + ERF_A[0])*t*Math.exp(-x*x);
-    return sign * y;
-  }
+ * Push samples
+ * Get distribution params
  */
+function StreamedDistribution(unit) {
+  var samples = [];
+
+  this.push = function (sample) {
+    samples.push(sample);
+  };
+
+  this.getParams = function () {
+    var distribution = new Distribution(unit);
+    distribution.setSamples(samples);
+    return distribution.getParams();
+  };
+}
+
+
+/**
+ * Push time events. Samples are time differences between events.
+ * Expected difference between intervals is passed in constructor.
+ */
+function StreamedIntervalDistribution(expectedInterval, unit) {
+  var firstEvent = null,
+      distribution = new StreamedDistribution(unit),
+      params = {
+        last_iteration : 0,
+        iterations_missed : 0,
+        iterations_hit : 0,
+        hit_rate : null
+      };
+
+  this.push = function (t) {
+    if (firstEvent == null) {
+      firstEvent = t;
+    }
+    var iteration = Math.round((t - firstEvent) / expectedInterval);
+    var expectedT = firstEvent + expectedInterval * iteration;
+    distribution.push(expectedT - t);
+
+    params.iterations_hit += 1;
+    params.last_iteration = Math.max(params.last_iteration, iteration);
+    params.hit_rate = params.iterations_hit / (params.last_iteration + 1);
+    params.iterations_missed =
+      params.last_iteration + 1 - params.iterations_hit;
+  }
+
+  this.getParams = function() {
+    var result = {};
+    var distParams = distribution.getParams();
+    for (var key in params) {
+      result[key] = params[key];
+    }
+    for (var key in distParams) {
+      result[key] = distParams[key];
+    }
+    return result;
+  }
+}
