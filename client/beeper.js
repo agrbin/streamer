@@ -17,7 +17,8 @@ function Beeper(audioContext, gui) {
     volume = 0.3,
     inBeep = false,
     paused = false,
-    that = this;
+    that = this,
+    beepsProduced = 0;
 
   function toggle() {
     inBeep ^= 1;
@@ -35,11 +36,13 @@ function Beeper(audioContext, gui) {
     var dur = config.beepDuration / 1000;
     oscillator.frequency.setValueAtTime(config.beepFreqLow, t);
     oscillator.frequency.linearRampToValueAtTime(config.beepFreqHigh, t + dur);
+    beepsProduced++;
+    console.log(config);
 
     gain.gain.setValueAtTime(0, t);
-    gain.gain.linearRampToValueAtTime(0.3, t + 0.010);
-    gain.gain.linearRampToValueAtTime(1, t + dur);
-    gain.gain.linearRampToValueAtTime(0, t + dur + 0.005);
+    gain.gain.linearRampToValueAtTime(0.4, t + 0.010);
+    gain.gain.linearRampToValueAtTime(1, t + dur - 0.010);
+    gain.gain.linearRampToValueAtTime(0, t + dur);
   }
 
   this.beep = function (config, when) {
@@ -48,9 +51,7 @@ function Beeper(audioContext, gui) {
       if (t < audioContext.currentTime) {
         return gui.log('beep late for ' + (audioContext.currentTime - t));
       }
-
       beepOnce(config, t);
-
       toggle();
       setTimeout(toggle, config.beepDuration);
     }
@@ -59,10 +60,16 @@ function Beeper(audioContext, gui) {
   var beepRepeatedlyStartTime = 0;
   var beepRepeatedlyLastScheduledTime = 0;
 
+  function shouldBeepMore() {
+    return config.maxBeepRepeatedlyBeeps == -1 ||
+           beepsProduced < config.maxBeepRepeatedlyBeeps;
+  }
+
   function checkBeepRepeatedlyQueue() {
     var t = audioContext.currentTime;
     var interval = config.beepRepeatedlyIntervalMs / 1000;
-    while (beepRepeatedlyLastScheduledTime - t < 10 * interval) {
+    while (shouldBeepMore() &&
+           beepRepeatedlyLastScheduledTime - t < 10 * interval) {
       beepRepeatedlyLastScheduledTime += interval;
       that.beep(config, beepRepeatedlyLastScheduledTime * 1000);
     }

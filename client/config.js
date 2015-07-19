@@ -17,7 +17,11 @@ var config = {
   /* test sync with beeping */
   testBeepFreq : false,
 
-  beepRepeatedlyIntervalMs : 2000,
+  // In Beeper::beepRepeatedly, what's the bepp interval?
+  beepRepeatedlyIntervalMs : 1000,
+
+  // In Beeper::beepRepeatedly, how many beeps to send?
+  maxBeepRepeatedlyBeeps : -1,
 
   detectorSampleRate : 20,
   detectorRetain : 100,

@@ -91,3 +91,45 @@ function StreamedDistribution(unit) {
   };
 }
 
+
+/**
+ * Push time events. Samples are time differences between events.
+ * Expected difference between intervals is passed in constructor.
+ */
+function StreamedIntervalDistribution(expectedInterval, unit) {
+  var firstEvent = null,
+      distribution = new StreamedDistribution(unit),
+      params = {
+        last_iteration : 0,
+        iterations_missed : 0,
+        iterations_hit : 0,
+        hit_rate : null
+      };
+
+  this.push = function (t) {
+    if (firstEvent == null) {
+      firstEvent = t;
+    }
+    var iteration = Math.round((t - firstEvent) / expectedInterval);
+    var expectedT = firstEvent + expectedInterval * iteration;
+    distribution.push(expectedT - t);
+
+    params.iterations_hit += 1;
+    params.last_iteration = Math.max(params.last_iteration, iteration);
+    params.hit_rate = params.iterations_hit / (params.last_iteration + 1);
+    params.iterations_missed =
+      params.last_iteration + 1 - params.iterations_hit;
+  }
+
+  this.getParams = function() {
+    var result = {};
+    var distParams = distribution.getParams();
+    for (var key in params) {
+      result[key] = params[key];
+    }
+    for (var key in distParams) {
+      result[key] = distParams[key];
+    }
+    return result;
+  }
+}
