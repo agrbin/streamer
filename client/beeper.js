@@ -36,14 +36,10 @@ function Beeper(audioContext, gui) {
     oscillator.frequency.setValueAtTime(config.beepFreqLow, t);
     oscillator.frequency.linearRampToValueAtTime(config.beepFreqHigh, t + dur);
 
-    /*
-    // it seems that this doesn't change precission. this was to avoid the
-    // click at the beginning of the beep.
     gain.gain.setValueAtTime(0, t);
     gain.gain.linearRampToValueAtTime(0.3, t + 0.010);
     gain.gain.linearRampToValueAtTime(1, t + dur);
     gain.gain.linearRampToValueAtTime(0, t + dur + 0.005);
-    */
   }
 
   this.beep = function (config, when) {
