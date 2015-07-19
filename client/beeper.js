@@ -37,7 +37,6 @@ function Beeper(audioContext, gui) {
     oscillator.frequency.setValueAtTime(config.beepFreqLow, t);
     oscillator.frequency.linearRampToValueAtTime(config.beepFreqHigh, t + dur);
     beepsProduced++;
-    console.log(config);
 
     gain.gain.setValueAtTime(0, t);
     gain.gain.linearRampToValueAtTime(0.4, t + 0.010);

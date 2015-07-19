@@ -14,7 +14,7 @@ var config = {
   beepFreqLow :  2000,
   beepFreqHigh : 5000,
 
-  /* test sync with beeping */
+  // (Note: not implemented yet: test sync with beeping)
   testBeepFreq : false,
 
   // In Beeper::beepRepeatedly, what's the bepp interval?
@@ -25,5 +25,9 @@ var config = {
 
   detectorSampleRate : 20,
   detectorRetain : 100,
+
+  // If audioContext.currentTime and Date::getTime became unsynced for more
+  // than this value, crash the application.
+  maximumClocksDriftMs : 100,
 };
 
