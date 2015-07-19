@@ -1,7 +1,8 @@
 /*
  * A simple class that calculates distribution over a set of params
+ * string unit which is used with this distribution.
  */
-function Distribution() {
+function Distribution(unit) {
   var params = null,
     samples = [],
     that = this;
@@ -42,7 +43,7 @@ function Distribution() {
    *   stddev :
    *   min :
    *   max :
-   *
+   *   unit : unit
    * }
    */
   this.getParams = function () {
@@ -53,7 +54,8 @@ function Distribution() {
         stddev : 0,
         size : samples.length,
         min : Infinity,
-        max : -Infinity
+        max : -Infinity,
+        unit : unit
       };
       for (it = 0; it < samples.length; ++it) {
         var s = samples[it];
@@ -65,7 +67,7 @@ function Distribution() {
       for (it = 0; it < samples.length; ++it) {
         params.stddev += Math.pow(samples[it] - params.avg, 2);
       }
-      params.stddev = Math.sqrt(params.dev / params.size);
+      params.stddev = Math.sqrt(params.stddev / params.size);
     }
     return params;
   };
@@ -75,7 +77,7 @@ function Distribution() {
  * Push samples
  * Get distribution params
  */
-function StreamDistribution() {
+function StreamedDistribution(unit) {
   var samples = [];
 
   this.push = function (sample) {
@@ -83,7 +85,8 @@ function StreamDistribution() {
   };
 
   this.getParams = function () {
-    var distribution = new Distribution(samples);
+    var distribution = new Distribution(unit);
+    distribution.setSamples(samples);
     return distribution.getParams();
   };
 }
