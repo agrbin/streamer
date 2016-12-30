@@ -4,11 +4,11 @@ Streamer
 Stream synchronised music on multiple network devices without latency. This
 repository serves as prototype and implementation test for designed algorithm.
 
-**Live example at <http://agrbin.github.io/streamer/>**
+**Live example at <https://agrbin.github.io/streamer/>**
 
 Open this page from more than one device including at least one device with
 browser that can use your microphone.
-[check mic here](http://agrbin.github.io/streamer/spectogram.html).
+[check mic here](https://agrbin.github.io/streamer/spectogram.html).
 Turn the speakers on. What should happen is this:
 
 - for a minute or so you should be able to hear high-freq beeps, these are
