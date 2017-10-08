@@ -221,7 +221,7 @@ module.exports.getGraph = function () {
 
 module.exports.getGraphHTML = function () {
   return '<head>' +
-    '<script src="http://mdaines.github.io/viz.js/viz.js" type="text/javascript"></script>' +
+    '<script src="//cdnjs.cloudflare.com/ajax/libs/vis/4.20.1/vis.min.js" type="text/javascript"></script>' +
     '<script id="a" type="text/vnd.graphviz">' + dotOutput + '</script>' +
     '<script>' +
     ' function render() {' +
