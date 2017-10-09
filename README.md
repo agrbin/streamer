@@ -1,43 +1,69 @@
-Streamer
-========
+# Streamer
 
-Stream synchronised music on multiple network devices without latency. This
-repository serves as prototype and implementation test for designed algorithm.
+This prototype shows it's possible to play synchronised music on multiple
+mobile phones with different hardware and unreliable network connection.
+
+The goal of synchronisation is to be so good that human ear can't regoznie that
+there are multiple sources of sound.
+
+During the synchronisation phase, devices communicate over IP network and audio
+channel - with speakers and microphones.
+
+Assumptions made:
+
+- devices have clocks that can measure time intervals,
+- messages transmitted over network are delivered in bounded time, or not
+  delivered at all,
+- network channel is asymmetric,
+- at least one device has a microphone with time invariant input latency
+  specific to that device,
+- each device has a speaker time invariant output latency specific to that
+  device,
+- the room with devices is small (~10m or so, so that speed of sound doesn't
+  introduce significant latency)
+
+The duration of the synchronisation phase is proportional to message delivery
+success rate, number of devices, and maximum possible latency in the system.
+
+## Demo
 
 **Live example at <https://agrbin.github.io/streamer/>**
 
 Open this page from more than one device including at least one device with
 browser that can use your microphone.
-[check mic here](https://agrbin.github.io/streamer/spectogram.html).
+
+Ensure that microphone works [using the spectogram page](https://agrbin.github.io/streamer/spectogram.html).
+
 Turn the speakers on. What should happen is this:
 
-- for a minute or so you should be able to hear high-freq beeps, these are
+- For a minute or so you should be able to hear high-freq beeps, these are
   synchronisation impulses.
-- at least one of your devices should print 'b!' on screen, it means that beep
-  was detected
-- when clients are synchronized tight enough, the music should start to play.
-- when music starts to play the beeps will stop, but you can add more devices
-  to the group by opening the same page on other device in the same room
+- Your devices with microphones should print 'b!' on the screen, which means
+  that beeps are detected.
+- When clients are well synchronized, the music should start to play.
+- When music starts to play the beeps will stop, but you can add more devices
+  to the group by opening the same page on other device.
 
 To see some debug information you can take a look at the internal data
-structure used by server:
+structure used by server at http://agrbin-streamer.herokuapp.com.
 
-    http://agrbin-streamer.herokuapp.com
+If you managed to test this stuff and you liked it, tell me about it!
 
-If you managed to test this stuff using more than a few devices,
-tell me about it!
+## Sync algorithm
 
-The Real Problem
-================
+### Why it's not easy?
 
-How can below algorithm be used to synchronise the music? Didn't we just need
-to synchronise clocks and then play the music at the same time from all
-devices?
+What's the fuss all about? Didn't we just need to synchronise clocks and then
+play the music at the same time from all devices? Clock sync is a known
+problem!
 
-The problem is output latency. When application schedules the sound to be
-played on speakers, various buffers inside the music card driver and music card
-itself will cause output latency, eg. sound will be played with some delay.
-This delay can be noticeable.
+Even if the clocks are perfectly sycned, there is an audio output latency that
+makes things problematic.
+
+When application schedules the sound to be played on speakers, various buffers
+inside the music card driver and music card itself will cause output latency,
+eg. sound will be played with some delay. This delay can be noticeable - more
+than 50ms on Android phones.
 
 Speed of sound will also add some latency. For every 0.33 meters there will be 1
 ms of latency. The subjective effect of latency is as follows:
@@ -55,127 +81,147 @@ There is also an input latency that makes it hard to measure output latency.
 This is the interval of time from when microphone picks up a signal to the
 actual moment when this signal can be processed in application.
 
-Analogy to the riddle problem given below is as follows:
-
-* message times are TCP/IP network message times,
-* time to climb up the lighthouse is output latency,
-* blinking the light means moving the membrane of the speaker,
-* time to go down to the bottom of the lighthouse is input latency,
-* if two sounds are played at the same time it may be hard to detect them
-  precisely.
-
-Algorithm
-=========
+### The lighthouse analogy
 
 Let's start with a riddle that coresponds to the problem we are trying to
 solve.
 
-The riddle
-----------
-
 There are 3 lighthouses on an island each employing a keeper. Lighthouse keeper
-can be located on the bottom or on the top of the building. When located on the
-bottom, keeper can look at the clock installed on the wall or exchange messages
-with us using a currier. Message speeds are different every time, but each
-message will be delivered under an hour. Clocks are precise, but they are not
-synchronised. When located on the top, keeper can spot the blink from other
-lighthouses or blink with it's own light. It takes time to do the stairs up or
-down and that time is constant for each lighthouse. These times may be
-different for each lighthouse, and none of those 6 values are greater than 1
-hour. When one lighthouse blinks the light, it drains whole island's energy
-sources for 2 hours and no one else can blink.
+can be located on the bottom or on the top of the lighthouse. When located on
+the bottom, keeper can look at the clock installed on the wall or exchange
+messages with us using a currier. Message speeds are different every time, but
+each message will be delivered in under an hour, or not delivered at all. Clocks
+are precise, but they are not synchronised. When located on the top, keeper can
+spot the blink from other lighthouses or blink with it's own light. It takes
+time to do the stairs up or down and that time is constant and specific for
+each lighthouse. Downstairs time and upstairs time will not exceed 1 hour.
 
 We and our precise clock are located far away from the island and we can't
 see the lights. Can we communicate with keepers in order to be able to blink
-all lights at once? Energy will then be splitted in thirds and whole island's
-population will have a party.
+all lights at once?
 
-Easier subproblems
-------------------
+During the synchronisation phase, when one lighthouse blinks the light, other
+lighthouses shouldn't blink in the next 2 hours. This constraint is added
+because in the real problem with sound signals, it's harder to detect two sound
+signals if they happen close to each other. We say that a blink drains the
+energy of the full island.
 
-* message times are constant and keeper can fall down instantly
-* message times are constant, no energy problems
-* message times are constant
-* communication chanel is symmetric (send and recieve times are equal)
+This is not a problem after the sync is complete - when they try to blink all
+at once. In the real problem, this is exactly what our end goal is - we want
+music signals to be heard as only one signal.
 
-Solution
---------
+Analogy to the real problem is as follows:
 
-Firstly, let's try to solve the puzzle assuming that message times are
-constant and that going from top to bottom takes no time (eg. if keeper can
-fall down and still function).
+* currier message times are TCP/IP network message times,
+* time to climb up the lighthouse is audio output latency,
+* blinking the light means moving the membrane of the speaker,
+* time to go down to the bottom of the lighthouse is audio input latency,
+* if two sounds are played at the same time it may be hard to detect them
+  precisely.
+* 'we' are the synchronisation server that controls the devices.
 
-In this scenario a keeper can measure it's own up time because he can write
-down the clock value at the bottom, climb up, fall down and see the clock
-difference. Each keeper can then send us a message with theirs up time. We 
-can now choose a fixed time in future and send a light request to each
-lighthouse at the fixed time minus its up time. Lights will be turned on at the
-fixed time delayed by message time.
+### Easier subproblems
 
-    light1 = X - t(up_1) + t(message) + t(up_1) = X + t(message)
-    light2 = X - t(up_2) + t(message) + t(up_2) = X + t(message)
-    light3 = X - t(up_3) + t(message) + t(up_3) = X + t(message)
+* C1: message times are constant and all equal and downstairs time is zero
+* C2: message times are constant and all equal
+* C3: non-conatant message times
+* C4: communication chanel is symmetric (send and recieve times are equal)
 
-What if down time exists, but message times are still constant? Note that if we
-could calculate **differences between up times** of all pairs of lighthouses, we
-could find a solution. Having the:
+#### C1
+
+Message times are constant and all equal and downstairs time is zero.
+
+In this scenario a keeper can measure it's own upstairs time because he can
+write down the clock value at the bottom, climb up, fall down and see the clock
+difference. Each keeper can then send us a message with theirs upstairs time.
+
+Having the upstairs time, we can do the following:
+
+    at time (-t(up_1) - t(message)), send a light request to lighthouse1
+    at time (-t(up_2) - t(message)), send a light request to lighthouse2
+    at time (-t(up_3) - t(message)), send a light request to lighthouse3
+
+The lights will go off together:
+
+    light1 = -t(up_1) - t(message) + t(message) + t(up_1) = 0
+    light2 = -t(up_2) - t(message) + t(message) + t(up_2) = 0
+    light3 = -t(up_3) - t(message) + t(message) + t(up_3) = 0
+
+#### C2
+
+Message times are constant and all equal.
+
+Assume we have 3 lighthouses and we want to sync only the first two. We will
+use the third lighthouse to help us do so. If that is possible, we can repeat
+the process to sync lighthouses 2 and 3 using the lighthouse 1 as a helper.
+
+The main idea is to calculate **differences between upstair times** of the two
+lighthouses that we want to sync.
 
     t(up_12) = t(up_2) - t(up_1),
-    t(up_13) = t(up_3) - t(up_1),
 
-We can light up all lights by fixing the constant time in future and sending
-light request to first lighthouse at that moment. Second request will be sent
-at the fixed time decreased by difference of second's up time and first's up
-time. Third request similarly. Lights will then be turned on in:
+Having that info, we can light up the lights on first two lighthouses at the
+same time. The request to the second lighthouse needs to be offseted by the
+difference `t(up_12)`.
 
-    light(1) = X + t(message) + t(up_1)
-    light(2) = X - t(up_12) + t(message) + t(up_2)
-           = X - (t(up_2) - t(up_1)) + t(message) + t(up_2)
-           = X + t(up_1) + t(message)
-    light(3) = ...
+    at time (-t(message)           ) send a light request to lighthouse1
+    at time (-t(message) - t(up_12)) send a light request to lighthouse2
+
+The lights will go off together:
+
+    light(1) = (-t(message)           ) + t(message) + t(up_1) = t(up_1)
+    light(2) = (-t(message) - t(up_12)) + t(message) + t(up_2)
+             = -(t(up_2) - t(up_1)) + t(up_2)
+             = t(up_1)
+             = light(1)
 
 Now, how to obtain the differences? In order to obtain differences between
-first two lighthouses we can send the third keeper to the top of his building
-and tell him to go down and write the time when he sees the light from other
-twos. Then, we can send first request at X, and second request at X + 24. This
-will bring up first two lights in:
+first two lighthouses we can send the third keeper to the top of his lighthouse
+and tell him to go down and write the time when he sees the light from the
+other two.
+
+We introduce a bigger time delay that we call 'a day' that is guaranteed to be
+much bigger than any upstair, downstair or message latency time. We use this to
+cleanly separate the light blink from first and second lighthouse, so that
+third keeper doesn't need to worry that he will miss the second blink or that
+he will not recognize two blinks at the same time.
+
+On first day we send a light request for lighthouse 1 on time X. On second day
+we send a light request for lighthouse 2 on the same time of the day X.
+
+After the blink one the second day, the third keepr knows the difference
+between upstair times between the first two lighthouses. This is what the thrid
+keeper observes on the top of his lighthouse:
 
     light(1) = X + t(message) + t(up_1)
-    light(2) = X + 24 + t(message) + t(up_2)
+    light(2) = X + 1day + t(message) + t(up_2)
 
-And third keeper will note the following times:
+On the bottom of his lighthouse, the third keeper can note the receiving times:
 
-    saw_light(1) = X + t(message) + t(up_1) + t(down_3)
-    saw_light(2) = X + 24 + t(message) + t(up_2) + t(down_3)
+    saw_light(1) = light(1) + t(down_3) = X + t(message) + t(up_1) + t(down_3)
+    saw_light(2) = light(2) + t(down_3) = X + 1day + t(message) + t(up_2) + t(down_3)
 
 While clock from third keeper may not be synchronised with any other clock, we
 know that his clock is precise and that he can precisely measure an interval of
 time. By subtracting those two times, we have:
 
-    saw_light(2) - saw_light(1) = X + t(message) + t(up_2) + t(down_3) -
-                                  X + 2 + t(message) + t(up_1) + t(down_3)
-                                = t(up_2) - t(up_1) - 24
+    saw_light(2) - saw_light(1) = (X + t(message) + t(up_2) + t(down_3)) -
+                                  (X + 1day + t(message) + t(up_1) + t(down_3))
+                                = t(up_2) - t(up_1) - 1day
 
-Which is the difference between up times of first two lighthouses decreased by
-a constant. This value is then sent tu us. In next two iterations we can obtain
-other differences as well. This solves the problem when message time is
-constant.
+That means that third keepr now knows `t(up_12)`. He can send us this value in
+a message and we can use it to sync the first two lighthouses.
 
-Note.
+#### C3
 
-Solution without 24 hours delay would also suffice if there is no energy
-constraint. On the other hand, 24 hours is enough time for keeper to go up and
-down between the blinks. Smallest possible delay that can be used to meet all
-the constraints is 4 hours.
-
-Non constant message times
---------------------------
+TODO(agrbin): This section is really too hard to follow.. Refactor the text.
 
 The equations shown below are not necessary to fully understand the solution
 when message times are not constant. The idea is as follows. Say that at the
 beginning of the time we send messages to all keepers to change their clocks to
 zero (eg. to read the clock in future by subtracting the moment when they've
-    received this first message).
+received this first message).
+
 Now all clocks in system are synchronised with maximum error of 1 hour. These
 errors are not known, but they are fixed for each lighthouse. If we now issue
 light requests in form of "when your time is X, climb and blink the light", and
@@ -195,7 +241,7 @@ but bounded. If return message traveled exactly 1 hour then the current time at
 lighthouse will be received time increased by 1 hour, and if return message came
 instantly then received time will be correct.
 
-If we take a look at our clock when message was received we can calculate 
+If we take a look at our clock when message was received, we can calculate
 difference between that value and written remote time. In that moment, remote
 time written inside the message will be current remote time subtracted by
 return message time.
@@ -265,11 +311,9 @@ by two. This would gave us opportunity to determine `t(up_2) - t(up_1)` just
 like when message times where constant. In that scenario, clocks would also be
 easily synchronised.
 
-Beep detection
-==============
+## Beep detection
 
-The problem
------------
+### The problem
 
 In the algorithm described above if the lighthouse keeper wants to turn on the
 light he or she firstly must to climb the stairs and then blink the light. In
@@ -310,8 +354,7 @@ process while false positive will yield wrong results. Also, short signal
 duration is better as it means that sound would not be as clobbered as much
 during the synchronization. 
 
-Implementation
---------------
+### Implementation
 
 We experimented with three types of signal generators:
 
